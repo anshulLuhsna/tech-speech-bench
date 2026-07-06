@@ -1,0 +1,21 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+.env
+
+# Derived audio and model outputs
+data/**/audio/converted/
+data/**/audio/wav/
+results/**/*.jsonl
+results/**/*.csv
+results/**/*.tsv
+results/**/*.txt
+
+# Keep source manifests and raw v0 audio trackable unless release policy changes.
+!data/**/manifest.tsv
+!data/**/references.tsv
+!data/**/audio/raw/*.m4a
+

@@ -1,0 +1,101 @@
+clip_id	reference_text
+tsb_v0_001	Run the RAGAS faithfulness eval on the LangGraph branch and compare it with the pgvector baseline.
+tsb_v0_002	Create a small eval set with golden answers, retrieved context, and a rubric for hallucination rate.
+tsb_v0_003	I want context precision and answer relevance, but do not use RAGAS for the final score.
+tsb_v0_004	Compare the faithfulness score before and after adding the reranker.
+tsb_v0_005	Add a failure case where the model cites context that was never retrieved.
+tsb_v0_006	The eval should separate retrieval failure from generation failure.
+tsb_v0_007	Log the hallucination rate for every answer longer than five sentences.
+tsb_v0_008	Create a dashboard that shows RAGAS, latency, and manual review notes.
+tsb_v0_009	Actually replace RAGAS with a custom retrieval metric for this experiment.
+tsb_v0_010	Make the golden answer shorter and add one adversarial example.
+tsb_v0_011	Benchmark vLLM against the Triton endpoint for batch size one and batch size eight.
+tsb_v0_012	Fine-tune a LoRA adapter and compare it with the QLoRA checkpoint.
+tsb_v0_013	The quantization run improved memory usage but hurt answer quality.
+tsb_v0_014	Add embeddings for every chunk and test whether the reranker improves top five recall.
+tsb_v0_015	Measure p fifty and p ninety five latency for the streaming endpoint.
+tsb_v0_016	Compare throughput before and after enabling continuous batching.
+tsb_v0_017	The Triton server is healthy, but vLLM is returning slower first tokens.
+tsb_v0_018	Save the LoRA adapter separately from the base model.
+tsb_v0_019	The embedding model changed, so we need to rebuild the vector index.
+tsb_v0_020	Add a latency budget for retrieval, reranking, and generation separately.
+tsb_v0_021	Build a LangGraph agent with a planner, executor, and memory store.
+tsb_v0_022	Add tool calls for search memory, write memory, and run eval suite.
+tsb_v0_023	The checkpointing layer should let the agent resume after a failed tool call.
+tsb_v0_024	Store traces for every prompt, retrieval, tool call, and final answer.
+tsb_v0_025	The planner should not call the repo tool unless the question mentions code.
+tsb_v0_026	Add a memory policy that avoids saving temporary emotional state.
+tsb_v0_027	Mark the old memory stale when the user corrects their goal.
+tsb_v0_028	The executor should retry once, then ask the user for clarification.
+tsb_v0_029	Show me the trace where the agent chose the wrong tool.
+tsb_v0_030	Add a regression test for stale memory retrieval.
+tsb_v0_031	Store the embeddings in pgvector with an HNSW index.
+tsb_v0_032	Compare cosine similarity with hybrid search and a metadata filter.
+tsb_v0_033	The Postgres query is slow because the vector index is missing.
+tsb_v0_034	Add metadata filters for repo name, file path, and timestamp.
+tsb_v0_035	The HNSW index improved recall but increased memory usage.
+tsb_v0_036	Rebuild the pgvector index after changing the embedding dimension.
+tsb_v0_037	Use hybrid search for package names because exact terms matter.
+tsb_v0_038	The metadata filter should exclude stale memory entries.
+tsb_v0_039	Add a migration for the memory table and the correction table.
+tsb_v0_040	Store the raw transcript and the corrected transcript separately.
+tsb_v0_041	Run pytest dash k test memory retriever and show the failing assertion.
+tsb_v0_042	Open the Dockerfile and check whether the CUDA image version changed.
+tsb_v0_043	Update requirements dot txt with faster whisper and pgvector.
+tsb_v0_044	Add a dot env example with the OpenAI API key removed.
+tsb_v0_045	Convert the YAML config into JSON for the eval runner.
+tsb_v0_046	The FastAPI route should accept audio chunks over a WebSocket.
+tsb_v0_047	Add a Pydantic schema for correction events and domain terms.
+tsb_v0_048	Check the GitHub issue and create a Linear task for the bug.
+tsb_v0_049	Run the migration and verify that the memory table exists.
+tsb_v0_050	Create a README section for local setup and GPU deployment.
+tsb_v0_051	Create an issue for the ASR transcript bug and include the affected domain terms.
+tsb_v0_052	Add an acceptance test that verifies RAGAS, LangGraph, and pgvector are preserved exactly.
+tsb_v0_053	Draft a bug report comparing baseline Whisper with word boosting and LLM correction.
+tsb_v0_054	Make the eval runner output JSON for every transcript and Markdown for the summary.
+tsb_v0_055	Add a table with WER, CER, domain term error rate, and latency.
+tsb_v0_056	Include examples for RAGAS, LangGraph, pgvector, vLLM, and OpenTelemetry.
+tsb_v0_057	Remove the generic motivation section and start with the reproducible failure case.
+tsb_v0_058	Add a note identifying which technical terms were probably misheard.
+tsb_v0_059	Add a privacy check before saving correction examples from user audio.
+tsb_v0_060	Rewrite the issue title so it sounds like a senior software engineer wrote it.
+tsb_v0_061	Use RAGAS for the first pass, actually no, replace it with a custom eval metric.
+tsb_v0_062	Add pgvector as the baseline, wait, make that hybrid search with pgvector.
+tsb_v0_063	The model should call search memory, no, search terms before writing memory.
+tsb_v0_064	Compare vLLM and Triton, actually compare vLLM and the OpenAI endpoint.
+tsb_v0_065	Add a Dockerfile, sorry, I mean update the existing Dockerfile.
+tsb_v0_066	The agent should save this as a preference, no, as a project vocabulary item.
+tsb_v0_067	Run pytest dash k test retriever, actually test memory retriever.
+tsb_v0_068	Use LangChain, wait, use LangGraph for the state machine.
+tsb_v0_069	Store the transcript in Postgres, and also keep the raw audio in object storage.
+tsb_v0_070	Create a dashboard for WER, sorry, domain term error rate is the main metric.
+tsb_v0_071	Add GitHub Actions, Docker Compose, Kubernetes, Redis, Celery, WebSocket, Prometheus, and OpenTelemetry to the term list.
+tsb_v0_072	Compare the GitHub Actions failure with the local pytest output.
+tsb_v0_073	The user might say Kubernetes and LangGraph in the same prompt.
+tsb_v0_074	Add a test sentence with Docker Compose, Redis, Celery, and WebSocket streaming.
+tsb_v0_075	This dictation tool should work for engineers talking about backend services and AI infra.
+tsb_v0_076	Record one noisy clip about debugging a WebSocket connection during a deployment.
+tsb_v0_077	Check whether the model writes OpenTelemetry with the correct capitalization.
+tsb_v0_078	Add spelling rules for pytest, pgvector, FastAPI, Pydantic, and OpenTelemetry.
+tsb_v0_079	The benchmark should include package names, infra tools, and AI engineering terms.
+tsb_v0_080	Do not overfit only to machine learning vocabulary; include normal software engineering terms too.
+tsb_v0_081	I want to build a dictation tool for AI engineers because normal dictation misses the words that matter.
+tsb_v0_082	The first version should prove the failure mode before we fine-tune anything.
+tsb_v0_083	If word boosting solves the problem, we should say that honestly.
+tsb_v0_084	The dataset is not the product, it is the scoreboard for the product.
+tsb_v0_085	Every user correction should become either a memory, a term rule, or a training example.
+tsb_v0_086	The product should preserve my voice while fixing obvious technical transcription mistakes.
+tsb_v0_087	I care more about domain term accuracy than generic word error rate.
+tsb_v0_088	The demo should show the same technical note through generic dictation and our adapted system.
+tsb_v0_089	The case study should include failure examples, not just cherry picked wins.
+tsb_v0_090	The system should learn that PG vector usually means pgvector in my technical notes.
+tsb_v0_091	Run the RAGAS context precision eval on the LangGraph memory store and export the trace.
+tsb_v0_092	Compare faster whisper with the vLLM endpoint on p ninety five latency.
+tsb_v0_093	Store RAGAS, LoRA, QLoRA, pgvector, and LangGraph as protected technical terms.
+tsb_v0_094	Actually replace the Postgres metadata filter with hybrid search over pgvector.
+tsb_v0_095	Add a correction rule that prevents the system from rewriting vLLM as V L M.
+tsb_v0_096	Add a correction rule where PG vector maps to pgvector with no space.
+tsb_v0_097	The Dockerfile should install FastAPI, Pydantic, faster whisper, and pgvector.
+tsb_v0_098	The benchmark should punish wrong acronyms more than ordinary filler words.
+tsb_v0_099	Compare baseline Whisper and faster whisper for software engineering dictation.
+tsb_v0_100	If the model hears ragas, it should consider whether I meant RAGAS the eval library.
