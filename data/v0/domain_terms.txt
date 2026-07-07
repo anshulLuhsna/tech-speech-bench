@@ -1,0 +1,50 @@
+RAGAS
+faithfulness
+context precision
+hallucination rate
+eval set
+golden answer
+rubric
+vLLM
+Triton
+LoRA
+QLoRA
+quantization
+embeddings
+reranker
+latency
+throughput
+LangGraph
+LangChain
+tool calls
+memory store
+checkpointing
+traces
+retrieval
+planner
+executor
+pgvector
+Postgres
+HNSW
+cosine similarity
+hybrid search
+metadata filter
+pytest
+pytest -k
+Dockerfile
+FastAPI
+Pydantic
+requirements.txt
+.env
+YAML
+JSON
+GitHub Actions
+Docker Compose
+Kubernetes
+Redis
+Celery
+WebSocket
+Prometheus
+OpenTelemetry
+OpenAI
+

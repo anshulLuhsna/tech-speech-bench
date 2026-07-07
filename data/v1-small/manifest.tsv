@@ -1,0 +1,121 @@
+id	split	category	terms	utterance
+tsb_v1_001	train	AI evals and model behavior	OpenAI API;Whisper	Send the audio sample through Whisper first, then score the OpenAI API summary for missing technical entities.
+tsb_v1_002	train	backend services and deployment	FastAPI;Uvicorn	Note that the FastAPI health endpoint only fails when Uvicorn starts with multiple workers.
+tsb_v1_003	train	configuration and environment files	.env;JWT	Move the JWT secret into .env and make the startup check fail when it is missing.
+tsb_v1_004	train	commands and file names	curl;OpenAPI	Use curl against the staging endpoint and confirm the OpenAPI response still includes pagination fields.
+tsb_v1_005	train	data pipelines and queues	Celery;RabbitMQ	The Celery worker is retrying too aggressively after RabbitMQ drops a connection during the batch import.
+tsb_v1_006	train	vector databases and retrieval	FAISS;ChromaDB	Record a retrieval note saying FAISS returns closer matches than ChromaDB on the short support questions.
+tsb_v1_007	train	CI/CD and testing	GitHub;CI/CD	The GitHub workflow passes locally but the CI/CD job loses the generated coverage artifact.
+tsb_v1_008	train	configuration and environment files	tsconfig.json;TypeScript	Tighten tsconfig.json so TypeScript rejects implicit any in the shared validation package.
+tsb_v1_009	train	backend services and deployment	Docker;NGINX	The Docker container starts, but NGINX returns a stale upstream error after the deploy.
+tsb_v1_010	train	AI evals and model behavior	TensorFlow;scikit-learn	The TensorFlow baseline overfits faster than scikit-learn on the small tabular feature set.
+tsb_v1_011	train	agent systems and tool calls	LangChain;REST API	Add a LangChain tool call that fetches the REST API status before answering the user.
+tsb_v1_012	train	messy spoken corrections	Dockerfile;requirements.txt	Update the Dockerfile to copy requirements.txt earlier, actually replace that with a cache-friendly install step.
+tsb_v1_013	train	commands and file names	bash;package.json	Write the bash script so it reads the version from package.json before tagging the release.
+tsb_v1_014	train	observability and metrics	Flask;Gunicorn	The Flask latency spike only appears when Gunicorn recycles workers under sustained traffic.
+tsb_v1_015	train	data pipelines and queues	Kafka;Pandas	Export the Kafka sample into Pandas and inspect whether null timestamps are causing the join drift.
+tsb_v1_016	train	vector databases and retrieval	Pinecone;Weaviate	Pinecone retrieves the exact document title, while Weaviate ranks the chunk with the better explanation.
+tsb_v1_017	train	LLM infra and serving	CUDA;ONNX	Check whether the CUDA path and the ONNX export produce matching logits on the same input.
+tsb_v1_018	train	backend services and deployment	Node.js;GraphQL	The Node.js resolver should reject empty GraphQL filters instead of returning every record.
+tsb_v1_019	train	configuration and environment files	docker-compose.yml;Redis	In docker-compose.yml, pin Redis to a stable image and expose only the internal network.
+tsb_v1_020	train	CI/CD and testing	PyTorch;GitLab	The PyTorch smoke test passes on my machine but fails inside the GitLab runner.
+tsb_v1_021	train	commands and file names	systemctl;NGINX	Use systemctl to restart NGINX after writing the generated site config.
+tsb_v1_022	train	AI evals and model behavior	Anthropic API;transformers	Compare the transformers local output with the Anthropic API answer on the same prompt.
+tsb_v1_023	train	backend services and deployment	Kubernetes;MongoDB	The Kubernetes pod restarts when MongoDB takes longer than expected to accept connections.
+tsb_v1_024	train	messy spoken corrections	SQLite;PostgreSQL	Store the prototype in SQLite, actually make the migration path to PostgreSQL explicit.
+tsb_v1_025	train	vector databases and retrieval	Milvus;LlamaIndex	LlamaIndex sends the right query, but Milvus returns duplicate chunks from the same document.
+tsb_v1_026	train	configuration and environment files	Makefile;zsh	Add a Makefile target that works from zsh without relying on shell-specific aliases.
+tsb_v1_027	train	observability and metrics	OpenAPI;REST API	The OpenAPI spec says the REST API returns an array, but production returns an object.
+tsb_v1_028	train	LLM infra and serving	TensorRT;Vosk	TensorRT improves the encoder latency, but Vosk still misses punctuation on short commands.
+tsb_v1_029	train	commands and file names	wget;Dockerfile	Use wget in the Dockerfile only for the model checksum, not for runtime downloads.
+tsb_v1_030	train	agent systems and tool calls	LlamaIndex;OAuth	The LlamaIndex connector should refresh OAuth credentials before requesting the private document.
+tsb_v1_031	train	data pipelines and queues	NumPy;Pandas	The Pandas export changed column order, so verify the NumPy feature matrix before training.
+tsb_v1_032	train	backend services and deployment	gRPC;FastAPI	Bridge the gRPC worker behind FastAPI and keep the request timeout under ten seconds.
+tsb_v1_033	train	CI/CD and testing	requirements.txt;Git	Put the test-only dependency in requirements.txt and make Git ignore the generated cache.
+tsb_v1_034	train	messy spoken corrections	RabbitMQ;cron	The cron task should publish one RabbitMQ message per day, no, actually one per dataset shard.
+tsb_v1_035	train	vector databases and retrieval	HuggingFace;ChromaDB	Pull the embedding model from HuggingFace and store the local experiment results in ChromaDB.
+tsb_v1_036	train	configuration and environment files	package.json;Node.js	package.json should mark the Node.js script as module type before the import cleanup.
+tsb_v1_037	train	LLM infra and serving	DeepSpeech;Whisper	DeepSpeech struggles with code words, while Whisper keeps the sentence structure mostly intact.
+tsb_v1_038	train	backend services and deployment	Uvicorn;PostgreSQL	Uvicorn accepts the request before PostgreSQL finishes the migration lock, causing a startup race.
+tsb_v1_039	train	AI evals and model behavior	PyTorch;TensorFlow	Keep the PyTorch and TensorFlow experiments in separate folders so the metrics stay comparable.
+tsb_v1_040	train	commands and file names	curl;.env	curl the endpoint with the .env token loaded from the local shell session.
+tsb_v1_041	heldout_real	LLM infra and serving	vLLM;Ray Serve	The vLLM worker stays warm, but Ray Serve keeps routing the first request to a cold replica.
+tsb_v1_042	heldout_real	LLM infra and serving	Triton Inference Server	Measure the first-token delay after Triton Inference Server reloads the model repository.
+tsb_v1_043	heldout_real	LLM infra and serving	BentoML;Modal	Package the scoring service with BentoML, then run the same container image on Modal.
+tsb_v1_044	heldout_real	backend services and deployment	Fly.io;Supabase	The Fly.io deployment passes the health probe, but Supabase rejects the connection pool setting.
+tsb_v1_045	heldout_real	data pipelines and queues	Neon;PlanetScale	Write a migration note explaining why Neon handles this workload better than PlanetScale.
+tsb_v1_046	heldout_real	vector databases and retrieval	Qdrant;pgvector	Qdrant returns fewer duplicates, while pgvector is easier to inspect during debugging.
+tsb_v1_047	heldout_real	vector databases and retrieval	Redis Stack	The Redis Stack index includes stale vectors after the nightly document refresh.
+tsb_v1_048	heldout_real	data pipelines and queues	ClickHouse;DuckDB	Use ClickHouse for the larger event table and DuckDB for the local analysis notebook.
+tsb_v1_049	heldout_real	data pipelines and queues	Delta Lake;Airflow	The Delta Lake compaction task should run after Airflow finishes the ingestion window.
+tsb_v1_050	heldout_real	data pipelines and queues	Prefect;Dagster	Prefect reports the retry as successful, but Dagster shows the asset is still stale.
+tsb_v1_051	heldout_real	observability and metrics	Weights & Biases;MLflow	Log the same validation score to Weights & Biases and MLflow before changing the sampler.
+tsb_v1_052	heldout_real	observability and metrics	ClearML;OpenTelemetry	ClearML captures the experiment metadata, but OpenTelemetry is missing the request span.
+tsb_v1_053	heldout_real	observability and metrics	Prometheus;Grafana	Prometheus sees the counter increase, but Grafana rounds the panel to zero.
+tsb_v1_054	heldout_real	observability and metrics	Sentry;OpenTelemetry	Sentry groups the timeout as one issue, while OpenTelemetry shows two separate traces.
+tsb_v1_055	heldout_real	agent systems and tool calls	LangGraph;DSPy	LangGraph should call the search tool before DSPy rewrites the final answer.
+tsb_v1_056	heldout_real	agent systems and tool calls	Haystack;Instructor	Haystack retrieves the right passage, but Instructor rejects the structured response.
+tsb_v1_057	heldout_real	agent systems and tool calls	Guidance;Outlines	Guidance accepts the schema, while Outlines fails on the optional confidence field.
+tsb_v1_058	heldout_real	agent systems and tool calls	AutoGen;CrewAI	AutoGen creates too many handoffs, so test the same planner in CrewAI.
+tsb_v1_059	heldout_real	agent systems and tool calls	Semantic Kernel	Semantic Kernel should pass the tool result back without rewriting the field names.
+tsb_v1_060	heldout_real	AI evals and model behavior	Azure OpenAI;Google Vertex AI	Azure OpenAI follows the rubric better, while Google Vertex AI gives a shorter explanation.
+tsb_v1_061	heldout_real	AI evals and model behavior	AWS Bedrock	Run the moderation scenario again on AWS Bedrock and record the refusal reason.
+tsb_v1_062	heldout_real	LLM infra and serving	DeepSpeed;bitsandbytes	DeepSpeed reduces memory pressure, but bitsandbytes changes the numeric output slightly.
+tsb_v1_063	heldout_real	LLM infra and serving	PEFT;LoRA	Use PEFT to load the LoRA adapter and verify the base weights stay frozen.
+tsb_v1_064	heldout_real	LLM infra and serving	FlashAttention;xFormers	FlashAttention speeds up the long prompt, but xFormers uses less memory on this batch.
+tsb_v1_065	heldout_real	LLM infra and serving	TGI	Restart TGI after changing the token limit, then remeasure streaming latency.
+tsb_v1_066	heldout_real	messy spoken corrections	Replicate;Modal	Deploy the demo on Replicate, actually move the scheduled job to Modal instead.
+tsb_v1_067	heldout_real	vector databases and retrieval	pgvector;Qdrant	Keep pgvector for the small corpus, but use Qdrant for the larger retrieval test.
+tsb_v1_068	heldout_real	observability and metrics	Grafana;Sentry	Grafana shows the error burst first, then Sentry links it to one failing release.
+tsb_v1_069	heldout_real	data pipelines and queues	Airflow;Prefect	Airflow owns the legacy schedule, while Prefect runs the new validation flow.
+tsb_v1_070	heldout_real	agent systems and tool calls	LangGraph;Semantic Kernel	LangGraph handles the branching state, and Semantic Kernel wraps the plugin call.
+tsb_v1_071	heldout_real	AI evals and model behavior	MLflow;Weights & Biases	MLflow has the older baseline, but Weights & Biases has the cleaner comparison chart.
+tsb_v1_072	heldout_real	LLM infra and serving	vLLM;TGI	vLLM streams faster on short prompts, while TGI is steadier under the longer batch.
+tsb_v1_073	heldout_real	backend services and deployment	Supabase;Neon	Supabase is fine for auth, but Neon is the cleaner choice for this test database.
+tsb_v1_074	heldout_real	vector databases and retrieval	Redis Stack;ClickHouse	Redis Stack serves the lookup path, and ClickHouse stores the aggregated retrieval events.
+tsb_v1_075	heldout_real	messy spoken corrections	LoRA;FlashAttention	Enable LoRA for the adapter test, wait, disable FlashAttention for the reproducibility run.
+tsb_v1_076	heldout_real	agent systems and tool calls	Instructor;Outlines	Instructor validates the nested answer, but Outlines gives cleaner constrained decoding traces.
+tsb_v1_077	heldout_real	observability and metrics	OpenTelemetry;Prometheus	Add OpenTelemetry spans around the retrieval step and expose the duration to Prometheus.
+tsb_v1_078	heldout_real	data pipelines and queues	Dagster;Delta Lake	Dagster marks the asset fresh after the Delta Lake checkpoint lands.
+tsb_v1_079	heldout_real	AI evals and model behavior	Google Vertex AI;AWS Bedrock	Google Vertex AI gives a higher factuality score than AWS Bedrock on this prompt set.
+tsb_v1_080	heldout_real	LLM infra and serving	Triton Inference Server;BentoML	BentoML packages the model cleanly, but Triton Inference Server has the faster warm path.
+tsb_v1_081	heldout_fake	vector databases and retrieval	VectorFlowDB;QueryWeave	VectorFlowDB finds the right paragraph, but QueryWeave ranks the shorter snippet first.
+tsb_v1_082	heldout_fake	LLM infra and serving	FastServeX;InferLite	FastServeX handles the warm request well, while InferLite is better for the tiny model.
+tsb_v1_083	heldout_fake	agent systems and tool calls	PromptForge;ContextMesh	PromptForge should draft the tool input before ContextMesh attaches the session state.
+tsb_v1_084	heldout_fake	data pipelines and queues	DataWeaveX;StreamForge	DataWeaveX writes the cleaned event stream after StreamForge finishes the backfill.
+tsb_v1_085	heldout_fake	observability and metrics	SignalDB;CacheFlux	SignalDB records the latency spike, but CacheFlux hides it behind a stale cache hit.
+tsb_v1_086	heldout_fake	configuration and environment files	TokenForge	TokenForge should read the local config value and refuse to start when it is blank.
+tsb_v1_087	heldout_fake	vector databases and retrieval	EmbedStack;NeuroCache	EmbedStack stores the new vectors, but NeuroCache keeps returning yesterday's embedding.
+tsb_v1_088	heldout_fake	LLM infra and serving	TensorDockX;HyperServe	TensorDockX loads the model slowly, so keep HyperServe on the interactive endpoint.
+tsb_v1_089	heldout_fake	AI evals and model behavior	AutoPromptor;Retrievon	AutoPromptor improves the rubric wording, but Retrievon still misses the key evidence.
+tsb_v1_090	heldout_fake	backend services and deployment	GraphStack;ServeStack	GraphStack resolves the dependency order before ServeStack rolls out the worker process.
+tsb_v1_091	heldout_fake	data pipelines and queues	SynthDB;DataForgeX	SynthDB stores the generated rows, while DataForgeX validates the schema drift report.
+tsb_v1_092	heldout_fake	vector databases and retrieval	FluxVector;VectorMesh	FluxVector returns better nearest neighbors than VectorMesh on the noisy notes.
+tsb_v1_093	heldout_fake	agent systems and tool calls	ModelWeaver;PromptMesh	ModelWeaver should call the planner first, then PromptMesh can format the final instruction.
+tsb_v1_094	heldout_fake	observability and metrics	IndexStream;QueryStack	IndexStream shows the ingest lag, but QueryStack only reports the failed lookup count.
+tsb_v1_095	heldout_fake	messy spoken corrections	EmbedForge;CacheWeaver	Refresh EmbedForge after the import, actually invalidate CacheWeaver before rerunning the query.
+tsb_v1_096	heldout_fake	LLM infra and serving	TensorFlowX;InferStack	TensorFlowX compiles the graph faster, but InferStack gives steadier response timing.
+tsb_v1_097	heldout_fake	data pipelines and queues	NeuroWeave;StreamMesh	NeuroWeave enriches the records before StreamMesh pushes them to the downstream queue.
+tsb_v1_098	heldout_fake	backend services and deployment	GraphForge;ContextDB	GraphForge deploys cleanly, but ContextDB needs a manual index refresh.
+tsb_v1_099	heldout_fake	AI evals and model behavior	TokenStack;AutoWeave	TokenStack shortens the prompt budget, while AutoWeave changes the tool selection behavior.
+tsb_v1_100	heldout_fake	vector databases and retrieval	FluxDB;QueryForge	FluxDB stores the candidate chunks, and QueryForge explains why the top result changed.
+tsb_v1_101	heldout_fake	LLM infra and serving	ModelStack;FastServeX	ModelStack should preload the small checkpoint before FastServeX accepts traffic.
+tsb_v1_102	heldout_fake	configuration and environment files	QueryWeave;ContextDB	Put the QueryWeave endpoint in the config file and point ContextDB at the same workspace.
+tsb_v1_103	heldout_fake	observability and metrics	SignalDB;HyperServe	SignalDB flags the timeout after HyperServe starts queueing requests behind one worker.
+tsb_v1_104	heldout_fake	agent systems and tool calls	PromptForge;AutoPromptor	PromptForge generated the draft, but AutoPromptor changed the constraint order.
+tsb_v1_105	heldout_fake	messy spoken corrections	VectorMesh;EmbedStack	Use VectorMesh for the recall test, no, switch that note to EmbedStack for the compact index.
+tsb_v1_106	heldout_fake	data pipelines and queues	StreamForge;DataForgeX	StreamForge replays the missing window, and DataForgeX marks three rows as malformed.
+tsb_v1_107	heldout_fake	vector databases and retrieval	NeuroCache;FluxVector	NeuroCache returns the cached answer even after FluxVector updates the nearest match.
+tsb_v1_108	heldout_fake	backend services and deployment	ServeStack;CacheFlux	ServeStack reports a clean rollout, but CacheFlux still serves the old response.
+tsb_v1_109	heldout_fake	AI evals and model behavior	ModelWeaver;Retrievon	ModelWeaver improves the answer plan, while Retrievon supplies weaker supporting evidence.
+tsb_v1_110	heldout_fake	configuration and environment files	TokenForge;GraphStack	TokenForge needs a stricter default before GraphStack reads the generated policy file.
+tsb_v1_111	heldout_fake	LLM infra and serving	InferLite;TensorDockX	InferLite is the better baseline, but TensorDockX wins once the batch size increases.
+tsb_v1_112	heldout_fake	observability and metrics	IndexStream;SignalDB	IndexStream records the backlog, and SignalDB links it to the slow parser stage.
+tsb_v1_113	heldout_fake	agent systems and tool calls	ContextMesh;PromptMesh	ContextMesh keeps the conversation state, while PromptMesh turns it into the tool request.
+tsb_v1_114	heldout_fake	vector databases and retrieval	QueryStack;VectorFlowDB	QueryStack asks the broader question, but VectorFlowDB returns the more precise passage.
+tsb_v1_115	heldout_fake	messy spoken corrections	FluxDB;SynthDB	Write the sample into FluxDB, actually that should be SynthDB because it is generated data.
+tsb_v1_116	heldout_fake	data pipelines and queues	DataWeaveX;NeuroWeave	DataWeaveX normalizes the timestamps before NeuroWeave attaches the derived labels.
+tsb_v1_117	heldout_fake	backend services and deployment	GraphForge;FastServeX	GraphForge should finish the dependency scan before FastServeX restarts the endpoint.
+tsb_v1_118	heldout_fake	AI evals and model behavior	AutoWeave;TokenStack	AutoWeave picks the wrong tool when TokenStack trims the system message too aggressively.
+tsb_v1_119	heldout_fake	configuration and environment files	EmbedForge;QueryForge	Set EmbedForge to read-only during the QueryForge regression test.
+tsb_v1_120	heldout_fake	observability and metrics	CacheWeaver;ModelStack	CacheWeaver masks the slow response until ModelStack emits the cold-start metric.
