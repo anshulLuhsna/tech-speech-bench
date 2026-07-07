@@ -57,3 +57,10 @@ The first useful report should include:
 - examples where WER looks acceptable but the technical term is wrong
 - held-out split results separated from dev results
 
+Run the local scorer:
+
+```bash
+uv run python scripts/score_transcripts.py \
+  --transcripts results/baselines/faster-whisper-base-en/transcripts.tsv \
+  --out-dir results/baselines/faster-whisper-base-en
+```
