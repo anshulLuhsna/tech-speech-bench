@@ -1,0 +1,94 @@
+{
+  "clips": 100,
+  "wer": 0.1678082191780822,
+  "cer": 0.0448798110323746,
+  "domain_term_exact_match_rate": 0.42424242424242425,
+  "domain_term_error_rate": 0.5757575757575757,
+  "domain_term_mentions": 132,
+  "domain_term_exact_hits": 56,
+  "command_exact_match_rate": 0.0,
+  "command_mentions": 3,
+  "command_exact_hits": 0,
+  "top_missed_terms": [
+    [
+      "pgvector",
+      13
+    ],
+    [
+      "RAGAS",
+      10
+    ],
+    [
+      "LangGraph",
+      8
+    ],
+    [
+      "vLLM",
+      6
+    ],
+    [
+      "pytest",
+      4
+    ],
+    [
+      "OpenTelemetry",
+      4
+    ],
+    [
+      "LoRA",
+      3
+    ],
+    [
+      "Dockerfile",
+      3
+    ],
+    [
+      "FastAPI",
+      3
+    ],
+    [
+      "WebSocket",
+      3
+    ],
+    [
+      "Pydantic",
+      3
+    ],
+    [
+      "reranker",
+      2
+    ],
+    [
+      "QLoRA",
+      2
+    ],
+    [
+      "Postgres",
+      2
+    ],
+    [
+      "faithfulness",
+      1
+    ],
+    [
+      "checkpointing",
+      1
+    ],
+    [
+      "retrieval",
+      1
+    ],
+    [
+      "HNSW",
+      1
+    ],
+    [
+      "YAML",
+      1
+    ],
+    [
+      "OpenAI",
+      1
+    ]
+  ]
+}

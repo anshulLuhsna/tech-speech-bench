@@ -66,7 +66,24 @@ Metrics:
 - manual edits per 100 words
 - latency
 
+Run the first local baseline:
+
+```bash
+uv run python scripts/transcribe_faster_whisper.py --model base.en
+```
+
+First baseline report:
+
+```text
+results/baselines/faster-whisper-base-en/README.md
+```
+
+Generate candidate v1 utterances:
+
+```text
+docs/utterance-generation-prompt.md
+```
+
 ## License
 
 License is intentionally undecided until the dataset release policy is finalized. Do not publish audio publicly until consent and licensing are explicit.
-

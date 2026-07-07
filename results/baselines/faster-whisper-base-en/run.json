@@ -1,0 +1,16 @@
+{
+  "system": "faster-whisper",
+  "model": "base.en",
+  "device": "cpu",
+  "compute_type": "int8",
+  "language": "en",
+  "beam_size": 5,
+  "manifest": "data/v0/manifest.tsv",
+  "data_root": "data/v0",
+  "clips": 100,
+  "total_seconds": 44.567,
+  "outputs": [
+    "transcripts.jsonl",
+    "transcripts.tsv"
+  ]
+}
