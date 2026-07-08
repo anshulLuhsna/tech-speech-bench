@@ -1,0 +1,41 @@
+clip_id	audio_path	reference_text	terms
+tsb_v1_001	data/v1-small/tsb_v1-small-train/tsb_v1_001.m4a	Send the audio sample through Whisper first, then score the OpenAI API summary for missing technical entities.	OpenAI API;Whisper
+tsb_v1_002	data/v1-small/tsb_v1-small-train/tsb_v1_002.m4a	Note that the FastAPI health endpoint only fails when Uvicorn starts with multiple workers.	FastAPI;Uvicorn
+tsb_v1_003	data/v1-small/tsb_v1-small-train/tsb_v1_003.m4a	Move the JWT secret into .env and make the startup check fail when it is missing.	.env;JWT
+tsb_v1_004	data/v1-small/tsb_v1-small-train/tsb_v1_004.m4a	Use curl against the staging endpoint and confirm the OpenAPI response still includes pagination fields.	curl;OpenAPI
+tsb_v1_005	data/v1-small/tsb_v1-small-train/tsb_v1_005.m4a	The Celery worker is retrying too aggressively after RabbitMQ drops a connection during the batch import.	Celery;RabbitMQ
+tsb_v1_006	data/v1-small/tsb_v1-small-train/tsb_v1_006.m4a	Record a retrieval note saying FAISS returns closer matches than ChromaDB on the short support questions.	FAISS;ChromaDB
+tsb_v1_007	data/v1-small/tsb_v1-small-train/tsb_v1_007.m4a	The GitHub workflow passes locally but the CI/CD job loses the generated coverage artifact.	GitHub;CI/CD
+tsb_v1_008	data/v1-small/tsb_v1-small-train/tsb_v1_008.m4a	Tighten tsconfig.json so TypeScript rejects implicit any in the shared validation package.	tsconfig.json;TypeScript
+tsb_v1_009	data/v1-small/tsb_v1-small-train/tsb_v1_009.m4a	The Docker container starts, but NGINX returns a stale upstream error after the deploy.	Docker;NGINX
+tsb_v1_010	data/v1-small/tsb_v1-small-train/tsb_v1_010.m4a	The TensorFlow baseline overfits faster than scikit-learn on the small tabular feature set.	TensorFlow;scikit-learn
+tsb_v1_011	data/v1-small/tsb_v1-small-train/tsb_v1_011.m4a	Add a LangChain tool call that fetches the REST API status before answering the user.	LangChain;REST API
+tsb_v1_012	data/v1-small/tsb_v1-small-train/tsb_v1_012.m4a	Update the Dockerfile to copy requirements.txt earlier, actually replace that with a cache-friendly install step.	Dockerfile;requirements.txt
+tsb_v1_013	data/v1-small/tsb_v1-small-train/tsb_v1_013.m4a	Write the bash script so it reads the version from package.json before tagging the release.	bash;package.json
+tsb_v1_014	data/v1-small/tsb_v1-small-train/tsb_v1_014.m4a	The Flask latency spike only appears when Gunicorn recycles workers under sustained traffic.	Flask;Gunicorn
+tsb_v1_015	data/v1-small/tsb_v1-small-train/tsb_v1_015.m4a	Export the Kafka sample into Pandas and inspect whether null timestamps are causing the join drift.	Kafka;Pandas
+tsb_v1_016	data/v1-small/tsb_v1-small-train/tsb_v1_016.m4a	Pinecone retrieves the exact document title, while Weaviate ranks the chunk with the better explanation.	Pinecone;Weaviate
+tsb_v1_017	data/v1-small/tsb_v1-small-train/tsb_v1_017.m4a	Check whether the CUDA path and the ONNX export produce matching logits on the same input.	CUDA;ONNX
+tsb_v1_018	data/v1-small/tsb_v1-small-train/tsb_v1_018.m4a	The Node.js resolver should reject empty GraphQL filters instead of returning every record.	Node.js;GraphQL
+tsb_v1_019	data/v1-small/tsb_v1-small-train/tsb_v1_019.m4a	In docker-compose.yml, pin Redis to a stable image and expose only the internal network.	docker-compose.yml;Redis
+tsb_v1_020	data/v1-small/tsb_v1-small-train/tsb_v1_020.m4a	The PyTorch smoke test passes on my machine but fails inside the GitLab runner.	PyTorch;GitLab
+tsb_v1_021	data/v1-small/tsb_v1-small-train/tsb_v1_021.m4a	Use systemctl to restart NGINX after writing the generated site config.	systemctl;NGINX
+tsb_v1_022	data/v1-small/tsb_v1-small-train/tsb_v1_022.m4a	Compare the transformers local output with the Anthropic API answer on the same prompt.	Anthropic API;transformers
+tsb_v1_023	data/v1-small/tsb_v1-small-train/tsb_v1_023.m4a	The Kubernetes pod restarts when MongoDB takes longer than expected to accept connections.	Kubernetes;MongoDB
+tsb_v1_024	data/v1-small/tsb_v1-small-train/tsb_v1_024.m4a	Store the prototype in SQLite, actually make the migration path to PostgreSQL explicit.	SQLite;PostgreSQL
+tsb_v1_025	data/v1-small/tsb_v1-small-train/tsb_v1_025.m4a	LlamaIndex sends the right query, but Milvus returns duplicate chunks from the same document.	Milvus;LlamaIndex
+tsb_v1_026	data/v1-small/tsb_v1-small-train/tsb_v1_026.m4a	Add a Makefile target that works from zsh without relying on shell-specific aliases.	Makefile;zsh
+tsb_v1_027	data/v1-small/tsb_v1-small-train/tsb_v1_027.m4a	The OpenAPI spec says the REST API returns an array, but production returns an object.	OpenAPI;REST API
+tsb_v1_028	data/v1-small/tsb_v1-small-train/tsb_v1_028.m4a	TensorRT improves the encoder latency, but Vosk still misses punctuation on short commands.	TensorRT;Vosk
+tsb_v1_029	data/v1-small/tsb_v1-small-train/tsb_v1_029.m4a	Use wget in the Dockerfile only for the model checksum, not for runtime downloads.	wget;Dockerfile
+tsb_v1_030	data/v1-small/tsb_v1-small-train/tsb_v1_030.m4a	The LlamaIndex connector should refresh OAuth credentials before requesting the private document.	LlamaIndex;OAuth
+tsb_v1_031	data/v1-small/tsb_v1-small-train/tsb_v1_031.m4a	The Pandas export changed column order, so verify the NumPy feature matrix before training.	NumPy;Pandas
+tsb_v1_032	data/v1-small/tsb_v1-small-train/tsb_v1_032.m4a	Bridge the gRPC worker behind FastAPI and keep the request timeout under ten seconds.	gRPC;FastAPI
+tsb_v1_033	data/v1-small/tsb_v1-small-train/tsb_v1_033.m4a	Put the test-only dependency in requirements.txt and make Git ignore the generated cache.	requirements.txt;Git
+tsb_v1_034	data/v1-small/tsb_v1-small-train/tsb_v1_034.m4a	The cron task should publish one RabbitMQ message per day, no, actually one per dataset shard.	RabbitMQ;cron
+tsb_v1_035	data/v1-small/tsb_v1-small-train/tsb_v1_035.m4a	Pull the embedding model from HuggingFace and store the local experiment results in ChromaDB.	HuggingFace;ChromaDB
+tsb_v1_036	data/v1-small/tsb_v1-small-train/tsb_v1_036.m4a	package.json should mark the Node.js script as module type before the import cleanup.	package.json;Node.js
+tsb_v1_037	data/v1-small/tsb_v1-small-train/tsb_v1_037.m4a	DeepSpeech struggles with code words, while Whisper keeps the sentence structure mostly intact.	DeepSpeech;Whisper
+tsb_v1_038	data/v1-small/tsb_v1-small-train/tsb_v1_038.m4a	Uvicorn accepts the request before PostgreSQL finishes the migration lock, causing a startup race.	Uvicorn;PostgreSQL
+tsb_v1_039	data/v1-small/tsb_v1-small-train/tsb_v1_039.m4a	Keep the PyTorch and TensorFlow experiments in separate folders so the metrics stay comparable.	PyTorch;TensorFlow
+tsb_v1_040	data/v1-small/tsb_v1-small-train/tsb_v1_040.m4a	curl the endpoint with the .env token loaded from the local shell session.	curl;.env

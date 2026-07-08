@@ -1,0 +1,121 @@
+clip_id	speaker_id	split	condition	category	audio_path	duration_seconds	size_bytes	transcript_status
+tsb_v1_001	anshul	train	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-train/tsb_v1_001.m4a	8.939	147563	expected_reference_from_manifest
+tsb_v1_002	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_002.m4a	6.891	114767	expected_reference_from_manifest
+tsb_v1_003	anshul	train	quiet	configuration and environment files	data/v1-small/tsb_v1-small-train/tsb_v1_003.m4a	7.317	122411	expected_reference_from_manifest
+tsb_v1_004	anshul	train	quiet	commands and file names	data/v1-small/tsb_v1-small-train/tsb_v1_004.m4a	9.195	154048	expected_reference_from_manifest
+tsb_v1_005	anshul	train	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-train/tsb_v1_005.m4a	7.403	122794	expected_reference_from_manifest
+tsb_v1_006	anshul	train	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-train/tsb_v1_006.m4a	9.024	150021	expected_reference_from_manifest
+tsb_v1_007	anshul	train	quiet	CI/CD and testing	data/v1-small/tsb_v1-small-train/tsb_v1_007.m4a	8.000	131708	expected_reference_from_manifest
+tsb_v1_008	anshul	train	quiet	configuration and environment files	data/v1-small/tsb_v1-small-train/tsb_v1_008.m4a	9.024	151498	expected_reference_from_manifest
+tsb_v1_009	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_009.m4a	9.024	151264	expected_reference_from_manifest
+tsb_v1_010	anshul	train	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-train/tsb_v1_010.m4a	7.659	125865	expected_reference_from_manifest
+tsb_v1_011	anshul	train	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-train/tsb_v1_011.m4a	7.061	117476	expected_reference_from_manifest
+tsb_v1_012	anshul	train	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-train/tsb_v1_012.m4a	9.536	159473	expected_reference_from_manifest
+tsb_v1_013	anshul	train	quiet	commands and file names	data/v1-small/tsb_v1-small-train/tsb_v1_013.m4a	8.341	138634	expected_reference_from_manifest
+tsb_v1_014	anshul	train	quiet	observability and metrics	data/v1-small/tsb_v1-small-train/tsb_v1_014.m4a	9.621	162254	expected_reference_from_manifest
+tsb_v1_015	anshul	train	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-train/tsb_v1_015.m4a	8.341	137114	expected_reference_from_manifest
+tsb_v1_016	anshul	train	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-train/tsb_v1_016.m4a	9.621	159181	expected_reference_from_manifest
+tsb_v1_017	anshul	train	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-train/tsb_v1_017.m4a	9.195	155537	expected_reference_from_manifest
+tsb_v1_018	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_018.m4a	8.597	142887	expected_reference_from_manifest
+tsb_v1_019	anshul	train	quiet	configuration and environment files	data/v1-small/tsb_v1-small-train/tsb_v1_019.m4a	9.451	158187	expected_reference_from_manifest
+tsb_v1_020	anshul	train	quiet	CI/CD and testing	data/v1-small/tsb_v1-small-train/tsb_v1_020.m4a	6.635	109348	expected_reference_from_manifest
+tsb_v1_021	anshul	train	quiet	commands and file names	data/v1-small/tsb_v1-small-train/tsb_v1_021.m4a	7.488	124417	expected_reference_from_manifest
+tsb_v1_022	anshul	train	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-train/tsb_v1_022.m4a	7.659	126082	expected_reference_from_manifest
+tsb_v1_023	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_023.m4a	7.488	123839	expected_reference_from_manifest
+tsb_v1_024	anshul	train	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-train/tsb_v1_024.m4a	9.280	157634	expected_reference_from_manifest
+tsb_v1_025	anshul	train	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-train/tsb_v1_025.m4a	8.512	144054	expected_reference_from_manifest
+tsb_v1_026	anshul	train	quiet	configuration and environment files	data/v1-small/tsb_v1-small-train/tsb_v1_026.m4a	7.744	130184	expected_reference_from_manifest
+tsb_v1_027	anshul	train	quiet	observability and metrics	data/v1-small/tsb_v1-small-train/tsb_v1_027.m4a	8.512	141284	expected_reference_from_manifest
+tsb_v1_028	anshul	train	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-train/tsb_v1_028.m4a	7.915	130693	expected_reference_from_manifest
+tsb_v1_029	anshul	train	quiet	commands and file names	data/v1-small/tsb_v1-small-train/tsb_v1_029.m4a	8.256	137077	expected_reference_from_manifest
+tsb_v1_030	anshul	train	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-train/tsb_v1_030.m4a	7.659	127699	expected_reference_from_manifest
+tsb_v1_031	anshul	train	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-train/tsb_v1_031.m4a	7.659	128472	expected_reference_from_manifest
+tsb_v1_032	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_032.m4a	9.877	162670	expected_reference_from_manifest
+tsb_v1_033	anshul	train	quiet	CI/CD and testing	data/v1-small/tsb_v1-small-train/tsb_v1_033.m4a	9.280	155334	expected_reference_from_manifest
+tsb_v1_034	anshul	train	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-train/tsb_v1_034.m4a	9.451	158356	expected_reference_from_manifest
+tsb_v1_035	anshul	train	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-train/tsb_v1_035.m4a	7.488	124647	expected_reference_from_manifest
+tsb_v1_036	anshul	train	quiet	configuration and environment files	data/v1-small/tsb_v1-small-train/tsb_v1_036.m4a	7.403	121566	expected_reference_from_manifest
+tsb_v1_037	anshul	train	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-train/tsb_v1_037.m4a	7.915	130918	expected_reference_from_manifest
+tsb_v1_038	anshul	train	quiet	backend services and deployment	data/v1-small/tsb_v1-small-train/tsb_v1_038.m4a	9.280	155907	expected_reference_from_manifest
+tsb_v1_039	anshul	train	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-train/tsb_v1_039.m4a	6.805	113002	expected_reference_from_manifest
+tsb_v1_040	anshul	train	quiet	commands and file names	data/v1-small/tsb_v1-small-train/tsb_v1_040.m4a	6.805	112483	expected_reference_from_manifest
+tsb_v1_041	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_041.m4a	8.085	136318	expected_reference_from_manifest
+tsb_v1_042	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_042.m4a	7.829	129536	expected_reference_from_manifest
+tsb_v1_043	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_043.m4a	8.683	145543	expected_reference_from_manifest
+tsb_v1_044	anshul	heldout_real	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_044.m4a	7.915	132042	expected_reference_from_manifest
+tsb_v1_045	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_045.m4a	7.147	120399	expected_reference_from_manifest
+tsb_v1_046	anshul	heldout_real	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_046.m4a	7.915	131777	expected_reference_from_manifest
+tsb_v1_047	anshul	heldout_real	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_047.m4a	7.573	127481	expected_reference_from_manifest
+tsb_v1_048	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_048.m4a	7.317	121907	expected_reference_from_manifest
+tsb_v1_049	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_049.m4a	7.659	129710	expected_reference_from_manifest
+tsb_v1_050	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_050.m4a	8.597	145288	expected_reference_from_manifest
+tsb_v1_051	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_051.m4a	6.805	112323	expected_reference_from_manifest
+tsb_v1_052	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_052.m4a	6.891	115984	expected_reference_from_manifest
+tsb_v1_053	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_053.m4a	6.037	101418	expected_reference_from_manifest
+tsb_v1_054	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_054.m4a	8.341	143581	expected_reference_from_manifest
+tsb_v1_055	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_055.m4a	6.976	119958	expected_reference_from_manifest
+tsb_v1_056	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_056.m4a	6.549	109371	expected_reference_from_manifest
+tsb_v1_057	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_057.m4a	8.256	140060	expected_reference_from_manifest
+tsb_v1_058	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_058.m4a	6.635	111942	expected_reference_from_manifest
+tsb_v1_059	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_059.m4a	6.635	111597	expected_reference_from_manifest
+tsb_v1_060	anshul	heldout_real	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_060.m4a	7.659	127729	expected_reference_from_manifest
+tsb_v1_061	anshul	heldout_real	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_061.m4a	7.232	121921	expected_reference_from_manifest
+tsb_v1_062	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_062.m4a	9.451	160552	expected_reference_from_manifest
+tsb_v1_063	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_063.m4a	7.147	120654	expected_reference_from_manifest
+tsb_v1_064	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_064.m4a	7.915	135808	expected_reference_from_manifest
+tsb_v1_065	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_065.m4a	6.891	116273	expected_reference_from_manifest
+tsb_v1_066	anshul	heldout_real	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-full/tsb_v1_066.m4a	7.659	129391	expected_reference_from_manifest
+tsb_v1_067	anshul	heldout_real	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_067.m4a	7.488	126021	expected_reference_from_manifest
+tsb_v1_068	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_068.m4a	7.915	132495	expected_reference_from_manifest
+tsb_v1_069	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_069.m4a	7.147	120026	expected_reference_from_manifest
+tsb_v1_070	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_070.m4a	6.891	117510	expected_reference_from_manifest
+tsb_v1_071	anshul	heldout_real	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_071.m4a	6.805	113966	expected_reference_from_manifest
+tsb_v1_072	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_072.m4a	7.659	127491	expected_reference_from_manifest
+tsb_v1_073	anshul	heldout_real	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_073.m4a	7.488	124875	expected_reference_from_manifest
+tsb_v1_074	anshul	heldout_real	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_074.m4a	7.232	121207	expected_reference_from_manifest
+tsb_v1_075	anshul	heldout_real	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-full/tsb_v1_075.m4a	9.024	150527	expected_reference_from_manifest
+tsb_v1_076	anshul	heldout_real	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_076.m4a	9.536	160611	expected_reference_from_manifest
+tsb_v1_077	anshul	heldout_real	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_077.m4a	7.317	123924	expected_reference_from_manifest
+tsb_v1_078	anshul	heldout_real	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_078.m4a	6.293	106252	expected_reference_from_manifest
+tsb_v1_079	anshul	heldout_real	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_079.m4a	7.915	133380	expected_reference_from_manifest
+tsb_v1_080	anshul	heldout_real	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_080.m4a	8.427	140130	expected_reference_from_manifest
+tsb_v1_081	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_081.m4a	7.744	130290	expected_reference_from_manifest
+tsb_v1_082	anshul	heldout_fake	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_082.m4a	7.573	127259	expected_reference_from_manifest
+tsb_v1_083	anshul	heldout_fake	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_083.m4a	7.403	124733	expected_reference_from_manifest
+tsb_v1_084	anshul	heldout_fake	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_084.m4a	9.195	154821	expected_reference_from_manifest
+tsb_v1_085	anshul	heldout_fake	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_085.m4a	9.536	160877	expected_reference_from_manifest
+tsb_v1_086	anshul	heldout_fake	quiet	configuration and environment files	data/v1-small/tsb_v1-small-full/tsb_v1_086.m4a	7.317	123363	expected_reference_from_manifest
+tsb_v1_087	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_087.m4a	7.915	132042	expected_reference_from_manifest
+tsb_v1_088	anshul	heldout_fake	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_088.m4a	7.915	132898	expected_reference_from_manifest
+tsb_v1_089	anshul	heldout_fake	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_089.m4a	9.280	156501	expected_reference_from_manifest
+tsb_v1_090	anshul	heldout_fake	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_090.m4a	7.659	130919	expected_reference_from_manifest
+tsb_v1_091	anshul	heldout_fake	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_091.m4a	8.341	140058	expected_reference_from_manifest
+tsb_v1_092	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_092.m4a	6.891	118355	expected_reference_from_manifest
+tsb_v1_093	anshul	heldout_fake	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_093.m4a	6.805	114620	expected_reference_from_manifest
+tsb_v1_094	anshul	heldout_fake	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_094.m4a	7.147	121558	expected_reference_from_manifest
+tsb_v1_095	anshul	heldout_fake	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-full/tsb_v1_095.m4a	8.683	146934	expected_reference_from_manifest
+tsb_v1_096	anshul	heldout_fake	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_096.m4a	8.939	149588	expected_reference_from_manifest
+tsb_v1_097	anshul	heldout_fake	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_097.m4a	7.915	133930	expected_reference_from_manifest
+tsb_v1_098	anshul	heldout_fake	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_098.m4a	6.379	109150	expected_reference_from_manifest
+tsb_v1_099	anshul	heldout_fake	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_099.m4a	7.232	120663	expected_reference_from_manifest
+tsb_v1_100	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_100.m4a	9.109	154127	expected_reference_from_manifest
+tsb_v1_101	anshul	heldout_fake	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_101.m4a	8.085	138536	expected_reference_from_manifest
+tsb_v1_102	anshul	heldout_fake	quiet	configuration and environment files	data/v1-small/tsb_v1-small-full/tsb_v1_102.m4a	7.403	125491	expected_reference_from_manifest
+tsb_v1_103	anshul	heldout_fake	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_103.m4a	8.597	145022	expected_reference_from_manifest
+tsb_v1_104	anshul	heldout_fake	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_104.m4a	6.379	108390	expected_reference_from_manifest
+tsb_v1_105	anshul	heldout_fake	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-full/tsb_v1_105.m4a	9.280	158937	expected_reference_from_manifest
+tsb_v1_106	anshul	heldout_fake	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_106.m4a	9.109	152443	expected_reference_from_manifest
+tsb_v1_107	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_107.m4a	7.317	122861	expected_reference_from_manifest
+tsb_v1_108	anshul	heldout_fake	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_108.m4a	7.573	129631	expected_reference_from_manifest
+tsb_v1_109	anshul	heldout_fake	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_109.m4a	7.744	129249	expected_reference_from_manifest
+tsb_v1_110	anshul	heldout_fake	quiet	configuration and environment files	data/v1-small/tsb_v1-small-full/tsb_v1_110.m4a	6.464	109347	expected_reference_from_manifest
+tsb_v1_111	anshul	heldout_fake	quiet	LLM infra and serving	data/v1-small/tsb_v1-small-full/tsb_v1_111.m4a	8.000	135600	expected_reference_from_manifest
+tsb_v1_112	anshul	heldout_fake	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_112.m4a	6.805	115108	expected_reference_from_manifest
+tsb_v1_113	anshul	heldout_fake	quiet	agent systems and tool calls	data/v1-small/tsb_v1-small-full/tsb_v1_113.m4a	8.000	135670	expected_reference_from_manifest
+tsb_v1_114	anshul	heldout_fake	quiet	vector databases and retrieval	data/v1-small/tsb_v1-small-full/tsb_v1_114.m4a	8.000	137211	expected_reference_from_manifest
+tsb_v1_115	anshul	heldout_fake	quiet	messy spoken corrections	data/v1-small/tsb_v1-small-full/tsb_v1_115.m4a	8.256	138238	expected_reference_from_manifest
+tsb_v1_116	anshul	heldout_fake	quiet	data pipelines and queues	data/v1-small/tsb_v1-small-full/tsb_v1_116.m4a	7.488	124532	expected_reference_from_manifest
+tsb_v1_117	anshul	heldout_fake	quiet	backend services and deployment	data/v1-small/tsb_v1-small-full/tsb_v1_117.m4a	7.232	122009	expected_reference_from_manifest
+tsb_v1_118	anshul	heldout_fake	quiet	AI evals and model behavior	data/v1-small/tsb_v1-small-full/tsb_v1_118.m4a	7.488	125978	expected_reference_from_manifest
+tsb_v1_119	anshul	heldout_fake	quiet	configuration and environment files	data/v1-small/tsb_v1-small-full/tsb_v1_119.m4a	6.123	101940	expected_reference_from_manifest
+tsb_v1_120	anshul	heldout_fake	quiet	observability and metrics	data/v1-small/tsb_v1-small-full/tsb_v1_120.m4a	6.976	115971	expected_reference_from_manifest

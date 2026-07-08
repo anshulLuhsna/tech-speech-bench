@@ -1,0 +1,505 @@
+# TechSpeechBench V1 Small Recording Script
+
+Use this file to record `v1-small` yourself.
+
+## How To Record
+
+- Record one clip per row.
+- Do not say the ID out loud.
+- Read only the sentence after the ID.
+- If you make a mistake, stop and re-record that clip from the start.
+- Use iPhone Voice Memos or Mac QuickTime.
+- Avoid WhatsApp compression.
+- Export original `.m4a` files.
+- Rename files after export:
+  - `tsb_v1_001.m4a`
+  - `tsb_v1_002.m4a`
+  - and so on.
+
+## Recording Lines
+
+### train
+
+#### tsb_v1_001
+
+Send the audio sample through Whisper first, then score the OpenAI API summary for missing technical entities.
+
+#### tsb_v1_002
+
+Note that the FastAPI health endpoint only fails when Uvicorn starts with multiple workers.
+
+#### tsb_v1_003
+
+Move the JWT secret into .env and make the startup check fail when it is missing.
+
+#### tsb_v1_004
+
+Use curl against the staging endpoint and confirm the OpenAPI response still includes pagination fields.
+
+#### tsb_v1_005
+
+The Celery worker is retrying too aggressively after RabbitMQ drops a connection during the batch import.
+
+#### tsb_v1_006
+
+Record a retrieval note saying FAISS returns closer matches than ChromaDB on the short support questions.
+
+#### tsb_v1_007
+
+The GitHub workflow passes locally but the CI/CD job loses the generated coverage artifact.
+
+#### tsb_v1_008
+
+Tighten tsconfig.json so TypeScript rejects implicit any in the shared validation package.
+
+#### tsb_v1_009
+
+The Docker container starts, but NGINX returns a stale upstream error after the deploy.
+
+#### tsb_v1_010
+
+The TensorFlow baseline overfits faster than scikit-learn on the small tabular feature set.
+
+#### tsb_v1_011
+
+Add a LangChain tool call that fetches the REST API status before answering the user.
+
+#### tsb_v1_012
+
+Update the Dockerfile to copy requirements.txt earlier, actually replace that with a cache-friendly install step.
+
+#### tsb_v1_013
+
+Write the bash script so it reads the version from package.json before tagging the release.
+
+#### tsb_v1_014
+
+The Flask latency spike only appears when Gunicorn recycles workers under sustained traffic.
+
+#### tsb_v1_015
+
+Export the Kafka sample into Pandas and inspect whether null timestamps are causing the join drift.
+
+#### tsb_v1_016
+
+Pinecone retrieves the exact document title, while Weaviate ranks the chunk with the better explanation.
+
+#### tsb_v1_017
+
+Check whether the CUDA path and the ONNX export produce matching logits on the same input.
+
+#### tsb_v1_018
+
+The Node.js resolver should reject empty GraphQL filters instead of returning every record.
+
+#### tsb_v1_019
+
+In docker-compose.yml, pin Redis to a stable image and expose only the internal network.
+
+#### tsb_v1_020
+
+The PyTorch smoke test passes on my machine but fails inside the GitLab runner.
+
+#### tsb_v1_021
+
+Use systemctl to restart NGINX after writing the generated site config.
+
+#### tsb_v1_022
+
+Compare the transformers local output with the Anthropic API answer on the same prompt.
+
+#### tsb_v1_023
+
+The Kubernetes pod restarts when MongoDB takes longer than expected to accept connections.
+
+#### tsb_v1_024
+
+Store the prototype in SQLite, actually make the migration path to PostgreSQL explicit.
+
+#### tsb_v1_025
+
+LlamaIndex sends the right query, but Milvus returns duplicate chunks from the same document.
+
+#### tsb_v1_026
+
+Add a Makefile target that works from zsh without relying on shell-specific aliases.
+
+#### tsb_v1_027
+
+The OpenAPI spec says the REST API returns an array, but production returns an object.
+
+#### tsb_v1_028
+
+TensorRT improves the encoder latency, but Vosk still misses punctuation on short commands.
+
+#### tsb_v1_029
+
+Use wget in the Dockerfile only for the model checksum, not for runtime downloads.
+
+#### tsb_v1_030
+
+The LlamaIndex connector should refresh OAuth credentials before requesting the private document.
+
+#### tsb_v1_031
+
+The Pandas export changed column order, so verify the NumPy feature matrix before training.
+
+#### tsb_v1_032
+
+Bridge the gRPC worker behind FastAPI and keep the request timeout under ten seconds.
+
+#### tsb_v1_033
+
+Put the test-only dependency in requirements.txt and make Git ignore the generated cache.
+
+#### tsb_v1_034
+
+The cron task should publish one RabbitMQ message per day, no, actually one per dataset shard.
+
+#### tsb_v1_035
+
+Pull the embedding model from HuggingFace and store the local experiment results in ChromaDB.
+
+#### tsb_v1_036
+
+package.json should mark the Node.js script as module type before the import cleanup.
+
+#### tsb_v1_037
+
+DeepSpeech struggles with code words, while Whisper keeps the sentence structure mostly intact.
+
+#### tsb_v1_038
+
+Uvicorn accepts the request before PostgreSQL finishes the migration lock, causing a startup race.
+
+#### tsb_v1_039
+
+Keep the PyTorch and TensorFlow experiments in separate folders so the metrics stay comparable.
+
+#### tsb_v1_040
+
+curl the endpoint with the .env token loaded from the local shell session.
+
+### heldout_real
+
+#### tsb_v1_041
+
+The vLLM worker stays warm, but Ray Serve keeps routing the first request to a cold replica.
+
+#### tsb_v1_042
+
+Measure the first-token delay after Triton Inference Server reloads the model repository.
+
+#### tsb_v1_043
+
+Package the scoring service with BentoML, then run the same container image on Modal.
+
+#### tsb_v1_044
+
+The Fly.io deployment passes the health probe, but Supabase rejects the connection pool setting.
+
+#### tsb_v1_045
+
+Write a migration note explaining why Neon handles this workload better than PlanetScale.
+
+#### tsb_v1_046
+
+Qdrant returns fewer duplicates, while pgvector is easier to inspect during debugging.
+
+#### tsb_v1_047
+
+The Redis Stack index includes stale vectors after the nightly document refresh.
+
+#### tsb_v1_048
+
+Use ClickHouse for the larger event table and DuckDB for the local analysis notebook.
+
+#### tsb_v1_049
+
+The Delta Lake compaction task should run after Airflow finishes the ingestion window.
+
+#### tsb_v1_050
+
+Prefect reports the retry as successful, but Dagster shows the asset is still stale.
+
+#### tsb_v1_051
+
+Log the same validation score to Weights & Biases and MLflow before changing the sampler.
+
+#### tsb_v1_052
+
+ClearML captures the experiment metadata, but OpenTelemetry is missing the request span.
+
+#### tsb_v1_053
+
+Prometheus sees the counter increase, but Grafana rounds the panel to zero.
+
+#### tsb_v1_054
+
+Sentry groups the timeout as one issue, while OpenTelemetry shows two separate traces.
+
+#### tsb_v1_055
+
+LangGraph should call the search tool before DSPy rewrites the final answer.
+
+#### tsb_v1_056
+
+Haystack retrieves the right passage, but Instructor rejects the structured response.
+
+#### tsb_v1_057
+
+Guidance accepts the schema, while Outlines fails on the optional confidence field.
+
+#### tsb_v1_058
+
+AutoGen creates too many handoffs, so test the same planner in CrewAI.
+
+#### tsb_v1_059
+
+Semantic Kernel should pass the tool result back without rewriting the field names.
+
+#### tsb_v1_060
+
+Azure OpenAI follows the rubric better, while Google Vertex AI gives a shorter explanation.
+
+#### tsb_v1_061
+
+Run the moderation scenario again on AWS Bedrock and record the refusal reason.
+
+#### tsb_v1_062
+
+DeepSpeed reduces memory pressure, but bitsandbytes changes the numeric output slightly.
+
+#### tsb_v1_063
+
+Use PEFT to load the LoRA adapter and verify the base weights stay frozen.
+
+#### tsb_v1_064
+
+FlashAttention speeds up the long prompt, but xFormers uses less memory on this batch.
+
+#### tsb_v1_065
+
+Restart TGI after changing the token limit, then remeasure streaming latency.
+
+#### tsb_v1_066
+
+Deploy the demo on Replicate, actually move the scheduled job to Modal instead.
+
+#### tsb_v1_067
+
+Keep pgvector for the small corpus, but use Qdrant for the larger retrieval test.
+
+#### tsb_v1_068
+
+Grafana shows the error burst first, then Sentry links it to one failing release.
+
+#### tsb_v1_069
+
+Airflow owns the legacy schedule, while Prefect runs the new validation flow.
+
+#### tsb_v1_070
+
+LangGraph handles the branching state, and Semantic Kernel wraps the plugin call.
+
+#### tsb_v1_071
+
+MLflow has the older baseline, but Weights & Biases has the cleaner comparison chart.
+
+#### tsb_v1_072
+
+vLLM streams faster on short prompts, while TGI is steadier under the longer batch.
+
+#### tsb_v1_073
+
+Supabase is fine for auth, but Neon is the cleaner choice for this test database.
+
+#### tsb_v1_074
+
+Redis Stack serves the lookup path, and ClickHouse stores the aggregated retrieval events.
+
+#### tsb_v1_075
+
+Enable LoRA for the adapter test, wait, disable FlashAttention for the reproducibility run.
+
+#### tsb_v1_076
+
+Instructor validates the nested answer, but Outlines gives cleaner constrained decoding traces.
+
+#### tsb_v1_077
+
+Add OpenTelemetry spans around the retrieval step and expose the duration to Prometheus.
+
+#### tsb_v1_078
+
+Dagster marks the asset fresh after the Delta Lake checkpoint lands.
+
+#### tsb_v1_079
+
+Google Vertex AI gives a higher factuality score than AWS Bedrock on this prompt set.
+
+#### tsb_v1_080
+
+BentoML packages the model cleanly, but Triton Inference Server has the faster warm path.
+
+### heldout_fake
+
+#### tsb_v1_081
+
+VectorFlowDB finds the right paragraph, but QueryWeave ranks the shorter snippet first.
+
+#### tsb_v1_082
+
+FastServeX handles the warm request well, while InferLite is better for the tiny model.
+
+#### tsb_v1_083
+
+PromptForge should draft the tool input before ContextMesh attaches the session state.
+
+#### tsb_v1_084
+
+DataWeaveX writes the cleaned event stream after StreamForge finishes the backfill.
+
+#### tsb_v1_085
+
+SignalDB records the latency spike, but CacheFlux hides it behind a stale cache hit.
+
+#### tsb_v1_086
+
+TokenForge should read the local config value and refuse to start when it is blank.
+
+#### tsb_v1_087
+
+EmbedStack stores the new vectors, but NeuroCache keeps returning yesterday's embedding.
+
+#### tsb_v1_088
+
+TensorDockX loads the model slowly, so keep HyperServe on the interactive endpoint.
+
+#### tsb_v1_089
+
+AutoPromptor improves the rubric wording, but Retrievon still misses the key evidence.
+
+#### tsb_v1_090
+
+GraphStack resolves the dependency order before ServeStack rolls out the worker process.
+
+#### tsb_v1_091
+
+SynthDB stores the generated rows, while DataForgeX validates the schema drift report.
+
+#### tsb_v1_092
+
+FluxVector returns better nearest neighbors than VectorMesh on the noisy notes.
+
+#### tsb_v1_093
+
+ModelWeaver should call the planner first, then PromptMesh can format the final instruction.
+
+#### tsb_v1_094
+
+IndexStream shows the ingest lag, but QueryStack only reports the failed lookup count.
+
+#### tsb_v1_095
+
+Refresh EmbedForge after the import, actually invalidate CacheWeaver before rerunning the query.
+
+#### tsb_v1_096
+
+TensorFlowX compiles the graph faster, but InferStack gives steadier response timing.
+
+#### tsb_v1_097
+
+NeuroWeave enriches the records before StreamMesh pushes them to the downstream queue.
+
+#### tsb_v1_098
+
+GraphForge deploys cleanly, but ContextDB needs a manual index refresh.
+
+#### tsb_v1_099
+
+TokenStack shortens the prompt budget, while AutoWeave changes the tool selection behavior.
+
+#### tsb_v1_100
+
+FluxDB stores the candidate chunks, and QueryForge explains why the top result changed.
+
+#### tsb_v1_101
+
+ModelStack should preload the small checkpoint before FastServeX accepts traffic.
+
+#### tsb_v1_102
+
+Put the QueryWeave endpoint in the config file and point ContextDB at the same workspace.
+
+#### tsb_v1_103
+
+SignalDB flags the timeout after HyperServe starts queueing requests behind one worker.
+
+#### tsb_v1_104
+
+PromptForge generated the draft, but AutoPromptor changed the constraint order.
+
+#### tsb_v1_105
+
+Use VectorMesh for the recall test, no, switch that note to EmbedStack for the compact index.
+
+#### tsb_v1_106
+
+StreamForge replays the missing window, and DataForgeX marks three rows as malformed.
+
+#### tsb_v1_107
+
+NeuroCache returns the cached answer even after FluxVector updates the nearest match.
+
+#### tsb_v1_108
+
+ServeStack reports a clean rollout, but CacheFlux still serves the old response.
+
+#### tsb_v1_109
+
+ModelWeaver improves the answer plan, while Retrievon supplies weaker supporting evidence.
+
+#### tsb_v1_110
+
+TokenForge needs a stricter default before GraphStack reads the generated policy file.
+
+#### tsb_v1_111
+
+InferLite is the better baseline, but TensorDockX wins once the batch size increases.
+
+#### tsb_v1_112
+
+IndexStream records the backlog, and SignalDB links it to the slow parser stage.
+
+#### tsb_v1_113
+
+ContextMesh keeps the conversation state, while PromptMesh turns it into the tool request.
+
+#### tsb_v1_114
+
+QueryStack asks the broader question, but VectorFlowDB returns the more precise passage.
+
+#### tsb_v1_115
+
+Write the sample into FluxDB, actually that should be SynthDB because it is generated data.
+
+#### tsb_v1_116
+
+DataWeaveX normalizes the timestamps before NeuroWeave attaches the derived labels.
+
+#### tsb_v1_117
+
+GraphForge should finish the dependency scan before FastServeX restarts the endpoint.
+
+#### tsb_v1_118
+
+AutoWeave picks the wrong tool when TokenStack trims the system message too aggressively.
+
+#### tsb_v1_119
+
+Set EmbedForge to read-only during the QueryForge regression test.
+
+#### tsb_v1_120
+
+CacheWeaver masks the slow response until ModelStack emits the cold-start metric.

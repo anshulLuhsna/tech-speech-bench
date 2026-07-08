@@ -1,0 +1,94 @@
+{
+  "clips": 120,
+  "wer": 0.1991094147582697,
+  "cer": 0.04214596423392943,
+  "domain_term_exact_match_rate": 0.26556016597510373,
+  "domain_term_error_rate": 0.7344398340248963,
+  "domain_term_mentions": 241,
+  "domain_term_exact_hits": 64,
+  "command_exact_match_rate": 0.6666666666666666,
+  "command_mentions": 6,
+  "command_exact_hits": 4,
+  "top_missed_terms": [
+    [
+      "OpenTelemetry",
+      3
+    ],
+    [
+      "FastServeX",
+      3
+    ],
+    [
+      "FastAPI",
+      2
+    ],
+    [
+      "Uvicorn",
+      2
+    ],
+    [
+      "OpenAPI",
+      2
+    ],
+    [
+      "RabbitMQ",
+      2
+    ],
+    [
+      "Docker",
+      2
+    ],
+    [
+      "NGINX",
+      2
+    ],
+    [
+      "Pandas",
+      2
+    ],
+    [
+      "Redis",
+      2
+    ],
+    [
+      "Git",
+      2
+    ],
+    [
+      "LlamaIndex",
+      2
+    ],
+    [
+      "vLLM",
+      2
+    ],
+    [
+      "Triton Inference Server",
+      2
+    ],
+    [
+      "Modal",
+      2
+    ],
+    [
+      "Supabase",
+      2
+    ],
+    [
+      "Qdrant",
+      2
+    ],
+    [
+      "pgvector",
+      2
+    ],
+    [
+      "Redis Stack",
+      2
+    ],
+    [
+      "ClickHouse",
+      2
+    ]
+  ]
+}
