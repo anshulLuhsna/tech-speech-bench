@@ -1,0 +1,94 @@
+{
+  "clips": 120,
+  "wer": 0.15394402035623408,
+  "cer": 0.04639922667955534,
+  "domain_term_exact_match_rate": 0.4107883817427386,
+  "domain_term_error_rate": 0.5892116182572614,
+  "domain_term_mentions": 241,
+  "domain_term_exact_hits": 99,
+  "command_exact_match_rate": 1.0,
+  "command_mentions": 6,
+  "command_exact_hits": 6,
+  "top_missed_terms": [
+    [
+      "FastServeX",
+      3
+    ],
+    [
+      "Uvicorn",
+      2
+    ],
+    [
+      "OpenAPI",
+      2
+    ],
+    [
+      "NGINX",
+      2
+    ],
+    [
+      "Pandas",
+      2
+    ],
+    [
+      "LlamaIndex",
+      2
+    ],
+    [
+      "vLLM",
+      2
+    ],
+    [
+      "Triton Inference Server",
+      2
+    ],
+    [
+      "Supabase",
+      2
+    ],
+    [
+      "Qdrant",
+      2
+    ],
+    [
+      "pgvector",
+      2
+    ],
+    [
+      "Redis Stack",
+      2
+    ],
+    [
+      "ClickHouse",
+      2
+    ],
+    [
+      "Dagster",
+      2
+    ],
+    [
+      "Weights & Biases",
+      2
+    ],
+    [
+      "OpenTelemetry",
+      2
+    ],
+    [
+      "Sentry",
+      2
+    ],
+    [
+      "LangGraph",
+      2
+    ],
+    [
+      "Outlines",
+      2
+    ],
+    [
+      "Semantic Kernel",
+      2
+    ]
+  ]
+}

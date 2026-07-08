@@ -13,9 +13,11 @@ results/**/*.jsonl
 results/**/*.csv
 results/**/*.tsv
 results/**/*.txt
+results/**/checkpoint-*/
+results/finetunes/**/processor_config.json
+results/finetunes/**/tokenizer*.json
 
 # Keep source manifests and raw v0 audio trackable unless release policy changes.
 !data/**/manifest.tsv
 !data/**/references.tsv
 !data/**/audio/raw/*.m4a
-
