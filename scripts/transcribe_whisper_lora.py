@@ -27,12 +27,24 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--num-beams", type=int, default=5)
     parser.add_argument("--max-new-tokens", type=int, default=None)
     parser.add_argument("--limit", type=int, default=None)
+    parser.add_argument(
+        "--clip-id",
+        action="append",
+        help="Only transcribe this clip id. Can be passed multiple times.",
+    )
     return parser.parse_args()
 
 
-def read_manifest(path: Path, limit: int | None) -> list[dict[str, str]]:
+def read_manifest(
+    path: Path,
+    limit: int | None,
+    clip_ids: list[str] | None,
+) -> list[dict[str, str]]:
     with path.open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter="\t"))
+    if clip_ids:
+        wanted = set(clip_ids)
+        rows = [row for row in rows if row["clip_id"] in wanted]
     return rows[:limit] if limit else rows
 
 
@@ -55,7 +67,7 @@ def main() -> None:
 
     out_dir = args.out_dir
     out_dir.mkdir(parents=True, exist_ok=True)
-    rows = read_manifest(args.manifest, args.limit)
+    rows = read_manifest(args.manifest, args.limit, args.clip_id)
 
     processor = WhisperProcessor.from_pretrained(
         args.base_model,

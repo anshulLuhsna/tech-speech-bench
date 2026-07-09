@@ -1,0 +1,879 @@
+{
+  "baseline": {
+    "overall": {
+      "clips": 120,
+      "wer": 0.1991094147582697,
+      "cer": 0.04214596423392943,
+      "domain_term_exact_hits": 64,
+      "domain_term_mentions": 241,
+      "domain_term_exact_match_rate": 0.26556016597510373,
+      "command_exact_hits": 4,
+      "command_mentions": 6,
+      "command_exact_match_rate": 0.6666666666666666,
+      "top_missed_terms": [
+        [
+          "OpenTelemetry",
+          3
+        ],
+        [
+          "FastServeX",
+          3
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "Uvicorn",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "RabbitMQ",
+          2
+        ],
+        [
+          "Docker",
+          2
+        ],
+        [
+          "NGINX",
+          2
+        ],
+        [
+          "Pandas",
+          2
+        ],
+        [
+          "Redis",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_101",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "FastServeX",
+            "ModelStack"
+          ],
+          "reference": "ModelStack should preload the small checkpoint before FastServeX accepts traffic.",
+          "hypothesis": "Model stack should preload the small checkpoint before faster wrecks except stuff it."
+        },
+        {
+          "clip_id": "tsb_v1_119",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "EmbedForge",
+            "QueryForge"
+          ],
+          "reference": "Set EmbedForge to read-only during the QueryForge regression test.",
+          "hypothesis": "Set embed force to read only during the query force regression test."
+        },
+        {
+          "clip_id": "tsb_v1_120",
+          "split": "heldout_fake",
+          "wer": 0.6363636363636364,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelStack"
+          ],
+          "reference": "CacheWeaver masks the slow response until ModelStack emits the cold-start metric.",
+          "hypothesis": "cache weaver masks the slow response until model stack emits the cold start metric"
+        },
+        {
+          "clip_id": "tsb_v1_098",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "ContextDB",
+            "GraphForge"
+          ],
+          "reference": "GraphForge deploys cleanly, but ContextDB needs a manual index refresh.",
+          "hypothesis": "Graph 4 is deployed cleanly, but contents DB needs a manual index refresh."
+        },
+        {
+          "clip_id": "tsb_v1_106",
+          "split": "heldout_fake",
+          "wer": 0.5833333333333334,
+          "missed_terms": [
+            "DataForgeX",
+            "StreamForge"
+          ],
+          "reference": "StreamForge replays the missing window, and DataForgeX marks three rows as malformed.",
+          "hypothesis": "Stream force replace the missing window and data force X marks 3 rows as malformed."
+        }
+      ]
+    },
+    "train": {
+      "clips": 40,
+      "wer": 0.13297872340425532,
+      "cer": 0.03462489694971146,
+      "domain_term_exact_hits": 34,
+      "domain_term_mentions": 84,
+      "domain_term_exact_match_rate": 0.40476190476190477,
+      "command_exact_hits": 4,
+      "command_mentions": 6,
+      "command_exact_match_rate": 0.6666666666666666,
+      "top_missed_terms": [
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "Uvicorn",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "RabbitMQ",
+          2
+        ],
+        [
+          "Docker",
+          2
+        ],
+        [
+          "NGINX",
+          2
+        ],
+        [
+          "Pandas",
+          2
+        ],
+        [
+          "Git",
+          2
+        ],
+        [
+          "LlamaIndex",
+          2
+        ],
+        [
+          ".env",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_010",
+          "split": "train",
+          "wer": 0.5384615384615384,
+          "missed_terms": [
+            "TensorFlow",
+            "scikit-learn"
+          ],
+          "reference": "The TensorFlow baseline overfits faster than scikit-learn on the small tabular feature set.",
+          "hypothesis": "The tensor flow baseline over fits faster than the scikit learn on the small tabular feature set."
+        },
+        {
+          "clip_id": "tsb_v1_038",
+          "split": "train",
+          "wer": 0.35714285714285715,
+          "missed_terms": [
+            "PostgreSQL",
+            "Uvicorn"
+          ],
+          "reference": "Uvicorn accepts the request before PostgreSQL finishes the migration lock, causing a startup race.",
+          "hypothesis": "Uvecon accepts the request before PoSV SQL finishes the migration log, causing a startup"
+        },
+        {
+          "clip_id": "tsb_v1_033",
+          "split": "train",
+          "wer": 0.3076923076923077,
+          "missed_terms": [
+            "Git"
+          ],
+          "reference": "Put the test-only dependency in requirements.txt and make Git ignore the generated cache.",
+          "hypothesis": "Put the test only dependency in the requirements.txt and make it ignore the generated cache."
+        },
+        {
+          "clip_id": "tsb_v1_019",
+          "split": "train",
+          "wer": 0.2857142857142857,
+          "missed_terms": [
+            "Redis",
+            "docker-compose.yml"
+          ],
+          "reference": "In docker-compose.yml, pin Redis to a stable image and expose only the internal network.",
+          "hypothesis": "In Docker compose.yml, pin the radius to a stable image and expose only the internal network."
+        },
+        {
+          "clip_id": "tsb_v1_021",
+          "split": "train",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "NGINX",
+            "systemctl"
+          ],
+          "reference": "Use systemctl to restart NGINX after writing the generated site config.",
+          "hypothesis": "Use systems ETL to restart Nginx after writing the generated side config."
+        }
+      ]
+    },
+    "heldout_real": {
+      "clips": 40,
+      "wer": 0.14395393474088292,
+      "cer": 0.03429602888086643,
+      "domain_term_exact_hits": 22,
+      "domain_term_mentions": 77,
+      "domain_term_exact_match_rate": 0.2857142857142857,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "OpenTelemetry",
+          3
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "Triton Inference Server",
+          2
+        ],
+        [
+          "Modal",
+          2
+        ],
+        [
+          "Supabase",
+          2
+        ],
+        [
+          "Qdrant",
+          2
+        ],
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "Redis Stack",
+          2
+        ],
+        [
+          "ClickHouse",
+          2
+        ],
+        [
+          "Dagster",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_062",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "DeepSpeed",
+            "bitsandbytes"
+          ],
+          "reference": "DeepSpeed reduces memory pressure, but bitsandbytes changes the numeric output slightly.",
+          "hypothesis": "Deep speed reduces memory pressure, but bits and bytes changes the numeric output slightly."
+        },
+        {
+          "clip_id": "tsb_v1_054",
+          "split": "heldout_real",
+          "wer": 0.38461538461538464,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "Sentry groups the timeout as one issue, while OpenTelemetry shows two separate traces.",
+          "hypothesis": "Sentry groups the time out as one issue, while open telemetry shows two separate races."
+        },
+        {
+          "clip_id": "tsb_v1_060",
+          "split": "heldout_real",
+          "wer": 0.35714285714285715,
+          "missed_terms": [
+            "Azure OpenAI",
+            "Google Vertex AI"
+          ],
+          "reference": "Azure OpenAI follows the rubric better, while Google Vertex AI gives a shorter explanation.",
+          "hypothesis": "As your open AI follows the rubric pattern, while Google vertex AI gives a shorter explanation."
+        },
+        {
+          "clip_id": "tsb_v1_046",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returns fewer duplicates, while pgvector is easier to inspect during debugging.",
+          "hypothesis": "Queudrant returns fear duplicates while PC vector is easier to inspect during debugging."
+        },
+        {
+          "clip_id": "tsb_v1_052",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "ClearML",
+            "OpenTelemetry"
+          ],
+          "reference": "ClearML captures the experiment metadata, but OpenTelemetry is missing the request span.",
+          "hypothesis": "Clear ML captures the experiment metadata, but open telemetry is missing the request span."
+        }
+      ]
+    },
+    "heldout_fake": {
+      "clips": 40,
+      "wer": 0.3347022587268994,
+      "cer": 0.0579538734476641,
+      "domain_term_exact_hits": 8,
+      "domain_term_mentions": 80,
+      "domain_term_exact_match_rate": 0.1,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "FastServeX",
+          3
+        ],
+        [
+          "QueryWeave",
+          2
+        ],
+        [
+          "VectorFlowDB",
+          2
+        ],
+        [
+          "InferLite",
+          2
+        ],
+        [
+          "ContextMesh",
+          2
+        ],
+        [
+          "PromptForge",
+          2
+        ],
+        [
+          "StreamForge",
+          2
+        ],
+        [
+          "CacheFlux",
+          2
+        ],
+        [
+          "SignalDB",
+          2
+        ],
+        [
+          "TokenForge",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_101",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "FastServeX",
+            "ModelStack"
+          ],
+          "reference": "ModelStack should preload the small checkpoint before FastServeX accepts traffic.",
+          "hypothesis": "Model stack should preload the small checkpoint before faster wrecks except stuff it."
+        },
+        {
+          "clip_id": "tsb_v1_119",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "EmbedForge",
+            "QueryForge"
+          ],
+          "reference": "Set EmbedForge to read-only during the QueryForge regression test.",
+          "hypothesis": "Set embed force to read only during the query force regression test."
+        },
+        {
+          "clip_id": "tsb_v1_120",
+          "split": "heldout_fake",
+          "wer": 0.6363636363636364,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelStack"
+          ],
+          "reference": "CacheWeaver masks the slow response until ModelStack emits the cold-start metric.",
+          "hypothesis": "cache weaver masks the slow response until model stack emits the cold start metric"
+        },
+        {
+          "clip_id": "tsb_v1_098",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "ContextDB",
+            "GraphForge"
+          ],
+          "reference": "GraphForge deploys cleanly, but ContextDB needs a manual index refresh.",
+          "hypothesis": "Graph 4 is deployed cleanly, but contents DB needs a manual index refresh."
+        },
+        {
+          "clip_id": "tsb_v1_106",
+          "split": "heldout_fake",
+          "wer": 0.5833333333333334,
+          "missed_terms": [
+            "DataForgeX",
+            "StreamForge"
+          ],
+          "reference": "StreamForge replays the missing window, and DataForgeX marks three rows as malformed.",
+          "hypothesis": "Stream force replace the missing window and data force X marks 3 rows as malformed."
+        }
+      ]
+    }
+  },
+  "lora": {
+    "overall": {
+      "clips": 120,
+      "wer": 0.15394402035623408,
+      "cer": 0.04639922667955534,
+      "domain_term_exact_hits": 99,
+      "domain_term_mentions": 241,
+      "domain_term_exact_match_rate": 0.4107883817427386,
+      "command_exact_hits": 6,
+      "command_mentions": 6,
+      "command_exact_match_rate": 1.0,
+      "top_missed_terms": [
+        [
+          "FastServeX",
+          3
+        ],
+        [
+          "Uvicorn",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "NGINX",
+          2
+        ],
+        [
+          "Pandas",
+          2
+        ],
+        [
+          "LlamaIndex",
+          2
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "Triton Inference Server",
+          2
+        ],
+        [
+          "Supabase",
+          2
+        ],
+        [
+          "Qdrant",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_097",
+          "split": "heldout_fake",
+          "wer": 1.0,
+          "missed_terms": [
+            "NeuroWeave",
+            "StreamMesh"
+          ],
+          "reference": "NeuroWeave enriches the records before StreamMesh pushes them to the downstream queue.",
+          "hypothesis": "��������������������������������������������������������������������������������������������������������������������������������"
+        },
+        {
+          "clip_id": "tsb_v1_119",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "EmbedForge",
+            "QueryForge"
+          ],
+          "reference": "Set EmbedForge to read-only during the QueryForge regression test.",
+          "hypothesis": "Set embed force to read only during the query force regression test."
+        },
+        {
+          "clip_id": "tsb_v1_075",
+          "split": "heldout_real",
+          "wer": 0.6153846153846154,
+          "missed_terms": [
+            "FlashAttention",
+            "LoRA"
+          ],
+          "reference": "Enable LoRA for the adapter test, wait, disable FlashAttention for the reproducibility run.",
+          "hypothesis": "Enable flash attention for the reproducibility run."
+        },
+        {
+          "clip_id": "tsb_v1_101",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastServeX"
+          ],
+          "reference": "ModelStack should preload the small checkpoint before FastServeX accepts traffic.",
+          "hypothesis": "ModelStack should preload the small checkpoint before faster wrecks, except stuff it."
+        },
+        {
+          "clip_id": "tsb_v1_106",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "DataForgeX",
+            "StreamForge"
+          ],
+          "reference": "StreamForge replays the missing window, and DataForgeX marks three rows as malformed.",
+          "hypothesis": "Stream Force replaced the missing window and Data Force X marks three rows as malformed."
+        }
+      ]
+    },
+    "train": {
+      "clips": 40,
+      "wer": 0.09219858156028368,
+      "cer": 0.02528167078867821,
+      "domain_term_exact_hits": 50,
+      "domain_term_mentions": 84,
+      "domain_term_exact_match_rate": 0.5952380952380952,
+      "command_exact_hits": 6,
+      "command_mentions": 6,
+      "command_exact_match_rate": 1.0,
+      "top_missed_terms": [
+        [
+          "Uvicorn",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "NGINX",
+          2
+        ],
+        [
+          "Pandas",
+          2
+        ],
+        [
+          "LlamaIndex",
+          2
+        ],
+        [
+          "FastAPI",
+          1
+        ],
+        [
+          "FAISS",
+          1
+        ],
+        [
+          "CI/CD",
+          1
+        ],
+        [
+          "tsconfig.json",
+          1
+        ],
+        [
+          "scikit-learn",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_038",
+          "split": "train",
+          "wer": 0.2857142857142857,
+          "missed_terms": [
+            "PostgreSQL",
+            "Uvicorn"
+          ],
+          "reference": "Uvicorn accepts the request before PostgreSQL finishes the migration lock, causing a startup race.",
+          "hypothesis": "UVcon accepts the request before PoSV SQL finishes the migration log, causing a startup race."
+        },
+        {
+          "clip_id": "tsb_v1_010",
+          "split": "train",
+          "wer": 0.23076923076923078,
+          "missed_terms": [
+            "scikit-learn"
+          ],
+          "reference": "The TensorFlow baseline overfits faster than scikit-learn on the small tabular feature set.",
+          "hypothesis": "The TensorFlow baseline overfits faster than the scikit learn on the small tabular feature set."
+        },
+        {
+          "clip_id": "tsb_v1_033",
+          "split": "train",
+          "wer": 0.23076923076923078,
+          "missed_terms": [
+            "Git"
+          ],
+          "reference": "Put the test-only dependency in requirements.txt and make Git ignore the generated cache.",
+          "hypothesis": "Put the test only dependency in requirements.txt and make it ignore the generated cache."
+        },
+        {
+          "clip_id": "tsb_v1_002",
+          "split": "train",
+          "wer": 0.21428571428571427,
+          "missed_terms": [
+            "FastAPI",
+            "Uvicorn"
+          ],
+          "reference": "Note that the FastAPI health endpoint only fails when Uvicorn starts with multiple workers.",
+          "hypothesis": "Note that the fast API health endpoint only fails when Uvikorn starts with multiple workers."
+        },
+        {
+          "clip_id": "tsb_v1_019",
+          "split": "train",
+          "wer": 0.21428571428571427,
+          "missed_terms": [
+            "docker-compose.yml"
+          ],
+          "reference": "In docker-compose.yml, pin Redis to a stable image and expose only the internal network.",
+          "hypothesis": "In Docker compose.yml, pin the Redis to a stable image and expose only the internal network."
+        }
+      ]
+    },
+    "heldout_real": {
+      "clips": 40,
+      "wer": 0.14395393474088292,
+      "cer": 0.04482551143200963,
+      "domain_term_exact_hits": 27,
+      "domain_term_mentions": 77,
+      "domain_term_exact_match_rate": 0.35064935064935066,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "Triton Inference Server",
+          2
+        ],
+        [
+          "Supabase",
+          2
+        ],
+        [
+          "Qdrant",
+          2
+        ],
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "Redis Stack",
+          2
+        ],
+        [
+          "ClickHouse",
+          2
+        ],
+        [
+          "Dagster",
+          2
+        ],
+        [
+          "Weights & Biases",
+          2
+        ],
+        [
+          "OpenTelemetry",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_075",
+          "split": "heldout_real",
+          "wer": 0.6153846153846154,
+          "missed_terms": [
+            "FlashAttention",
+            "LoRA"
+          ],
+          "reference": "Enable LoRA for the adapter test, wait, disable FlashAttention for the reproducibility run.",
+          "hypothesis": "Enable flash attention for the reproducibility run."
+        },
+        {
+          "clip_id": "tsb_v1_054",
+          "split": "heldout_real",
+          "wer": 0.46153846153846156,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "Sentry groups the timeout as one issue, while OpenTelemetry shows two separate traces.",
+          "hypothesis": "Centric groups the time out as one issue while open telemetry shows two separate races."
+        },
+        {
+          "clip_id": "tsb_v1_046",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returns fewer duplicates, while pgvector is easier to inspect during debugging.",
+          "hypothesis": "QDrunt returns fear duplicates while PC vector is easier to inspect during debugging."
+        },
+        {
+          "clip_id": "tsb_v1_060",
+          "split": "heldout_real",
+          "wer": 0.2857142857142857,
+          "missed_terms": [
+            "Azure OpenAI",
+            "Google Vertex AI"
+          ],
+          "reference": "Azure OpenAI follows the rubric better, while Google Vertex AI gives a shorter explanation.",
+          "hypothesis": "As your open AI follows the rubric better, while Google vertex AI gives a shorter explanation."
+        },
+        {
+          "clip_id": "tsb_v1_064",
+          "split": "heldout_real",
+          "wer": 0.2857142857142857,
+          "missed_terms": [
+            "FlashAttention",
+            "xFormers"
+          ],
+          "reference": "FlashAttention speeds up the long prompt, but xFormers uses less memory on this batch.",
+          "hypothesis": "Flash Attention speeds up the long prompt, but ex-formers uses less memory on this badge."
+        }
+      ]
+    },
+    "heldout_fake": {
+      "clips": 40,
+      "wer": 0.23613963039014374,
+      "cer": 0.0706682436428149,
+      "domain_term_exact_hits": 22,
+      "domain_term_mentions": 80,
+      "domain_term_exact_match_rate": 0.275,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "FastServeX",
+          3
+        ],
+        [
+          "QueryWeave",
+          2
+        ],
+        [
+          "VectorFlowDB",
+          2
+        ],
+        [
+          "InferLite",
+          2
+        ],
+        [
+          "PromptForge",
+          2
+        ],
+        [
+          "StreamForge",
+          2
+        ],
+        [
+          "CacheFlux",
+          2
+        ],
+        [
+          "TokenForge",
+          2
+        ],
+        [
+          "NeuroCache",
+          2
+        ],
+        [
+          "TensorDockX",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "tsb_v1_097",
+          "split": "heldout_fake",
+          "wer": 1.0,
+          "missed_terms": [
+            "NeuroWeave",
+            "StreamMesh"
+          ],
+          "reference": "NeuroWeave enriches the records before StreamMesh pushes them to the downstream queue.",
+          "hypothesis": "��������������������������������������������������������������������������������������������������������������������������������"
+        },
+        {
+          "clip_id": "tsb_v1_119",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "EmbedForge",
+            "QueryForge"
+          ],
+          "reference": "Set EmbedForge to read-only during the QueryForge regression test.",
+          "hypothesis": "Set embed force to read only during the query force regression test."
+        },
+        {
+          "clip_id": "tsb_v1_101",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastServeX"
+          ],
+          "reference": "ModelStack should preload the small checkpoint before FastServeX accepts traffic.",
+          "hypothesis": "ModelStack should preload the small checkpoint before faster wrecks, except stuff it."
+        },
+        {
+          "clip_id": "tsb_v1_106",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "DataForgeX",
+            "StreamForge"
+          ],
+          "reference": "StreamForge replays the missing window, and DataForgeX marks three rows as malformed.",
+          "hypothesis": "Stream Force replaced the missing window and Data Force X marks three rows as malformed."
+        },
+        {
+          "clip_id": "tsb_v1_120",
+          "split": "heldout_fake",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelStack"
+          ],
+          "reference": "CacheWeaver masks the slow response until ModelStack emits the cold-start metric.",
+          "hypothesis": "CashWeaver masks the slow response until model stack emits the cold start metric."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "system": "transformers-whisper-lora",
+  "base_model": "openai/whisper-base.en",
+  "adapter_dir": "results/finetunes/whisper-base-en-lora-v1-small-alltrain",
+  "device": "mps",
+  "language": "english",
+  "task": "transcribe",
+  "num_beams": 5,
+  "manifest": "data/v1-small/prepared/manifest.tsv",
+  "clips": 120,
+  "total_seconds": 64.862,
+  "outputs": [
+    "transcripts.jsonl",
+    "transcripts.tsv"
+  ]
+}

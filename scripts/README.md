@@ -9,6 +9,7 @@ Planned scripts:
 - `prepare_v1_small_eval.py`: write v1-small manifest/references/terms for ASR and scoring
 - `train_whisper_lora.py`: train a PEFT LoRA adapter on the v1-small train split
 - `transcribe_whisper_lora.py`: transcribe the benchmark with a trained Whisper LoRA adapter
+- `compare_transcript_runs.py`: compare ASR transcript runs by split
 - `build_term_list.py`: extract domain terms from references
 
 First baseline:
@@ -60,4 +61,13 @@ Transcribe with a trained LoRA adapter:
 
 ```bash
 uv run --group train python scripts/transcribe_whisper_lora.py
+```
+
+Compare v1-small transcript runs:
+
+```bash
+uv run python scripts/compare_transcript_runs.py \
+  --run baseline=results/baselines/faster-whisper-base-en-v1-small/transcripts.tsv \
+  --run lora=results/finetunes/whisper-base-en-lora-v1-small/eval/transcripts.tsv \
+  --out-dir results/comparisons/v1-small-baseline-vs-lora
 ```
