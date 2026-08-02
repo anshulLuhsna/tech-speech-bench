@@ -24,6 +24,11 @@ The first open-source synthetic-data experiment trains Whisper LoRA adapters
 on Kokoro speech and evaluates them only on this frozen human benchmark. Read
 `docs/kokoro-synthetic-training-v1.md` for the protocol and result.
 
+The follow-up compositional experiment trains on disjoint generated technical
+names and improves real-human WER on both held-out real terms and held-out
+coined names. Read `docs/kokoro-compositional-augmentation-v2.md` for the
+result, uncertainty, and test-aware limitation.
+
 ## Repository Layout
 
 ```text
