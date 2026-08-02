@@ -68,6 +68,12 @@ Whisper, but it did not improve exact recognition of unseen terms: both base
 and synthetic-only scored 13/137 on held-out real terms and 1/135 on held-out
 fake terms.
 
+Do not use the large base-to-synthetic overall WER gap as the headline result.
+The controlled base run emitted repeated punctuation for `s03_040`, giving that
+single clip WER `55.5` and inflating base overall and held-out-fake WER. Exact
+term counts are unaffected, and the main conclusion uses the cleaner
+human-only versus balanced comparison.
+
 Balanced training was weaker than human-only on seen train terms. Its held-out
 point estimates were slightly better: one additional exact real-term hit and
 three additional fake-term hits. This tradeoff left balanced overall WER 0.0096
