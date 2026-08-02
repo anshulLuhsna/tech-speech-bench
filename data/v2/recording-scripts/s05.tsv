@@ -1,0 +1,41 @@
+clip_id	utterance
+s05_001	Pin LoRA in requirements.txt before running the adapter smoke test.
+s05_002	Check the OpenAPI route and make sure the JWT middleware still passes.
+s05_003	The CI/CD job rebuilt the Dockerfile after the base image changed.
+s05_004	Copy the .env sample, then check tsconfig.json for the path alias.
+s05_005	Run pytest -k auth before touching the FastAPI login handler.
+s05_006	Redis dropped one task, so restart the Celery worker cleanly.
+s05_007	Kubernetes accepted the Helm rollout, but the readiness probe stayed red.
+s05_008	Prometheus is scraping, yet Grafana still shows yesterday's latency panel.
+s05_009	Qdrant returned fewer neighbors than pgvector on the same embedding query.
+s05_010	Dagster skipped the backfill after Sentry reported the serializer crash.
+s05_011	Modal served the batch job, but vLLM kept warming the model.
+s05_012	LangGraph retried the tool call when the planner returned an empty step.
+s05_013	OpenTelemetry traces showed the queue delay before inference even started.
+s05_014	The evaluator marked WhisperX drift after Neon returned stale transcript rows.
+s05_015	TraceNest flagged the retry, then QueueLoom moved the event downstream.
+s05_016	No, I meant SchemaHawk, not the old config checker.
+s05_017	CacheWeaver warmed the response, but TokenHarbor capped the prompt window.
+s05_018	DriftPilot says the small model changed behavior after yesterday's merge.
+s05_019	PromptForge generated the fixture while EvalSage compared the answer traces.
+s05_020	Wait, change ModelCrate to RelayMint in the serving note.
+s05_021	The Dockerfile installs requirements.txt before copying the LoRA adapter.
+s05_022	Set JWT audience in .env and regenerate the OpenAPI client.
+s05_023	Kubernetes restarted FastAPI after Helm changed the resource limit.
+s05_024	Celery consumed slowly because Redis was running near memory limit.
+s05_025	Grafana hid the Prometheus alert behind the wrong dashboard filter.
+s05_026	No, run pytest -k ingestion after fixing tsconfig.json.
+s05_027	Nginx passed WebSocket upgrades once CI/CD finished the deploy.
+s05_028	Pydantic rejected the payload before Alembic touched Postgres.
+s05_029	pgvector found similar tickets, but Milvus returned cleaner metadata.
+s05_030	vLLM slowed down after Ray Serve scaled to zero.
+s05_031	OpenTelemetry traces matched the Sentry issue for that timeout.
+s05_032	Kafka replay started when Temporal detected the stuck workflow.
+s05_033	LangGraph requested Tavily, then Modal executed the scraping job.
+s05_034	WhisperX aligned the audio before Evidently scored the drift.
+s05_035	LogVine showed fewer alerts after TraceNest deduplicated spans.
+s05_036	TokenHarbor clipped the prompt before ModelCrate finished loading.
+s05_037	QueueLoom flushed the batch when StreamLatch marked it complete.
+s05_038	No, I meant RAGStone, not RAGStack, for the reranker.
+s05_039	SchemaHawk approved the file after ConfigOtter renamed the field.
+s05_040	DriftPilot failed the case that EvalSage had marked safe.

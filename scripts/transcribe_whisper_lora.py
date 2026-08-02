@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Transcribe TechSpeechBench clips with a Whisper LoRA adapter."""
+"""Transcribe TechSpeechBench clips with Whisper, optionally using LoRA."""
 
 from __future__ import annotations
 
@@ -16,9 +16,22 @@ DEFAULT_OUT_DIR = Path("results/finetunes/whisper-base-en-lora-v1-small/eval")
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Transcribe with Whisper + LoRA.")
+    parser = argparse.ArgumentParser(
+        description="Transcribe with Whisper, optionally using a LoRA adapter."
+    )
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument(
+        "--data-root",
+        type=Path,
+        default=Path("."),
+        help="Resolve relative manifest audio paths against this directory.",
+    )
     parser.add_argument("--adapter-dir", type=Path, default=DEFAULT_ADAPTER_DIR)
+    parser.add_argument(
+        "--base-model-only",
+        action="store_true",
+        help="Skip adapter loading to produce a controlled base-model baseline.",
+    )
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
     parser.add_argument("--base-model", default="openai/whisper-base.en")
     parser.add_argument("--device", default="cpu")
@@ -52,7 +65,12 @@ def write_tsv(path: Path, rows: list[dict[str, object]]) -> None:
     if not rows:
         return
     with path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()), delimiter="\t")
+        writer = csv.DictWriter(
+            f,
+            fieldnames=list(rows[0].keys()),
+            delimiter="\t",
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(rows)
 
@@ -62,7 +80,6 @@ def main() -> None:
 
     import librosa
     import torch
-    from peft import PeftModel
     from transformers import WhisperForConditionalGeneration, WhisperProcessor
 
     out_dir = args.out_dir
@@ -75,7 +92,10 @@ def main() -> None:
         task=args.task,
     )
     model = WhisperForConditionalGeneration.from_pretrained(args.base_model)
-    model = PeftModel.from_pretrained(model, args.adapter_dir)
+    if not args.base_model_only:
+        from peft import PeftModel
+
+        model = PeftModel.from_pretrained(model, args.adapter_dir)
     model.eval()
     model.to(args.device)
 
@@ -91,7 +111,8 @@ def main() -> None:
     with jsonl_path.open("w", encoding="utf-8") as jsonl:
         for index, row in enumerate(rows, start=1):
             clip_started = time.time()
-            audio, _ = librosa.load(row["audio_path"], sr=16000, mono=True)
+            audio_path = args.data_root / row["audio_path"]
+            audio, _ = librosa.load(audio_path, sr=16000, mono=True)
             inputs = processor.feature_extractor(
                 audio,
                 sampling_rate=16000,
@@ -119,7 +140,7 @@ def main() -> None:
                 "split": row["split"],
                 "category": row["category"],
                 "base_model": args.base_model,
-                "adapter_dir": str(args.adapter_dir),
+                "adapter_dir": None if args.base_model_only else str(args.adapter_dir),
                 "device": args.device,
                 "duration_seconds": float(row["duration_seconds"]),
                 "transcription_seconds": elapsed,
@@ -140,14 +161,19 @@ def main() -> None:
 
     write_tsv(out_dir / "transcripts.tsv", transcript_rows)
     metadata = {
-        "system": "transformers-whisper-lora",
+        "system": (
+            "transformers-whisper-base"
+            if args.base_model_only
+            else "transformers-whisper-lora"
+        ),
         "base_model": args.base_model,
-        "adapter_dir": str(args.adapter_dir),
+        "adapter_dir": None if args.base_model_only else str(args.adapter_dir),
         "device": args.device,
         "language": args.language,
         "task": args.task,
         "num_beams": args.num_beams,
         "manifest": str(args.manifest),
+        "data_root": str(args.data_root),
         "clips": len(rows),
         "total_seconds": round(time.time() - started, 3),
         "outputs": ["transcripts.jsonl", "transcripts.tsv"],

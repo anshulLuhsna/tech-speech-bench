@@ -1,0 +1,898 @@
+{
+  "baseline": {
+    "overall": {
+      "clips": 240,
+      "wer": 0.37035490605427973,
+      "cer": 0.10217692210897195,
+      "domain_term_exact_hits": 90,
+      "domain_term_mentions": 496,
+      "domain_term_exact_match_rate": 0.1814516129032258,
+      "command_exact_hits": 21,
+      "command_mentions": 47,
+      "command_exact_match_rate": 0.44680851063829785,
+      "top_missed_terms": [
+        [
+          "FastAPI",
+          13
+        ],
+        [
+          "pytest -k",
+          12
+        ],
+        [
+          "OpenAPI",
+          11
+        ],
+        [
+          "CI/CD",
+          11
+        ],
+        [
+          "Helm",
+          11
+        ],
+        [
+          "LangGraph",
+          11
+        ],
+        [
+          "OpenTelemetry",
+          11
+        ],
+        [
+          "TraceNest",
+          11
+        ],
+        [
+          "ModelCrate",
+          11
+        ],
+        [
+          "LoRA",
+          10
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_024",
+          "split": "train",
+          "wer": 1.2222222222222223,
+          "missed_terms": [
+            "FastAPI",
+            "Nginx",
+            "OpenAPI"
+          ],
+          "reference": "FastAPI served OpenAPI docs after Nginx forwarded the header.",
+          "hypothesis": "First step is to open a PI Docs after engine x forwarded header"
+        },
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prompt force call tool sparrow after query mosaic return no candidates"
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "cache viewer, want model create, before token haber, trim the prompt"
+        },
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 1.0,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "use pi test minus k web socket when the debugging the fast API stream handler"
+        },
+        {
+          "clip_id": "s03_023",
+          "split": "train",
+          "wer": 1.0,
+          "missed_terms": [
+            "Ruff",
+            "pytest -k",
+            "requirements.txt"
+          ],
+          "reference": "Run pytest -k billing after updating requirements.txt and Ruff.",
+          "hypothesis": "current pi test dash k billing after updating requirements not txt and rough"
+        }
+      ]
+    },
+    "train": {
+      "clips": 96,
+      "wer": 0.31212121212121213,
+      "cer": 0.0800886356441912,
+      "domain_term_exact_hits": 76,
+      "domain_term_mentions": 224,
+      "domain_term_exact_match_rate": 0.3392857142857143,
+      "command_exact_hits": 21,
+      "command_mentions": 47,
+      "command_exact_match_rate": 0.44680851063829785,
+      "top_missed_terms": [
+        [
+          "FastAPI",
+          13
+        ],
+        [
+          "pytest -k",
+          12
+        ],
+        [
+          "OpenAPI",
+          11
+        ],
+        [
+          "CI/CD",
+          11
+        ],
+        [
+          "Helm",
+          11
+        ],
+        [
+          "LoRA",
+          10
+        ],
+        [
+          "Dockerfile",
+          8
+        ],
+        [
+          "Celery",
+          8
+        ],
+        [
+          "Redis",
+          8
+        ],
+        [
+          "tsconfig.json",
+          7
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_024",
+          "split": "train",
+          "wer": 1.2222222222222223,
+          "missed_terms": [
+            "FastAPI",
+            "Nginx",
+            "OpenAPI"
+          ],
+          "reference": "FastAPI served OpenAPI docs after Nginx forwarded the header.",
+          "hypothesis": "First step is to open a PI Docs after engine x forwarded header"
+        },
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 1.0,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "use pi test minus k web socket when the debugging the fast API stream handler"
+        },
+        {
+          "clip_id": "s03_023",
+          "split": "train",
+          "wer": 1.0,
+          "missed_terms": [
+            "Ruff",
+            "pytest -k",
+            "requirements.txt"
+          ],
+          "reference": "Run pytest -k billing after updating requirements.txt and Ruff.",
+          "hypothesis": "current pi test dash k billing after updating requirements not txt and rough"
+        },
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.9,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx",
+            "WebSocket"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "Enging's past web socket upgrades once CAC Finish the Deployer."
+        },
+        {
+          "clip_id": "s02_025",
+          "split": "train",
+          "wer": 0.8888888888888888,
+          "missed_terms": [
+            "Kubernetes",
+            "Nginx",
+            "WebSocket"
+          ],
+          "reference": "Nginx forwarded WebSocket traffic, but Kubernetes dropped idle connections.",
+          "hypothesis": "EngineX for worried web socket traffic, but Cuban it is dropped idle connections."
+        }
+      ]
+    },
+    "heldout_real": {
+      "clips": 72,
+      "wer": 0.3147896879240163,
+      "cer": 0.09728737507648379,
+      "domain_term_exact_hits": 13,
+      "domain_term_mentions": 137,
+      "domain_term_exact_match_rate": 0.0948905109489051,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "LangGraph",
+          11
+        ],
+        [
+          "OpenTelemetry",
+          11
+        ],
+        [
+          "Dagster",
+          10
+        ],
+        [
+          "vLLM",
+          10
+        ],
+        [
+          "pgvector",
+          9
+        ],
+        [
+          "Sentry",
+          9
+        ],
+        [
+          "Qdrant",
+          8
+        ],
+        [
+          "Neon",
+          8
+        ],
+        [
+          "WhisperX",
+          8
+        ],
+        [
+          "Modal",
+          6
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "line graph retried after the ugly return and empty answers"
+        },
+        {
+          "clip_id": "s03_010",
+          "split": "heldout_real",
+          "wer": 0.7,
+          "missed_terms": [
+            "Dagster",
+            "Sentry"
+          ],
+          "reference": "Dagster skipped the backfill after Sentry reported the serializer crash.",
+          "hypothesis": "The actors kept the backfill after sent to the reported serialization crash."
+        },
+        {
+          "clip_id": "s06_032",
+          "split": "heldout_real",
+          "wer": 0.5833333333333334,
+          "missed_terms": [
+            "Datadog",
+            "Honeycomb"
+          ],
+          "reference": "Honeycomb traced the request, then Datadog linked the timeout to the deployment.",
+          "hypothesis": "honeycomb trace the request and data doc link the timeout to deployment"
+        },
+        {
+          "clip_id": "s01_030",
+          "split": "heldout_real",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "Airflow",
+            "Dagster"
+          ],
+          "reference": "Airflow triggered dbt before Dagster finished materializing the table.",
+          "hypothesis": "Air float required dbt before the extra finished materializing the table."
+        },
+        {
+          "clip_id": "s03_034",
+          "split": "heldout_real",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "Arize",
+            "MLflow"
+          ],
+          "reference": "Arize and MLflow disagreed about the latest eval regression.",
+          "hypothesis": "Arise and ML float disaggregated about the latest evolveable regression."
+        }
+      ]
+    },
+    "heldout_fake": {
+      "clips": 72,
+      "wer": 0.5179640718562875,
+      "cer": 0.13717098223839075,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 135,
+      "domain_term_exact_match_rate": 0.007407407407407408,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          11
+        ],
+        [
+          "ModelCrate",
+          11
+        ],
+        [
+          "QueueLoom",
+          10
+        ],
+        [
+          "DriftPilot",
+          10
+        ],
+        [
+          "EvalSage",
+          10
+        ],
+        [
+          "SchemaHawk",
+          9
+        ],
+        [
+          "CacheWeaver",
+          9
+        ],
+        [
+          "TokenHarbor",
+          9
+        ],
+        [
+          "PromptForge",
+          8
+        ],
+        [
+          "RelayMint",
+          8
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prompt force call tool sparrow after query mosaic return no candidates"
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "cache viewer, want model create, before token haber, trim the prompt"
+        },
+        {
+          "clip_id": "s04_040",
+          "split": "heldout_fake",
+          "wer": 1.0,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate"
+          ],
+          "reference": "ModelCrate stayed warm because CacheWeaver refreshed the shard.",
+          "hypothesis": "model create straight wound because cache we were refreshed the shard"
+        },
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 1.0,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "That is forged compared to the output while evails by a flag to mismatch."
+        },
+        {
+          "clip_id": "s02_039",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "ModelCrate loaded slowly until TokenHarbor shortened the request.",
+          "hypothesis": "Model create load it slowly until token hardware shorten the request."
+        }
+      ]
+    }
+  },
+  "lora": {
+    "overall": {
+      "clips": 240,
+      "wer": 0.24718162839248434,
+      "cer": 0.07090726060148483,
+      "domain_term_exact_hits": 195,
+      "domain_term_mentions": 496,
+      "domain_term_exact_match_rate": 0.39314516129032256,
+      "command_exact_hits": 35,
+      "command_mentions": 47,
+      "command_exact_match_rate": 0.7446808510638298,
+      "top_missed_terms": [
+        [
+          "pytest -k",
+          12
+        ],
+        [
+          "CI/CD",
+          11
+        ],
+        [
+          "LangGraph",
+          11
+        ],
+        [
+          "TraceNest",
+          11
+        ],
+        [
+          "ModelCrate",
+          11
+        ],
+        [
+          "Dagster",
+          10
+        ],
+        [
+          "vLLM",
+          10
+        ],
+        [
+          "OpenTelemetry",
+          10
+        ],
+        [
+          "QueueLoom",
+          10
+        ],
+        [
+          "EvalSage",
+          10
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prommed force called Tool Sparrow after query Mosaic, return no candidates."
+        },
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "Line graph retried after the ugly return and empty answers."
+        },
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "Lattice Forge compared the output while Ewells by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_039",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "ShardMason",
+            "StreamHarbor"
+          ],
+          "reference": "ShardMason queued the batch after StreamHarbor sealed the partition.",
+          "hypothesis": "Shard Mason cured the batch of the stream Harbor sealed the partition."
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "Cash viewer warmed model threat before token haber trimmed the prompt."
+        }
+      ]
+    },
+    "train": {
+      "clips": 96,
+      "wer": 0.11515151515151516,
+      "cer": 0.028173472617917063,
+      "domain_term_exact_hits": 165,
+      "domain_term_mentions": 224,
+      "domain_term_exact_match_rate": 0.7366071428571429,
+      "command_exact_hits": 35,
+      "command_mentions": 47,
+      "command_exact_match_rate": 0.7446808510638298,
+      "top_missed_terms": [
+        [
+          "pytest -k",
+          12
+        ],
+        [
+          "CI/CD",
+          11
+        ],
+        [
+          "Celery",
+          5
+        ],
+        [
+          "FastAPI",
+          4
+        ],
+        [
+          "Helm",
+          3
+        ],
+        [
+          "Makefile",
+          3
+        ],
+        [
+          "Ruff",
+          3
+        ],
+        [
+          "Uvicorn",
+          2
+        ],
+        [
+          "Nginx",
+          2
+        ],
+        [
+          "mypy",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "ENJINK's past WebSocket upgrades, one CIC finished the deploy."
+        },
+        {
+          "clip_id": "s04_005",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run Python minus k auth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s06_004",
+          "split": "train",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "tsconfig.json"
+          ],
+          "reference": "Copy the .env sample, then check tsconfig.json for the path alias.",
+          "hypothesis": "Copy .env sample, then check the TS config JSON for the path alias."
+        },
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "Use pytest minus k web socket when debugging the FastAPI stream handler."
+        },
+        {
+          "clip_id": "s03_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest-k auth before touching the fast API login handler."
+        }
+      ]
+    },
+    "heldout_real": {
+      "clips": 72,
+      "wer": 0.25237449118046135,
+      "cer": 0.07995105037732,
+      "domain_term_exact_hits": 26,
+      "domain_term_mentions": 137,
+      "domain_term_exact_match_rate": 0.1897810218978102,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "LangGraph",
+          11
+        ],
+        [
+          "Dagster",
+          10
+        ],
+        [
+          "vLLM",
+          10
+        ],
+        [
+          "OpenTelemetry",
+          10
+        ],
+        [
+          "pgvector",
+          9
+        ],
+        [
+          "Sentry",
+          8
+        ],
+        [
+          "WhisperX",
+          8
+        ],
+        [
+          "Qdrant",
+          7
+        ],
+        [
+          "Modal",
+          5
+        ],
+        [
+          "Tavily",
+          4
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "Line graph retried after the ugly return and empty answers."
+        },
+        {
+          "clip_id": "s04_013",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the QDLA before inference events started."
+        },
+        {
+          "clip_id": "s04_032",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "Sentry linked the error to OpenTelemetry trace identifiers.",
+          "hypothesis": "Centre linked to the error to open telemetry trace identifiers."
+        },
+        {
+          "clip_id": "s01_009",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Coordrant returned fever neighbors, then pjvector on the same emitting query."
+        },
+        {
+          "clip_id": "s02_030",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "Ray Serve",
+            "vLLM"
+          ],
+          "reference": "Ray Serve autoscaled after vLLM queued too many prompts.",
+          "hypothesis": "Rayserve autoscale after VLLM cured too many prompts."
+        }
+      ]
+    },
+    "heldout_fake": {
+      "clips": 72,
+      "wer": 0.437125748502994,
+      "cer": 0.11919537770169056,
+      "domain_term_exact_hits": 4,
+      "domain_term_mentions": 135,
+      "domain_term_exact_match_rate": 0.02962962962962963,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          11
+        ],
+        [
+          "ModelCrate",
+          11
+        ],
+        [
+          "QueueLoom",
+          10
+        ],
+        [
+          "EvalSage",
+          10
+        ],
+        [
+          "CacheWeaver",
+          9
+        ],
+        [
+          "TokenHarbor",
+          9
+        ],
+        [
+          "DriftPilot",
+          9
+        ],
+        [
+          "SchemaHawk",
+          8
+        ],
+        [
+          "PromptForge",
+          8
+        ],
+        [
+          "RelayMint",
+          8
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prommed force called Tool Sparrow after query Mosaic, return no candidates."
+        },
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "Lattice Forge compared the output while Ewells by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_039",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "ShardMason",
+            "StreamHarbor"
+          ],
+          "reference": "ShardMason queued the batch after StreamHarbor sealed the partition.",
+          "hypothesis": "Shard Mason cured the batch of the stream Harbor sealed the partition."
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "Cash viewer warmed model threat before token haber trimmed the prompt."
+        },
+        {
+          "clip_id": "s04_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "ToolSparrow chose PromptForge after QueryMosaic lowered confidence again.",
+          "hypothesis": "Tool Sparrow chose prompt footage after query music lowered confidence again."
+        }
+      ]
+    }
+  }
+}

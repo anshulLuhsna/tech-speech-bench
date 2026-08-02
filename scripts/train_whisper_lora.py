@@ -27,6 +27,12 @@ DEFAULT_OUTPUT_DIR = Path("results/finetunes/whisper-base-en-lora-v1-small")
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train a Whisper LoRA adapter.")
     parser.add_argument("--train-metadata", type=Path, default=DEFAULT_TRAIN_METADATA)
+    parser.add_argument(
+        "--dev-metadata",
+        type=Path,
+        default=None,
+        help="Optional explicit dev JSONL. When set, train records are not randomly split.",
+    )
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--base-model", default="openai/whisper-base.en")
     parser.add_argument("--seed", type=int, default=13)
@@ -100,7 +106,11 @@ def print_plan(
 def main() -> None:
     args = parse_args()
     records = read_jsonl(args.train_metadata)
-    train_records, dev_records = split_records(records, args.dev_size, args.seed)
+    if args.dev_metadata is not None:
+        train_records = records
+        dev_records = read_jsonl(args.dev_metadata)
+    else:
+        train_records, dev_records = split_records(records, args.dev_size, args.seed)
     print_plan(records, train_records, dev_records, args)
 
     if args.dry_run:
@@ -206,8 +216,12 @@ def main() -> None:
         logging_steps=args.logging_steps,
         eval_strategy="steps" if eval_dataset is not None else "no",
         eval_steps=args.eval_steps,
+        save_strategy="steps",
         save_steps=args.save_steps,
         save_total_limit=3,
+        load_best_model_at_end=eval_dataset is not None,
+        metric_for_best_model="eval_loss" if eval_dataset is not None else None,
+        greater_is_better=False if eval_dataset is not None else None,
         remove_unused_columns=False,
         label_names=["labels"],
         report_to=[],

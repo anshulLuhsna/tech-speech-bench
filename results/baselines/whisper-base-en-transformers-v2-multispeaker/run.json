@@ -1,0 +1,17 @@
+{
+  "system": "transformers-whisper-base",
+  "base_model": "openai/whisper-base.en",
+  "adapter_dir": null,
+  "device": "mps",
+  "language": "english",
+  "task": "transcribe",
+  "num_beams": 5,
+  "manifest": "data/v2/manifest.tsv",
+  "data_root": "data/v2",
+  "clips": 240,
+  "total_seconds": 106.14,
+  "outputs": [
+    "transcripts.jsonl",
+    "transcripts.tsv"
+  ]
+}

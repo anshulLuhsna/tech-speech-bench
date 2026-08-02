@@ -1,0 +1,41 @@
+clip_id	utterance
+s03_001	Pin LoRA in requirements.txt before running the adapter smoke test.
+s03_002	Check the OpenAPI route and make sure the JWT middleware still passes.
+s03_003	The CI/CD job rebuilt the Dockerfile after the base image changed.
+s03_004	Copy the .env sample, then check tsconfig.json for the path alias.
+s03_005	Run pytest -k auth before touching the FastAPI login handler.
+s03_006	Redis dropped one task, so restart the Celery worker cleanly.
+s03_007	Kubernetes accepted the Helm rollout, but the readiness probe stayed red.
+s03_008	Prometheus is scraping, yet Grafana still shows yesterday's latency panel.
+s03_009	Qdrant returned fewer neighbors than pgvector on the same embedding query.
+s03_010	Dagster skipped the backfill after Sentry reported the serializer crash.
+s03_011	Modal served the batch job, but vLLM kept warming the model.
+s03_012	LangGraph retried the tool call when the planner returned an empty step.
+s03_013	OpenTelemetry traces showed the queue delay before inference even started.
+s03_014	The evaluator marked WhisperX drift after Neon returned stale transcript rows.
+s03_015	TraceNest flagged the retry, then QueueLoom moved the event downstream.
+s03_016	No, I meant SchemaHawk, not the old config checker.
+s03_017	CacheWeaver warmed the response, but TokenHarbor capped the prompt window.
+s03_018	DriftPilot says the small model changed behavior after yesterday's merge.
+s03_019	PromptForge generated the fixture while EvalSage compared the answer traces.
+s03_020	Wait, change ModelCrate to RelayMint in the serving note.
+s03_021	Helm installed the service, but Kubernetes kept the old ConfigMap.
+s03_022	Do not paste JWT secrets into tsconfig.json or the sample .env.
+s03_023	Run pytest -k billing after updating requirements.txt and Ruff.
+s03_024	FastAPI served OpenAPI docs after Nginx forwarded the header.
+s03_025	Redis backed up while Celery retried the export task.
+s03_026	Grafana compared Prometheus latency during the CI/CD deployment.
+s03_027	Load LoRA adapters only after uvicorn starts the worker.
+s03_028	The Dockerfile copies requirements.txt before installing the package.
+s03_029	Pinecone missed the phrase, but pgvector found the exact chunk.
+s03_030	Triton crashed when ONNX Runtime loaded the quantized encoder.
+s03_031	Dagster triggered Kafka replay for the failed enrichment run.
+s03_032	OpenTelemetry showed the Modal timeout before Sentry created the issue.
+s03_033	LangGraph retried after Tavily returned an empty answer.
+s03_034	Arize and MLflow disagreed about the latest eval regression.
+s03_035	SchemaHawk generated defaults, then ConfigOtter rewrote the nested section.
+s03_036	No, say RelayMint first, then QueueLoom in that sentence.
+s03_037	LogVine grouped the warning after TraceNest reopened the span.
+s03_038	QueryMosaic asked RAGStone to rerank the second passage.
+s03_039	CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.
+s03_040	EvalSage approved it, but DriftPilot flagged prompt sensitivity.

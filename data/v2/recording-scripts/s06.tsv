@@ -1,0 +1,41 @@
+clip_id	utterance
+s06_001	Pin LoRA in requirements.txt before running the adapter smoke test.
+s06_002	Check the OpenAPI route and make sure the JWT middleware still passes.
+s06_003	The CI/CD job rebuilt the Dockerfile after the base image changed.
+s06_004	Copy the .env sample, then check tsconfig.json for the path alias.
+s06_005	Run pytest -k auth before touching the FastAPI login handler.
+s06_006	Redis dropped one task, so restart the Celery worker cleanly.
+s06_007	Kubernetes accepted the Helm rollout, but the readiness probe stayed red.
+s06_008	Prometheus is scraping, yet Grafana still shows yesterday's latency panel.
+s06_009	Qdrant returned fewer neighbors than pgvector on the same embedding query.
+s06_010	Dagster skipped the backfill after Sentry reported the serializer crash.
+s06_011	Modal served the batch job, but vLLM kept warming the model.
+s06_012	LangGraph retried the tool call when the planner returned an empty step.
+s06_013	OpenTelemetry traces showed the queue delay before inference even started.
+s06_014	The evaluator marked WhisperX drift after Neon returned stale transcript rows.
+s06_015	TraceNest flagged the retry, then QueueLoom moved the event downstream.
+s06_016	No, I meant SchemaHawk, not the old config checker.
+s06_017	CacheWeaver warmed the response, but TokenHarbor capped the prompt window.
+s06_018	DriftPilot says the small model changed behavior after yesterday's merge.
+s06_019	PromptForge generated the fixture while EvalSage compared the answer traces.
+s06_020	Wait, change ModelCrate to RelayMint in the serving note.
+s06_021	The Makefile target runs Ruff before Uvicorn reloads the FastAPI server.
+s06_022	Set the Postgres DSN in .env before Alembic applies the migration.
+s06_023	Docker Compose rebuilt Redis after Celery lost its broker connection.
+s06_024	GitHub Actions ran mypy after Poetry updated requirements.txt.
+s06_025	Kubernetes rolled back the Helm release after Nginx failed the health check.
+s06_026	Prometheus recorded the p99 spike, but Grafana used the stale panel.
+s06_027	Run pytest -k webhook before merging the Pydantic validation change.
+s06_028	The CI/CD job copied tsconfig.json into the Dockerfile build context.
+s06_029	Chroma returned a wider result set than Weaviate for the same retrieval query.
+s06_030	Prefect retried the pipeline after Redpanda paused the consumer group.
+s06_031	TensorRT served the quantized model while BentoML prepared the fallback worker.
+s06_032	Honeycomb traced the request, then Datadog linked the timeout to the deployment.
+s06_033	DSPy chose the next module after the tool call returned incomplete evidence.
+s06_034	DeepEval marked the response inconsistent after W&B logged the regression.
+s06_035	SignalKite routed the alert after VectorCove rebuilt the embeddings.
+s06_036	Wait, I meant PromptBeacon, not PromptPillar, in the test note.
+s06_037	CacheMason warmed the worker before RouteWarden closed the request.
+s06_038	LatticeForge compared the output while EvalSpire flagged the mismatch.
+s06_039	ShardMason queued the batch after StreamHarbor sealed the partition.
+s06_040	QueryCrest reranked the chunk while DriftAnchor logged the disagreement.

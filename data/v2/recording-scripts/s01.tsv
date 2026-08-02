@@ -1,0 +1,41 @@
+clip_id	utterance
+s01_001	Pin LoRA in requirements.txt before running the adapter smoke test.
+s01_002	Check the OpenAPI route and make sure the JWT middleware still passes.
+s01_003	The CI/CD job rebuilt the Dockerfile after the base image changed.
+s01_004	Copy the .env sample, then check tsconfig.json for the path alias.
+s01_005	Run pytest -k auth before touching the FastAPI login handler.
+s01_006	Redis dropped one task, so restart the Celery worker cleanly.
+s01_007	Kubernetes accepted the Helm rollout, but the readiness probe stayed red.
+s01_008	Prometheus is scraping, yet Grafana still shows yesterday's latency panel.
+s01_009	Qdrant returned fewer neighbors than pgvector on the same embedding query.
+s01_010	Dagster skipped the backfill after Sentry reported the serializer crash.
+s01_011	Modal served the batch job, but vLLM kept warming the model.
+s01_012	LangGraph retried the tool call when the planner returned an empty step.
+s01_013	OpenTelemetry traces showed the queue delay before inference even started.
+s01_014	The evaluator marked WhisperX drift after Neon returned stale transcript rows.
+s01_015	TraceNest flagged the retry, then QueueLoom moved the event downstream.
+s01_016	No, I meant SchemaHawk, not the old config checker.
+s01_017	CacheWeaver warmed the response, but TokenHarbor capped the prompt window.
+s01_018	DriftPilot says the small model changed behavior after yesterday's merge.
+s01_019	PromptForge generated the fixture while EvalSage compared the answer traces.
+s01_020	Wait, change ModelCrate to RelayMint in the serving note.
+s01_021	Commit the Dockerfile change after GitHub Actions passes the CI/CD gate.
+s01_022	The .env value overrides OpenAPI docs only in local mode.
+s01_023	Uvicorn restarted FastAPI when the JWT dependency raised an exception.
+s01_024	Poetry locked requirements.txt, so rerun mypy before merging.
+s01_025	Prometheus missed the Redis spike because Grafana queried the wrong range.
+s01_026	Helm rolled back Kubernetes after Nginx failed the startup probe.
+s01_027	Use pytest -k websocket when debugging the FastAPI stream handler.
+s01_028	tsconfig.json broke the alias, and Ruff caught the unused import.
+s01_029	Milvus found the chunk, while pgvector missed the abbreviations.
+s01_030	Airflow triggered dbt before Dagster finished materializing the table.
+s01_031	Triton served the ONNX Runtime model with lower cold start.
+s01_032	OpenTelemetry sampled the vLLM request but Sentry kept the stack trace.
+s01_033	LangGraph paused after Tavily returned a malformed search result.
+s01_034	Great Expectations failed when Neon returned null transcript IDs.
+s01_035	RelayMint deployed the canary, then ModelCrate rolled it back.
+s01_036	LogVine counted three retries before TraceNest closed the incident.
+s01_037	No, I meant CacheWeaver, not CacheRiver, for that note.
+s01_038	RAGStone reranked the chunk after VectorNook refreshed embeddings.
+s01_039	ConfigOtter generated the sample, but SchemaHawk rejected one key.
+s01_040	EvalSage passed the slice while DriftPilot flagged regression.

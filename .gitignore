@@ -6,6 +6,12 @@ venv/
 env/
 .env
 
+# Private multi-speaker source audio and identity mapping
+data/friend-data/
+data/v2/private/
+data/v2/audio/
+data/synthetic/**/private/
+
 # Derived audio and model outputs
 data/**/audio/converted/
 data/**/audio/wav/
