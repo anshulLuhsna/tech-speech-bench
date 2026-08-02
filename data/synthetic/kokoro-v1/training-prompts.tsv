@@ -1,0 +1,63 @@
+utterance_id	source_clip_id	target_terms	transcript	synthesis_text
+ksv1_001a	synthetic_kokoro_v1	LoRA	We disabled LoRA while tracing the memory regression.	We disabled LoRA while tracing the memory regression.
+ksv1_001b	synthetic_kokoro_v1	LoRA	The deployment loads LoRA after the base checkpoint.	The deployment loads LoRA after the base checkpoint.
+ksv1_002a	synthetic_kokoro_v1	requirements.txt	Add the missing package to requirements.txt before rebuilding.	Add the missing package to requirements dot T X T before rebuilding.
+ksv1_002b	synthetic_kokoro_v1	requirements.txt	The security scan flagged an outdated entry in requirements.txt.	The security scan flagged an outdated entry in requirements dot T X T.
+ksv1_003a	synthetic_kokoro_v1	OpenAPI	Regenerate the OpenAPI document after changing the response model.	Regenerate the Open A P I document after changing the response model.
+ksv1_003b	synthetic_kokoro_v1	OpenAPI	The client was built from yesterday's OpenAPI specification.	The client was built from yesterday's Open A P I specification.
+ksv1_004a	synthetic_kokoro_v1	JWT	Refresh the JWT when the access token expires.	Refresh the J W T when the access token expires.
+ksv1_004b	synthetic_kokoro_v1	JWT	A malformed JWT caused the authorization failure.	A malformed J W T caused the authorization failure.
+ksv1_005a	synthetic_kokoro_v1	CI/CD	Our CI/CD workflow publishes artifacts from the release branch.	Our C I slash C D workflow publishes artifacts from the release branch.
+ksv1_005b	synthetic_kokoro_v1	CI/CD	The CI/CD run stopped during the integration stage.	The C I slash C D run stopped during the integration stage.
+ksv1_006a	synthetic_kokoro_v1	Dockerfile	Move the cacheable install step higher in the Dockerfile.	Move the cacheable install step higher in the Docker file.
+ksv1_006b	synthetic_kokoro_v1	Dockerfile	A stale environment variable remained in the Dockerfile.	A stale environment variable remained in the Docker file.
+ksv1_007a	synthetic_kokoro_v1	.env	The local port is configured in the .env file.	The local port is configured in the dot env file.
+ksv1_007b	synthetic_kokoro_v1	.env	Never commit production credentials from the .env file.	Never commit production credentials from the dot env file.
+ksv1_008a	synthetic_kokoro_v1	tsconfig.json	Enable strict type checking inside tsconfig.json.	Enable strict type checking inside T S config dot jay sawn.
+ksv1_008b	synthetic_kokoro_v1	tsconfig.json	The build reads its module target from tsconfig.json.	The build reads its module target from T S config dot jay sawn.
+ksv1_009a	synthetic_kokoro_v1	pytest -k	Use pytest -k payments to isolate the failing cases.	Use pie test dash K payments to isolate the failing cases.
+ksv1_009b	synthetic_kokoro_v1	pytest -k	I ran pytest -k timeout before pushing the patch.	I ran pie test dash K timeout before pushing the patch.
+ksv1_010a	synthetic_kokoro_v1	FastAPI	The FastAPI dependency opens a database connection per request.	The Fast A. P. I. dependency opens a database connection per request.
+ksv1_010b	synthetic_kokoro_v1	FastAPI	Mount the health route on the FastAPI application.	Mount the health route on the Fast A. P. I. application.
+ksv1_011a	synthetic_kokoro_v1	Redis	The worker reads its rate limit counter from Redis.	The worker reads its rate limit counter from red iss.
+ksv1_011b	synthetic_kokoro_v1	Redis	A short expiration keeps the Redis cache fresh.	A short expiration keeps the red iss cache fresh.
+ksv1_012a	synthetic_kokoro_v1	Celery	Celery moved the failed message to the retry queue.	Celery moved the failed message to the retry queue.
+ksv1_012b	synthetic_kokoro_v1	Celery	The Celery worker lost contact with its broker.	The Celery worker lost contact with its broker.
+ksv1_013a	synthetic_kokoro_v1	Kubernetes	Kubernetes scheduled the workload on a larger node.	Kubernetes scheduled the workload on a larger node.
+ksv1_013b	synthetic_kokoro_v1	Kubernetes	The Kubernetes service exposes only the internal port.	The Kubernetes service exposes only the internal port.
+ksv1_014a	synthetic_kokoro_v1	Helm	Update the Helm values before promoting the release.	Update the Helm values before promoting the release.
+ksv1_014b	synthetic_kokoro_v1	Helm	Helm rendered an invalid resource name for staging.	Helm rendered an invalid resource name for staging.
+ksv1_015a	synthetic_kokoro_v1	Prometheus	Prometheus recorded a sudden increase in error rate.	Prometheus recorded a sudden increase in error rate.
+ksv1_015b	synthetic_kokoro_v1	Prometheus	The custom counter is now visible in Prometheus.	The custom counter is now visible in Prometheus.
+ksv1_016a	synthetic_kokoro_v1	Grafana	Grafana groups the dashboard by deployment region.	Grafana groups the dashboard by deployment region.
+ksv1_016b	synthetic_kokoro_v1	Grafana	The on-call engineer linked the alert to Grafana.	The on-call engineer linked the alert to Grafana.
+ksv1_017a	synthetic_kokoro_v1	GitHub Actions	GitHub Actions signs the binary before uploading it.	GitHub Actions signs the binary before uploading it.
+ksv1_017b	synthetic_kokoro_v1	GitHub Actions	We restricted GitHub Actions permissions for external contributions.	We restricted GitHub Actions permissions for external contributions.
+ksv1_018a	synthetic_kokoro_v1	Uvicorn	Uvicorn bound the application to the loopback address.	you vee corn bound the application to the loopback address.
+ksv1_018b	synthetic_kokoro_v1	Uvicorn	The process manager restarted Uvicorn after the crash.	The process manager restarted you vee corn after the crash.
+ksv1_019a	synthetic_kokoro_v1	Poetry	Poetry resolved a different version on the clean machine.	Poetry resolved a different version on the clean machine.
+ksv1_019b	synthetic_kokoro_v1	Poetry	Use Poetry to separate development packages from runtime packages.	Use Poetry to separate development packages from runtime packages.
+ksv1_020a	synthetic_kokoro_v1	mypy	The new protocol removed three mypy errors.	The new protocol removed three my pie errors.
+ksv1_020b	synthetic_kokoro_v1	mypy	Our pre-commit hook runs mypy on changed modules.	Our pre-commit hook runs my pie on changed modules.
+ksv1_021a	synthetic_kokoro_v1	Nginx	Nginx adds a request identifier to every response.	engine X adds a request identifier to every response.
+ksv1_021b	synthetic_kokoro_v1	Nginx	Increase the upload limit in the Nginx configuration.	Increase the upload limit in the engine X configuration.
+ksv1_022a	synthetic_kokoro_v1	Ruff	Ruff fixed the import order across the package.	Ruff fixed the import order across the package.
+ksv1_022b	synthetic_kokoro_v1	Ruff	The editor invokes Ruff whenever a file is saved.	The editor invokes Ruff whenever a file is saved.
+ksv1_023a	synthetic_kokoro_v1	Docker Compose	Docker Compose created a temporary network for the stack.	Docker Compose created a temporary network for the stack.
+ksv1_023b	synthetic_kokoro_v1	Docker Compose	Stop Docker Compose before removing the local volumes.	Stop Docker Compose before removing the local volumes.
+ksv1_024a	synthetic_kokoro_v1	Postgres	Postgres chose a sequential scan for the query.	post gress chose a sequential scan for the query.
+ksv1_024b	synthetic_kokoro_v1	Postgres	The backup restored successfully into a fresh Postgres instance.	The backup restored successfully into a fresh post gress instance.
+ksv1_025a	synthetic_kokoro_v1	Makefile	Add the benchmark target to the Makefile.	Add the benchmark target to the make file.
+ksv1_025b	synthetic_kokoro_v1	Makefile	The Makefile passes the version into the build command.	The make file passes the version into the build command.
+ksv1_026a	synthetic_kokoro_v1	WebSocket	The WebSocket client reconnects with exponential backoff.	The web socket client reconnects with exponential backoff.
+ksv1_026b	synthetic_kokoro_v1	WebSocket	Send a heartbeat over the WebSocket every thirty seconds.	Send a heartbeat over the web socket every thirty seconds.
+ksv1_027a	synthetic_kokoro_v1	Pydantic	Pydantic rejected the value before it reached business logic.	pie dantic rejected the value before it reached business logic.
+ksv1_027b	synthetic_kokoro_v1	Pydantic	The nested Pydantic schema accepts an optional identifier.	The nested pie dantic schema accepts an optional identifier.
+ksv1_028a	synthetic_kokoro_v1	Alembic	Alembic generated an empty revision for the metadata change.	Alembic generated an empty revision for the metadata change.
+ksv1_028b	synthetic_kokoro_v1	Alembic	Downgrade the schema with the previous Alembic migration.	Downgrade the schema with the previous Alembic migration.
+ksv1_029a	synthetic_kokoro_v1	p95	The p95 response time dropped after adding the index.	The P ninety five response time dropped after adding the index.
+ksv1_029b	synthetic_kokoro_v1	p95	Track p95 separately for cached and uncached requests.	Track P ninety five separately for cached and uncached requests.
+ksv1_030a	synthetic_kokoro_v1	p99	A single slow dependency pushed p99 above the budget.	A single slow dependency pushed P ninety nine above the budget.
+ksv1_030b	synthetic_kokoro_v1	p99	The dashboard compares p99 across all availability zones.	The dashboard compares P ninety nine across all availability zones.
+ksv1_031a	synthetic_kokoro_v1	DSN	The application reads the DSN from its secret store.	The application reads the D S N from its secret store.
+ksv1_031b	synthetic_kokoro_v1	DSN	Redact the password before printing the DSN in logs.	Redact the password before printing the D S N in logs.

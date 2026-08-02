@@ -1,0 +1,3953 @@
+{
+  "base": {
+    "train_speaker/train": {
+      "clips": 64,
+      "wer": 0.31155015197568386,
+      "cer": 0.07901647171162568,
+      "domain_term_exact_hits": 48,
+      "domain_term_mentions": 145,
+      "domain_term_exact_match_rate": 0.3310344827586207,
+      "command_exact_hits": 14,
+      "command_mentions": 31,
+      "command_exact_match_rate": 0.45161290322580644,
+      "top_missed_terms": [
+        [
+          "FastAPI",
+          9
+        ],
+        [
+          "OpenAPI",
+          8
+        ],
+        [
+          "pytest -k",
+          8
+        ],
+        [
+          "LoRA",
+          7
+        ],
+        [
+          "CI/CD",
+          7
+        ],
+        [
+          "Dockerfile",
+          7
+        ],
+        [
+          "Helm",
+          7
+        ],
+        [
+          "Celery",
+          6
+        ],
+        [
+          "Redis",
+          6
+        ],
+        [
+          "JWT",
+          4
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_024",
+          "split": "train",
+          "wer": 1.2222222222222223,
+          "missed_terms": [
+            "FastAPI",
+            "Nginx",
+            "OpenAPI"
+          ],
+          "reference": "FastAPI served OpenAPI docs after Nginx forwarded the header.",
+          "hypothesis": "First step is to open a PI docs after engine x forwarded header"
+        },
+        {
+          "clip_id": "s02_025",
+          "split": "train",
+          "wer": 0.8888888888888888,
+          "missed_terms": [
+            "Kubernetes",
+            "Nginx",
+            "WebSocket"
+          ],
+          "reference": "Nginx forwarded WebSocket traffic, but Kubernetes dropped idle connections.",
+          "hypothesis": "nginx for worried web socket traffic but Cuban it is dropped idle connections"
+        },
+        {
+          "clip_id": "s01_005",
+          "split": "train",
+          "wer": 0.7,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "runbytest-kauth before touching the fast API login handler"
+        },
+        {
+          "clip_id": "s03_005",
+          "split": "train",
+          "wer": 0.7,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "or before touching the first API login handler"
+        },
+        {
+          "clip_id": "s01_024",
+          "split": "train",
+          "wer": 0.625,
+          "missed_terms": [
+            "Poetry",
+            "mypy",
+            "requirements.txt"
+          ],
+          "reference": "Poetry locked requirements.txt, so rerun mypy before merging.",
+          "hypothesis": "oatrelockedrequirement.txt so rerun mipy before merging"
+        }
+      ]
+    },
+    "train_speaker/heldout_real": {
+      "clips": 48,
+      "wer": 0.3409090909090909,
+      "cer": 0.1095592799503414,
+      "domain_term_exact_hits": 8,
+      "domain_term_mentions": 93,
+      "domain_term_exact_match_rate": 0.08602150537634409,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Dagster",
+          8
+        ],
+        [
+          "LangGraph",
+          8
+        ],
+        [
+          "OpenTelemetry",
+          8
+        ],
+        [
+          "vLLM",
+          7
+        ],
+        [
+          "Qdrant",
+          6
+        ],
+        [
+          "pgvector",
+          6
+        ],
+        [
+          "Neon",
+          6
+        ],
+        [
+          "Sentry",
+          5
+        ],
+        [
+          "Modal",
+          5
+        ],
+        [
+          "WhisperX",
+          5
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "line graph retried after the ugly return and empty answers"
+        },
+        {
+          "clip_id": "s03_010",
+          "split": "heldout_real",
+          "wer": 0.7,
+          "missed_terms": [
+            "Dagster",
+            "Sentry"
+          ],
+          "reference": "Dagster skipped the backfill after Sentry reported the serializer crash.",
+          "hypothesis": "The actors kept the backfill after sent to the reported serialization crash."
+        },
+        {
+          "clip_id": "s02_034",
+          "split": "heldout_real",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily",
+            "WhisperX"
+          ],
+          "reference": "LangGraph selected Tavily, then WhisperX aligned the spoken query.",
+          "hypothesis": "LANGRAV SELECTED TAVALY, THEN WISPER X ALIGN THE SPOKEN QURY."
+        },
+        {
+          "clip_id": "s03_034",
+          "split": "heldout_real",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "Arize",
+            "MLflow"
+          ],
+          "reference": "Arize and MLflow disagreed about the latest eval regression.",
+          "hypothesis": "Arise and ML float disaggregated about the latest evolve the regression."
+        },
+        {
+          "clip_id": "s04_031",
+          "split": "heldout_real",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "Modal",
+            "vLLM"
+          ],
+          "reference": "Modal launched the worker, then vLLM compiled the cache.",
+          "hypothesis": "More than launched the worker. Then we LLM combine the cache."
+        }
+      ]
+    },
+    "train_speaker/heldout_fake": {
+      "clips": 48,
+      "wer": 1.4966139954853273,
+      "cer": 0.41267288517208106,
+      "domain_term_exact_hits": 0,
+      "domain_term_mentions": 91,
+      "domain_term_exact_match_rate": 0.0,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          8
+        ],
+        [
+          "ModelCrate",
+          8
+        ],
+        [
+          "QueueLoom",
+          7
+        ],
+        [
+          "SchemaHawk",
+          7
+        ],
+        [
+          "CacheWeaver",
+          7
+        ],
+        [
+          "DriftPilot",
+          7
+        ],
+        [
+          "EvalSage",
+          7
+        ],
+        [
+          "TokenHarbor",
+          6
+        ],
+        [
+          "PromptForge",
+          6
+        ],
+        [
+          "RelayMint",
+          6
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_040",
+          "split": "heldout_fake",
+          "wer": 55.5,
+          "missed_terms": [
+            "DriftPilot",
+            "EvalSage"
+          ],
+          "reference": "EvalSage approved it, but DriftPilot flagged prompt sensitivity.",
+          "hypothesis": ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+        },
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "prompt force call tool sparrow after query mosaic return no candidates"
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 1.125,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "cache we were warned model create before token haber trimmed the prompt"
+        },
+        {
+          "clip_id": "s02_039",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "ModelCrate loaded slowly until TokenHarbor shortened the request.",
+          "hypothesis": "Model create load it slowly until token hardware shorten the request."
+        },
+        {
+          "clip_id": "s04_040",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate"
+          ],
+          "reference": "ModelCrate stayed warm because CacheWeaver refreshed the shard.",
+          "hypothesis": "Model create state bound because cache we were refreshed the shard."
+        }
+      ]
+    },
+    "dev_speaker/train": {
+      "clips": 16,
+      "wer": 0.30434782608695654,
+      "cer": 0.07170172084130019,
+      "domain_term_exact_hits": 15,
+      "domain_term_mentions": 37,
+      "domain_term_exact_match_rate": 0.40540540540540543,
+      "command_exact_hits": 4,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.5,
+      "top_missed_terms": [
+        [
+          "LoRA",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "Dockerfile",
+          1
+        ],
+        [
+          ".env",
+          1
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "Redis",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.7,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx",
+            "WebSocket"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "Engine's past web socket upgrades once CSC has finished the deploy."
+        },
+        {
+          "clip_id": "s05_023",
+          "split": "train",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "FastAPI",
+            "Helm",
+            "Kubernetes"
+          ],
+          "reference": "Kubernetes restarted FastAPI after Helm changed the resource limit.",
+          "hypothesis": "Ubernet is restarted fast API after help change the resource limit."
+        },
+        {
+          "clip_id": "s05_005",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Learn PyTest-KAuth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s05_006",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "Celery",
+            "Redis"
+          ],
+          "reference": "Redis dropped one task, so restart the Celery worker cleanly.",
+          "hypothesis": "Then it is dropped one task. So restart the salary worker cleanly."
+        },
+        {
+          "clip_id": "s05_001",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "LoRA"
+          ],
+          "reference": "Pin LoRA in requirements.txt before running the adapter smoke test.",
+          "hypothesis": "Fill laura in requirements.txt before running the adapter's MOOC test."
+        }
+      ]
+    },
+    "dev_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.23529411764705882,
+      "cer": 0.05402010050251256,
+      "domain_term_exact_hits": 2,
+      "domain_term_mentions": 23,
+      "domain_term_exact_match_rate": 0.08695652173913043,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "Sentry",
+          2
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "LangGraph",
+          2
+        ],
+        [
+          "OpenTelemetry",
+          2
+        ],
+        [
+          "WhisperX",
+          2
+        ],
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Neon",
+          1
+        ],
+        [
+          "Milvus",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_029",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "Milvus",
+            "pgvector"
+          ],
+          "reference": "pgvector found similar tickets, but Milvus returned cleaner metadata.",
+          "hypothesis": "bg vector found similar tickets but milwas returned cleaner metadata"
+        },
+        {
+          "clip_id": "s05_031",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "OpenTelemetry traces matched the Sentry issue for that timeout.",
+          "hypothesis": "Open telemetry traces match the center issue for that timeout."
+        },
+        {
+          "clip_id": "s05_033",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "LangGraph",
+            "Modal",
+            "Tavily"
+          ],
+          "reference": "LangGraph requested Tavily, then Modal executed the scraping job.",
+          "hypothesis": "Langraf requested Tavi Li, then Mudal executed the scraping job."
+        },
+        {
+          "clip_id": "s05_034",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Evidently",
+            "WhisperX"
+          ],
+          "reference": "WhisperX aligned the audio before Evidently scored the drift.",
+          "hypothesis": "Whisper X aligned audio before evidently scored the drift."
+        },
+        {
+          "clip_id": "s05_013",
+          "split": "heldout_real",
+          "wer": 0.3,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the queue delay before the inference even started."
+        }
+      ]
+    },
+    "dev_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.4594594594594595,
+      "cer": 0.1010498687664042,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.045454545454545456,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          2
+        ],
+        [
+          "TraceNest",
+          2
+        ],
+        [
+          "TokenHarbor",
+          2
+        ],
+        [
+          "DriftPilot",
+          2
+        ],
+        [
+          "EvalSage",
+          2
+        ],
+        [
+          "ModelCrate",
+          2
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_038",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "RAGStack",
+            "RAGStone"
+          ],
+          "reference": "No, I meant RAGStone, not RAGStack, for the reranker.",
+          "hypothesis": "No, I mean the rack stole, not rack stack for the re-ranker."
+        },
+        {
+          "clip_id": "s05_015",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "QueueLoom",
+            "TraceNest"
+          ],
+          "reference": "TraceNest flagged the retry, then QueueLoom moved the event downstream.",
+          "hypothesis": "Trace Nest to flag the retry then qlu move the event downstream"
+        },
+        {
+          "clip_id": "s05_017",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "CacheWeaver",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed the response, but TokenHarbor capped the prompt window.",
+          "hypothesis": "Cache we were warned the response, but token harbor kept the prompt window."
+        },
+        {
+          "clip_id": "s05_020",
+          "split": "heldout_fake",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "ModelCrate",
+            "RelayMint"
+          ],
+          "reference": "Wait, change ModelCrate to RelayMint in the serving note.",
+          "hypothesis": "Wait. Change model crate to Relayment in the serving node."
+        },
+        {
+          "clip_id": "s05_019",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "EvalSage",
+            "PromptForge"
+          ],
+          "reference": "PromptForge generated the fixture while EvalSage compared the answer traces.",
+          "hypothesis": "Prompt force generated the fixture while EVL sits compared to answer traces."
+        }
+      ]
+    },
+    "test_speaker/train": {
+      "clips": 16,
+      "wer": 0.30409356725146197,
+      "cer": 0.08310249307479224,
+      "domain_term_exact_hits": 18,
+      "domain_term_mentions": 42,
+      "domain_term_exact_match_rate": 0.42857142857142855,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "tsconfig.json",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "LoRA",
+          1
+        ],
+        [
+          "OpenAPI",
+          1
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "Makefile",
+          1
+        ],
+        [
+          "Ruff",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_004",
+          "split": "train",
+          "wer": 0.7272727272727273,
+          "missed_terms": [
+            "tsconfig.json"
+          ],
+          "reference": "Copy the .env sample, then check tsconfig.json for the path alias.",
+          "hypothesis": "copy.env sample then check the TS config JSON for the path alias"
+        },
+        {
+          "clip_id": "s06_021",
+          "split": "train",
+          "wer": 0.6363636363636364,
+          "missed_terms": [
+            "FastAPI",
+            "Makefile",
+            "Ruff",
+            "Uvicorn"
+          ],
+          "reference": "The Makefile target runs Ruff before Uvicorn reloads the FastAPI server.",
+          "hypothesis": "The make file target runs rough before you recon reloads the fast API server."
+        },
+        {
+          "clip_id": "s06_005",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run PyTestKAuth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s06_026",
+          "split": "train",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Prometheus",
+            "p99"
+          ],
+          "reference": "Prometheus recorded the p99 spike, but Grafana used the stale panel.",
+          "hypothesis": "From it he has recorded the P99 spike but Grafana used the steel panel."
+        },
+        {
+          "clip_id": "s06_002",
+          "split": "train",
+          "wer": 0.4166666666666667,
+          "missed_terms": [
+            "OpenAPI"
+          ],
+          "reference": "Check the OpenAPI route and make sure the JWT middleware still passes.",
+          "hypothesis": "Check the open API route and make sure the JWT middle vest repasses."
+        }
+      ]
+    },
+    "test_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.291044776119403,
+      "cer": 0.08361581920903954,
+      "domain_term_exact_hits": 3,
+      "domain_term_mentions": 21,
+      "domain_term_exact_match_rate": 0.14285714285714285,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "pgvector",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Sentry",
+          1
+        ],
+        [
+          "Modal",
+          1
+        ],
+        [
+          "vLLM",
+          1
+        ],
+        [
+          "LangGraph",
+          1
+        ],
+        [
+          "OpenTelemetry",
+          1
+        ],
+        [
+          "Neon",
+          1
+        ],
+        [
+          "WhisperX",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_030",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "Prefect",
+            "Redpanda"
+          ],
+          "reference": "Prefect retried the pipeline after Redpanda paused the consumer group.",
+          "hypothesis": "Perfect retry the pipeline after Red Panda pause the consumer group."
+        },
+        {
+          "clip_id": "s06_031",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "BentoML"
+          ],
+          "reference": "TensorRT served the quantized model while BentoML prepared the fallback worker.",
+          "hypothesis": "TensorRT serve the quantized module while Bentham will prepare the fallback worker."
+        },
+        {
+          "clip_id": "s06_032",
+          "split": "heldout_real",
+          "wer": 0.4166666666666667,
+          "missed_terms": [
+            "Datadog"
+          ],
+          "reference": "Honeycomb traced the request, then Datadog linked the timeout to the deployment.",
+          "hypothesis": "Honeycomb trace the request in data.link the timeout to deployment."
+        },
+        {
+          "clip_id": "s06_033",
+          "split": "heldout_real",
+          "wer": 0.4166666666666667,
+          "missed_terms": [
+            "DSPy"
+          ],
+          "reference": "DSPy chose the next module after the tool call returned incomplete evidence.",
+          "hypothesis": "dspy shows the next module after the tool called returned in complete evidence"
+        },
+        {
+          "clip_id": "s06_014",
+          "split": "heldout_real",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "Neon",
+            "WhisperX"
+          ],
+          "reference": "The evaluator marked WhisperX drift after Neon returned stale transcript rows.",
+          "hypothesis": "The evaluator marked whisper X drift after neon-returned stale transcript rows."
+        }
+      ]
+    },
+    "test_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.5877192982456141,
+      "cer": 0.15087281795511223,
+      "domain_term_exact_hits": 0,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.0,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          1
+        ],
+        [
+          "TraceNest",
+          1
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "TokenHarbor",
+          1
+        ],
+        [
+          "DriftPilot",
+          1
+        ],
+        [
+          "EvalSage",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "ModelCrate",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 1.1111111111111112,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "That is forged. Compare the output well evails by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_015",
+          "split": "heldout_fake",
+          "wer": 0.8,
+          "missed_terms": [
+            "QueueLoom",
+            "TraceNest"
+          ],
+          "reference": "TraceNest flagged the retry, then QueueLoom moved the event downstream.",
+          "hypothesis": "Dress nest, flag the rich eye, then kill loom, move the event downstream."
+        },
+        {
+          "clip_id": "s06_035",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "SignalKite",
+            "VectorCove"
+          ],
+          "reference": "SignalKite routed the alert after VectorCove rebuilt the embeddings.",
+          "hypothesis": "Signal guy routed the alert after vector code rebuild the embeddings"
+        },
+        {
+          "clip_id": "s06_039",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "ShardMason",
+            "StreamHarbor"
+          ],
+          "reference": "ShardMason queued the batch after StreamHarbor sealed the partition.",
+          "hypothesis": "Short mason queued the batch of the shrimp harbour sealed the partition."
+        },
+        {
+          "clip_id": "s06_040",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "DriftAnchor",
+            "QueryCrest"
+          ],
+          "reference": "QueryCrest reranked the chunk while DriftAnchor logged the disagreement.",
+          "hypothesis": "Query Chris to re-rank the chunk while drift anchor logged the disagreement."
+        }
+      ]
+    }
+  },
+  "human_only": {
+    "train_speaker/train": {
+      "clips": 64,
+      "wer": 0.10182370820668693,
+      "cer": 0.024110766292671282,
+      "domain_term_exact_hits": 112,
+      "domain_term_mentions": 145,
+      "domain_term_exact_match_rate": 0.7724137931034483,
+      "command_exact_hits": 23,
+      "command_mentions": 31,
+      "command_exact_match_rate": 0.7419354838709677,
+      "top_missed_terms": [
+        [
+          "pytest -k",
+          8
+        ],
+        [
+          "CI/CD",
+          7
+        ],
+        [
+          "Celery",
+          4
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "Makefile",
+          2
+        ],
+        [
+          "Ruff",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "JWT",
+          1
+        ],
+        [
+          "OpenAPI",
+          1
+        ],
+        [
+          "Uvicorn",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s04_005",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run Python minus k auth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "Use pytest minus k web socket when debugging the FastAPI stream handler."
+        },
+        {
+          "clip_id": "s03_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest-k auth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s03_021",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "Helm"
+          ],
+          "reference": "Helm installed the service, but Kubernetes kept the old ConfigMap.",
+          "hypothesis": "Help install the service, but Kubernetes kept the old config map."
+        },
+        {
+          "clip_id": "s03_023",
+          "split": "train",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Ruff",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k billing after updating requirements.txt and Ruff.",
+          "hypothesis": "Run pytest-k billing after updating requirements.txt and rough."
+        }
+      ]
+    },
+    "train_speaker/heldout_real": {
+      "clips": 48,
+      "wer": 0.26859504132231404,
+      "cer": 0.08907510862818126,
+      "domain_term_exact_hits": 17,
+      "domain_term_mentions": 93,
+      "domain_term_exact_match_rate": 0.1827956989247312,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Dagster",
+          8
+        ],
+        [
+          "LangGraph",
+          8
+        ],
+        [
+          "vLLM",
+          7
+        ],
+        [
+          "OpenTelemetry",
+          7
+        ],
+        [
+          "pgvector",
+          6
+        ],
+        [
+          "Sentry",
+          6
+        ],
+        [
+          "Qdrant",
+          5
+        ],
+        [
+          "WhisperX",
+          5
+        ],
+        [
+          "Modal",
+          4
+        ],
+        [
+          "Tavily",
+          3
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "Line graph retried after the ugly return and empty answers."
+        },
+        {
+          "clip_id": "s04_013",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the QDLA before inference events started."
+        },
+        {
+          "clip_id": "s04_032",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "Sentry linked the error to OpenTelemetry trace identifiers.",
+          "hypothesis": "Centre linked to the error to open telemetry trace identifiers."
+        },
+        {
+          "clip_id": "s01_009",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Coordrant returned fever neighbors, then pjvector on the same emitting query."
+        },
+        {
+          "clip_id": "s02_030",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "Ray Serve",
+            "vLLM"
+          ],
+          "reference": "Ray Serve autoscaled after vLLM queued too many prompts.",
+          "hypothesis": "Rayserve autoscale after VLLM cured too many prompts."
+        }
+      ]
+    },
+    "train_speaker/heldout_fake": {
+      "clips": 48,
+      "wer": 0.43792325056433407,
+      "cer": 0.12126085558057254,
+      "domain_term_exact_hits": 2,
+      "domain_term_mentions": 91,
+      "domain_term_exact_match_rate": 0.02197802197802198,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          8
+        ],
+        [
+          "ModelCrate",
+          8
+        ],
+        [
+          "QueueLoom",
+          7
+        ],
+        [
+          "CacheWeaver",
+          7
+        ],
+        [
+          "DriftPilot",
+          7
+        ],
+        [
+          "EvalSage",
+          7
+        ],
+        [
+          "SchemaHawk",
+          6
+        ],
+        [
+          "TokenHarbor",
+          6
+        ],
+        [
+          "PromptForge",
+          6
+        ],
+        [
+          "RelayMint",
+          6
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prommed force called Tool Sparrow after query Mosaic, return no candidates."
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "Cash viewer warmed model threat before token haber trimmed the prompt."
+        },
+        {
+          "clip_id": "s04_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "ToolSparrow chose PromptForge after QueryMosaic lowered confidence again.",
+          "hypothesis": "Tool Sparrow chose prompt footage after query music lowered confidence again."
+        },
+        {
+          "clip_id": "s02_019",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "EvalSage",
+            "PromptForge"
+          ],
+          "reference": "PromptForge generated the fixture while EvalSage compared the answer traces.",
+          "hypothesis": "Prommed 4 generated the fixture where Ewell's age compared the Anser traces."
+        },
+        {
+          "clip_id": "s03_036",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "QueueLoom",
+            "RelayMint"
+          ],
+          "reference": "No, say RelayMint first, then QueueLoom in that sentence.",
+          "hypothesis": "No, say relay meant first and then Q-Lome in the second sentence."
+        }
+      ]
+    },
+    "dev_speaker/train": {
+      "clips": 16,
+      "wer": 0.11801242236024845,
+      "cer": 0.029636711281070746,
+      "domain_term_exact_hits": 28,
+      "domain_term_mentions": 37,
+      "domain_term_exact_match_rate": 0.7567567567567568,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "LoRA",
+          1
+        ],
+        [
+          "FastAPI",
+          1
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "Grafana",
+          1
+        ],
+        [
+          "Nginx",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "ENJINK's past WebSocket upgrades, one CIC finished the deploy."
+        },
+        {
+          "clip_id": "s05_026",
+          "split": "train",
+          "wer": 0.25,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "No, run pytest -k ingestion after fixing tsconfig.json.",
+          "hypothesis": "No, run pytest-k ingestion after fixing tsconfig.json."
+        },
+        {
+          "clip_id": "s05_023",
+          "split": "train",
+          "wer": 0.2222222222222222,
+          "missed_terms": [
+            "FastAPI"
+          ],
+          "reference": "Kubernetes restarted FastAPI after Helm changed the resource limit.",
+          "hypothesis": "Kubernetes restarted fast API after Helm changed the resource limit."
+        },
+        {
+          "clip_id": "s05_005",
+          "split": "train",
+          "wer": 0.2,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest-k auth before touching the FastAPI login handler."
+        },
+        {
+          "clip_id": "s05_003",
+          "split": "train",
+          "wer": 0.16666666666666666,
+          "missed_terms": [
+            "CI/CD"
+          ],
+          "reference": "The CI/CD job rebuilt the Dockerfile after the base image changed.",
+          "hypothesis": "The CICD job rebuilt the Dockerfile after the base image changed."
+        }
+      ]
+    },
+    "dev_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.20168067226890757,
+      "cer": 0.05402010050251256,
+      "domain_term_exact_hits": 4,
+      "domain_term_mentions": 23,
+      "domain_term_exact_match_rate": 0.17391304347826086,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "LangGraph",
+          2
+        ],
+        [
+          "OpenTelemetry",
+          2
+        ],
+        [
+          "WhisperX",
+          2
+        ],
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Neon",
+          1
+        ],
+        [
+          "Milvus",
+          1
+        ],
+        [
+          "Ray Serve",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_029",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Milvus",
+            "pgvector"
+          ],
+          "reference": "pgvector found similar tickets, but Milvus returned cleaner metadata.",
+          "hypothesis": "PG vector found similar tickets, but Millvus returned cleaner metadata."
+        },
+        {
+          "clip_id": "s05_031",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "OpenTelemetry traces matched the Sentry issue for that timeout.",
+          "hypothesis": "Open telemetry traces match the sentry issue for that timeout."
+        },
+        {
+          "clip_id": "s05_034",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Evidently",
+            "WhisperX"
+          ],
+          "reference": "WhisperX aligned the audio before Evidently scored the drift.",
+          "hypothesis": "Visper X aligned audio before evidently scored the drift."
+        },
+        {
+          "clip_id": "s05_013",
+          "split": "heldout_real",
+          "wer": 0.3,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the queue delay before the inference even started."
+        },
+        {
+          "clip_id": "s05_009",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Qdrent returned fewer neighbors than PG vector on the same embedding query."
+        }
+      ]
+    },
+    "dev_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.40540540540540543,
+      "cer": 0.0984251968503937,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.045454545454545456,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          2
+        ],
+        [
+          "TraceNest",
+          2
+        ],
+        [
+          "TokenHarbor",
+          2
+        ],
+        [
+          "DriftPilot",
+          2
+        ],
+        [
+          "EvalSage",
+          2
+        ],
+        [
+          "ModelCrate",
+          2
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_017",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "CacheWeaver",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed the response, but TokenHarbor capped the prompt window.",
+          "hypothesis": "Cash, we were warned the response, but Token Harbor kept the prompt window."
+        },
+        {
+          "clip_id": "s05_038",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "RAGStack",
+            "RAGStone"
+          ],
+          "reference": "No, I meant RAGStone, not RAGStack, for the reranker.",
+          "hypothesis": "No, I meant the RACS tool, not RACS stack, for the re-ranker."
+        },
+        {
+          "clip_id": "s05_035",
+          "split": "heldout_fake",
+          "wer": 0.625,
+          "missed_terms": [
+            "LogVine",
+            "TraceNest"
+          ],
+          "reference": "LogVine showed fewer alerts after TraceNest deduplicated spans.",
+          "hypothesis": "Logwine showed fewer alerts after Tree's Nest de-duplicated spans."
+        },
+        {
+          "clip_id": "s05_019",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "EvalSage",
+            "PromptForge"
+          ],
+          "reference": "PromptForge generated the fixture while EvalSage compared the answer traces.",
+          "hypothesis": "Prompt force generated the fixture while Eval's age compared to answer traces."
+        },
+        {
+          "clip_id": "s05_036",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "TokenHarbor clipped the prompt before ModelCrate finished loading.",
+          "hypothesis": "Tookan Harbor clipped the prompt before Model Create finished loading."
+        }
+      ]
+    },
+    "test_speaker/train": {
+      "clips": 16,
+      "wer": 0.16374269005847952,
+      "cer": 0.04247460757156048,
+      "domain_term_exact_hits": 25,
+      "domain_term_mentions": 42,
+      "domain_term_exact_match_rate": 0.5952380952380952,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "tsconfig.json",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "LoRA",
+          1
+        ],
+        [
+          "FastAPI",
+          1
+        ],
+        [
+          "Makefile",
+          1
+        ],
+        [
+          "Ruff",
+          1
+        ],
+        [
+          "Uvicorn",
+          1
+        ],
+        [
+          "Postgres",
+          1
+        ],
+        [
+          "Poetry",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_004",
+          "split": "train",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "tsconfig.json"
+          ],
+          "reference": "Copy the .env sample, then check tsconfig.json for the path alias.",
+          "hypothesis": "Copy .env sample, then check the TS config JSON for the path alias."
+        },
+        {
+          "clip_id": "s06_021",
+          "split": "train",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "FastAPI",
+            "Makefile",
+            "Ruff",
+            "Uvicorn"
+          ],
+          "reference": "The Makefile target runs Ruff before Uvicorn reloads the FastAPI server.",
+          "hypothesis": "The makefile target runs rough before UVcon reloads the fast API server."
+        },
+        {
+          "clip_id": "s06_028",
+          "split": "train",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "CI/CD",
+            "tsconfig.json"
+          ],
+          "reference": "The CI/CD job copied tsconfig.json into the Dockerfile build context.",
+          "hypothesis": "The CICD job copied TS config.json into the Dockerfile build context."
+        },
+        {
+          "clip_id": "s06_007",
+          "split": "train",
+          "wer": 0.2727272727272727,
+          "missed_terms": [],
+          "reference": "Kubernetes accepted the Helm rollout, but the readiness probe stayed red.",
+          "hypothesis": "Kubernetes accepted the Helm rollout for the readiness probe state read."
+        },
+        {
+          "clip_id": "s06_024",
+          "split": "train",
+          "wer": 0.25,
+          "missed_terms": [
+            "Poetry",
+            "mypy"
+          ],
+          "reference": "GitHub Actions ran mypy after Poetry updated requirements.txt.",
+          "hypothesis": "GitHub Actions ran my buy after poetry updated requirements.txt."
+        }
+      ]
+    },
+    "test_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.23880597014925373,
+      "cer": 0.07005649717514124,
+      "domain_term_exact_hits": 5,
+      "domain_term_mentions": 21,
+      "domain_term_exact_match_rate": 0.23809523809523808,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "pgvector",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Sentry",
+          1
+        ],
+        [
+          "Modal",
+          1
+        ],
+        [
+          "vLLM",
+          1
+        ],
+        [
+          "LangGraph",
+          1
+        ],
+        [
+          "OpenTelemetry",
+          1
+        ],
+        [
+          "WhisperX",
+          1
+        ],
+        [
+          "Weaviate",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_031",
+          "split": "heldout_real",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "BentoML"
+          ],
+          "reference": "TensorRT served the quantized model while BentoML prepared the fallback worker.",
+          "hypothesis": "TensorRT served the Quantized module while Benton will prepare the fallback worker."
+        },
+        {
+          "clip_id": "s06_032",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Datadog"
+          ],
+          "reference": "Honeycomb traced the request, then Datadog linked the timeout to the deployment.",
+          "hypothesis": "Honeycomb traced the request in data doc linked the timeout to deployment."
+        },
+        {
+          "clip_id": "s06_030",
+          "split": "heldout_real",
+          "wer": 0.3,
+          "missed_terms": [
+            "Redpanda"
+          ],
+          "reference": "Prefect retried the pipeline after Redpanda paused the consumer group.",
+          "hypothesis": "Prefect retired the pipeline after Red Panda paused the consumer group."
+        },
+        {
+          "clip_id": "s06_009",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Kugen returned fewer neighbors than PG vector on the same embedding query."
+        },
+        {
+          "clip_id": "s06_034",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "DeepEval",
+            "W&B"
+          ],
+          "reference": "DeepEval marked the response inconsistent after W&B logged the regression.",
+          "hypothesis": "Dpvan marked the response inconsistent after WNB logged the regression."
+        }
+      ]
+    },
+    "test_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.4649122807017544,
+      "cer": 0.13092269326683292,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.045454545454545456,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          1
+        ],
+        [
+          "TraceNest",
+          1
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "TokenHarbor",
+          1
+        ],
+        [
+          "EvalSage",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "ModelCrate",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ],
+        [
+          "SignalKite",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "Lattice Forge compared the output while Ewells by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_039",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "ShardMason",
+            "StreamHarbor"
+          ],
+          "reference": "ShardMason queued the batch after StreamHarbor sealed the partition.",
+          "hypothesis": "Shard Mason cured the batch of the stream Harbor sealed the partition."
+        },
+        {
+          "clip_id": "s06_040",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "DriftAnchor",
+            "QueryCrest"
+          ],
+          "reference": "QueryCrest reranked the chunk while DriftAnchor logged the disagreement.",
+          "hypothesis": "Query criss to re-rank the chunk while Rift anchor logged the disagreement."
+        },
+        {
+          "clip_id": "s06_036",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "PromptBeacon",
+            "PromptPillar"
+          ],
+          "reference": "Wait, I meant PromptBeacon, not PromptPillar, in the test note.",
+          "hypothesis": "Wait, I meant prompt we cannot prompt pillar in the test node."
+        },
+        {
+          "clip_id": "s06_017",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "CacheWeaver",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed the response, but TokenHarbor capped the prompt window.",
+          "hypothesis": "Cash Viva warmed the response, but token Harbour kept the prompt window."
+        }
+      ]
+    }
+  },
+  "synthetic_only": {
+    "train_speaker/train": {
+      "clips": 64,
+      "wer": 0.24924012158054712,
+      "cer": 0.06588684650274529,
+      "domain_term_exact_hits": 57,
+      "domain_term_mentions": 145,
+      "domain_term_exact_match_rate": 0.3931034482758621,
+      "command_exact_hits": 17,
+      "command_mentions": 31,
+      "command_exact_match_rate": 0.5483870967741935,
+      "top_missed_terms": [
+        [
+          "FastAPI",
+          9
+        ],
+        [
+          "pytest -k",
+          8
+        ],
+        [
+          "LoRA",
+          7
+        ],
+        [
+          "CI/CD",
+          7
+        ],
+        [
+          "Helm",
+          7
+        ],
+        [
+          "OpenAPI",
+          6
+        ],
+        [
+          "Celery",
+          6
+        ],
+        [
+          "Redis",
+          6
+        ],
+        [
+          "tsconfig.json",
+          5
+        ],
+        [
+          "JWT",
+          3
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_024",
+          "split": "train",
+          "wer": 0.8888888888888888,
+          "missed_terms": [
+            "FastAPI",
+            "OpenAPI"
+          ],
+          "reference": "FastAPI served OpenAPI docs after Nginx forwarded the header.",
+          "hypothesis": "First step is to open a PI docs after Nginx forwarded header."
+        },
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 0.8,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "Use pi test minus k web socket when debugging the fast API stream handler."
+        },
+        {
+          "clip_id": "s02_005",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pi-test-k-auth before touching the fast API login handling."
+        },
+        {
+          "clip_id": "s03_026",
+          "split": "train",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "CI/CD",
+            "Grafana",
+            "Prometheus"
+          ],
+          "reference": "Grafana compared Prometheus latency during the CI/CD deployment.",
+          "hypothesis": "Rafana compared pro methods latency during the CICD deployment."
+        },
+        {
+          "clip_id": "s01_005",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run bytest-kauth before touching the fast API login handler."
+        }
+      ]
+    },
+    "train_speaker/heldout_real": {
+      "clips": 48,
+      "wer": 0.3119834710743802,
+      "cer": 0.10304158907510863,
+      "domain_term_exact_hits": 8,
+      "domain_term_mentions": 93,
+      "domain_term_exact_match_rate": 0.08602150537634409,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Dagster",
+          8
+        ],
+        [
+          "Sentry",
+          8
+        ],
+        [
+          "LangGraph",
+          8
+        ],
+        [
+          "vLLM",
+          7
+        ],
+        [
+          "OpenTelemetry",
+          7
+        ],
+        [
+          "pgvector",
+          6
+        ],
+        [
+          "Modal",
+          6
+        ],
+        [
+          "Neon",
+          6
+        ],
+        [
+          "Qdrant",
+          5
+        ],
+        [
+          "WhisperX",
+          5
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "Line graph retried after the ugly return and empty answers."
+        },
+        {
+          "clip_id": "s03_010",
+          "split": "heldout_real",
+          "wer": 0.8,
+          "missed_terms": [
+            "Dagster",
+            "Sentry"
+          ],
+          "reference": "Dagster skipped the backfill after Sentry reported the serializer crash.",
+          "hypothesis": "The actors kept the backfill after sent to the reporter the serialization crash."
+        },
+        {
+          "clip_id": "s04_030",
+          "split": "heldout_real",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "Airflow",
+            "Dagster"
+          ],
+          "reference": "Dagster waited for Airflow to finish the upstream schedule.",
+          "hypothesis": "The extra weighted for air flow to finish the upstream setting."
+        },
+        {
+          "clip_id": "s04_031",
+          "split": "heldout_real",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "Modal",
+            "vLLM"
+          ],
+          "reference": "Modal launched the worker, then vLLM compiled the cache.",
+          "hypothesis": "More than launched the worker. Then we LLM combined the cache."
+        },
+        {
+          "clip_id": "s04_032",
+          "split": "heldout_real",
+          "wer": 0.625,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "Sentry linked the error to OpenTelemetry trace identifiers.",
+          "hypothesis": "Centre link to the error to open telemetry trace identifiers."
+        }
+      ]
+    },
+    "train_speaker/heldout_fake": {
+      "clips": 48,
+      "wer": 0.4650112866817156,
+      "cer": 0.12962367320681892,
+      "domain_term_exact_hits": 0,
+      "domain_term_mentions": 91,
+      "domain_term_exact_match_rate": 0.0,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          8
+        ],
+        [
+          "ModelCrate",
+          8
+        ],
+        [
+          "QueueLoom",
+          7
+        ],
+        [
+          "SchemaHawk",
+          7
+        ],
+        [
+          "CacheWeaver",
+          7
+        ],
+        [
+          "DriftPilot",
+          7
+        ],
+        [
+          "EvalSage",
+          7
+        ],
+        [
+          "TokenHarbor",
+          6
+        ],
+        [
+          "PromptForge",
+          6
+        ],
+        [
+          "RelayMint",
+          6
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prommed force called tool sparrow after query mosaic return no candidates."
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "Cash we were warned model create before tokenhabber trimmed the prompt."
+        },
+        {
+          "clip_id": "s04_039",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "ToolSparrow chose PromptForge after QueryMosaic lowered confidence again.",
+          "hypothesis": "Tools pair out chose prompt footage after query music lowered confidence again."
+        },
+        {
+          "clip_id": "s02_036",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "RAGStone",
+            "VectorNook"
+          ],
+          "reference": "VectorNook stored the note, and RAGStone reranked the top chunk.",
+          "hypothesis": "Victor nook stored the node and dragstone re-rank the topchunk."
+        },
+        {
+          "clip_id": "s03_015",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "QueueLoom",
+            "TraceNest"
+          ],
+          "reference": "TraceNest flagged the retry, then QueueLoom moved the event downstream.",
+          "hypothesis": "Tressness flag the retry, then you will move to the downstream event downstream."
+        }
+      ]
+    },
+    "dev_speaker/train": {
+      "clips": 16,
+      "wer": 0.2360248447204969,
+      "cer": 0.05066921606118547,
+      "domain_term_exact_hits": 18,
+      "domain_term_mentions": 37,
+      "domain_term_exact_match_rate": 0.4864864864864865,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "LoRA",
+          2
+        ],
+        [
+          "OpenAPI",
+          2
+        ],
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "Kubernetes",
+          2
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "JWT",
+          1
+        ],
+        [
+          "Grafana",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_023",
+          "split": "train",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "FastAPI",
+            "Helm",
+            "Kubernetes"
+          ],
+          "reference": "Kubernetes restarted FastAPI after Helm changed the resource limit.",
+          "hypothesis": "Cubernet is restarted fast API after help change the resource limit."
+        },
+        {
+          "clip_id": "s05_005",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Learn PyTest-KAuth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "Enging's past WebSocket upgrades once CIC had finished the deploy."
+        },
+        {
+          "clip_id": "s05_022",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "JWT",
+            "OpenAPI"
+          ],
+          "reference": "Set JWT audience in .env and regenerate the OpenAPI client.",
+          "hypothesis": "Set JWD audience in the .env and regenerate the open API client."
+        },
+        {
+          "clip_id": "s05_026",
+          "split": "train",
+          "wer": 0.375,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "No, run pytest -k ingestion after fixing tsconfig.json.",
+          "hypothesis": "No! runPitest-k ingestion after fixing tsconfig.json."
+        }
+      ]
+    },
+    "dev_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.2184873949579832,
+      "cer": 0.05402010050251256,
+      "domain_term_exact_hits": 2,
+      "domain_term_mentions": 23,
+      "domain_term_exact_match_rate": 0.08695652173913043,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "Modal",
+          2
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "LangGraph",
+          2
+        ],
+        [
+          "OpenTelemetry",
+          2
+        ],
+        [
+          "WhisperX",
+          2
+        ],
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Neon",
+          1
+        ],
+        [
+          "Milvus",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_030",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "Ray Serve",
+            "vLLM"
+          ],
+          "reference": "vLLM slowed down after Ray Serve scaled to zero.",
+          "hypothesis": "VLM slowed down after rates of scale to zero."
+        },
+        {
+          "clip_id": "s05_029",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Milvus",
+            "pgvector"
+          ],
+          "reference": "pgvector found similar tickets, but Milvus returned cleaner metadata.",
+          "hypothesis": "PG vector found similar tickets, but Milvas returned cleaner metadata."
+        },
+        {
+          "clip_id": "s05_031",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "OpenTelemetry traces matched the Sentry issue for that timeout.",
+          "hypothesis": "Open telemetry traces match the sentry issue for that timeout."
+        },
+        {
+          "clip_id": "s05_033",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "LangGraph",
+            "Modal",
+            "Tavily"
+          ],
+          "reference": "LangGraph requested Tavily, then Modal executed the scraping job.",
+          "hypothesis": "Langraf requested Thavili, then Mudal executed the scraping job."
+        },
+        {
+          "clip_id": "s05_034",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Evidently",
+            "WhisperX"
+          ],
+          "reference": "WhisperX aligned the audio before Evidently scored the drift.",
+          "hypothesis": "Visper X aligned audio before evidently scored the drift."
+        }
+      ]
+    },
+    "dev_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.42342342342342343,
+      "cer": 0.1062992125984252,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.045454545454545456,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          2
+        ],
+        [
+          "TraceNest",
+          2
+        ],
+        [
+          "TokenHarbor",
+          2
+        ],
+        [
+          "DriftPilot",
+          2
+        ],
+        [
+          "EvalSage",
+          2
+        ],
+        [
+          "ModelCrate",
+          2
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_017",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "CacheWeaver",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed the response, but TokenHarbor capped the prompt window.",
+          "hypothesis": "Cash we were warned the response, but token harbor kept the prompt window."
+        },
+        {
+          "clip_id": "s05_038",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "RAGStack",
+            "RAGStone"
+          ],
+          "reference": "No, I meant RAGStone, not RAGStack, for the reranker.",
+          "hypothesis": "No, I meant the rack stole, not rack stack, for the re-ranker."
+        },
+        {
+          "clip_id": "s05_015",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "QueueLoom",
+            "TraceNest"
+          ],
+          "reference": "TraceNest flagged the retry, then QueueLoom moved the event downstream.",
+          "hypothesis": "Trace Nest to flag the retry, then Kulu moved the event downstream."
+        },
+        {
+          "clip_id": "s05_035",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "LogVine",
+            "TraceNest"
+          ],
+          "reference": "LogVine showed fewer alerts after TraceNest deduplicated spans.",
+          "hypothesis": "Logwine showed fewer alerts after tracenessed de- duplicated spans."
+        },
+        {
+          "clip_id": "s05_036",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "TokenHarbor clipped the prompt before ModelCrate finished loading.",
+          "hypothesis": "Toucan Harbor clipped the prompt before model create finished loading."
+        }
+      ]
+    },
+    "test_speaker/train": {
+      "clips": 16,
+      "wer": 0.2807017543859649,
+      "cer": 0.07848568790397045,
+      "domain_term_exact_hits": 17,
+      "domain_term_mentions": 42,
+      "domain_term_exact_match_rate": 0.40476190476190477,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "tsconfig.json",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "LoRA",
+          1
+        ],
+        [
+          "OpenAPI",
+          1
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "Makefile",
+          1
+        ],
+        [
+          "Ruff",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_004",
+          "split": "train",
+          "wer": 0.6363636363636364,
+          "missed_terms": [
+            "tsconfig.json"
+          ],
+          "reference": "Copy the .env sample, then check tsconfig.json for the path alias.",
+          "hypothesis": "Copy.env sample, then check the TS config JSON for the path alias."
+        },
+        {
+          "clip_id": "s06_021",
+          "split": "train",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "FastAPI",
+            "Makefile",
+            "Ruff",
+            "Uvicorn"
+          ],
+          "reference": "The Makefile target runs Ruff before Uvicorn reloads the FastAPI server.",
+          "hypothesis": "The makefile target runs rough before you recon reloads the fast API server."
+        },
+        {
+          "clip_id": "s06_002",
+          "split": "train",
+          "wer": 0.4166666666666667,
+          "missed_terms": [
+            "OpenAPI"
+          ],
+          "reference": "Check the OpenAPI route and make sure the JWT middleware still passes.",
+          "hypothesis": "Check the open API route and make sure the JWT Middle vests will passes."
+        },
+        {
+          "clip_id": "s06_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest KAuth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s06_007",
+          "split": "train",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "Helm"
+          ],
+          "reference": "Kubernetes accepted the Helm rollout, but the readiness probe stayed red.",
+          "hypothesis": "Kubernetes accepted the help rollout for the readiness probe statement."
+        }
+      ]
+    },
+    "test_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.26865671641791045,
+      "cer": 0.07005649717514124,
+      "domain_term_exact_hits": 3,
+      "domain_term_mentions": 21,
+      "domain_term_exact_match_rate": 0.14285714285714285,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "pgvector",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Sentry",
+          1
+        ],
+        [
+          "Modal",
+          1
+        ],
+        [
+          "vLLM",
+          1
+        ],
+        [
+          "LangGraph",
+          1
+        ],
+        [
+          "OpenTelemetry",
+          1
+        ],
+        [
+          "Neon",
+          1
+        ],
+        [
+          "WhisperX",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_014",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Neon",
+            "WhisperX"
+          ],
+          "reference": "The evaluator marked WhisperX drift after Neon returned stale transcript rows.",
+          "hypothesis": "The evaluator marked whisper X drift after neon-returned stale transcript roles."
+        },
+        {
+          "clip_id": "s06_033",
+          "split": "heldout_real",
+          "wer": 0.4166666666666667,
+          "missed_terms": [
+            "DSPy"
+          ],
+          "reference": "DSPy chose the next module after the tool call returned incomplete evidence.",
+          "hypothesis": "TS by chose the next module after the tool called returned in complete evidence."
+        },
+        {
+          "clip_id": "s06_034",
+          "split": "heldout_real",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "DeepEval",
+            "W&B"
+          ],
+          "reference": "DeepEval marked the response inconsistent after W&B logged the regression.",
+          "hypothesis": "Deep event marked the response inconsistent after WNB logged the regression."
+        },
+        {
+          "clip_id": "s06_032",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Datadog"
+          ],
+          "reference": "Honeycomb traced the request, then Datadog linked the timeout to the deployment.",
+          "hypothesis": "Honeycomb traced the request in data doc linked the timeout to deployment."
+        },
+        {
+          "clip_id": "s06_009",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "QGent returned fewer neighbors than PG vector on the same embedding query."
+        }
+      ]
+    },
+    "test_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.49122807017543857,
+      "cer": 0.16708229426433915,
+      "domain_term_exact_hits": 0,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.0,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          1
+        ],
+        [
+          "TraceNest",
+          1
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "TokenHarbor",
+          1
+        ],
+        [
+          "DriftPilot",
+          1
+        ],
+        [
+          "EvalSage",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "ModelCrate",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 0.8888888888888888,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "That is forged compared the output while evails by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_039",
+          "split": "heldout_fake",
+          "wer": 0.8888888888888888,
+          "missed_terms": [
+            "ShardMason",
+            "StreamHarbor"
+          ],
+          "reference": "ShardMason queued the batch after StreamHarbor sealed the partition.",
+          "hypothesis": "Shard may sin cute the batch of extreme harbor seal the partition."
+        },
+        {
+          "clip_id": "s06_036",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "PromptBeacon",
+            "PromptPillar"
+          ],
+          "reference": "Wait, I meant PromptBeacon, not PromptPillar, in the test note.",
+          "hypothesis": "Wait! I meant prompt we cannot prompt pillar in the test node."
+        },
+        {
+          "clip_id": "s06_020",
+          "split": "heldout_fake",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "ModelCrate",
+            "RelayMint"
+          ],
+          "reference": "Wait, change ModelCrate to RelayMint in the serving note.",
+          "hypothesis": "Wait. Change model grade to relayment in the serving node."
+        },
+        {
+          "clip_id": "s06_040",
+          "split": "heldout_fake",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "DriftAnchor",
+            "QueryCrest"
+          ],
+          "reference": "QueryCrest reranked the chunk while DriftAnchor logged the disagreement.",
+          "hypothesis": "Query crust re-rank the chunk while drift anchor logged the disagreement."
+        }
+      ]
+    }
+  },
+  "balanced": {
+    "train_speaker/train": {
+      "clips": 64,
+      "wer": 0.1337386018237082,
+      "cer": 0.028169014084507043,
+      "domain_term_exact_hits": 90,
+      "domain_term_mentions": 145,
+      "domain_term_exact_match_rate": 0.6206896551724138,
+      "command_exact_hits": 22,
+      "command_mentions": 31,
+      "command_exact_match_rate": 0.7096774193548387,
+      "top_missed_terms": [
+        [
+          "pytest -k",
+          8
+        ],
+        [
+          "CI/CD",
+          7
+        ],
+        [
+          "FastAPI",
+          6
+        ],
+        [
+          "Celery",
+          5
+        ],
+        [
+          "Helm",
+          4
+        ],
+        [
+          "LoRA",
+          3
+        ],
+        [
+          "JWT",
+          2
+        ],
+        [
+          "mypy",
+          2
+        ],
+        [
+          "tsconfig.json",
+          2
+        ],
+        [
+          "Kubernetes",
+          2
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s01_027",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Use pytest -k websocket when debugging the FastAPI stream handler.",
+          "hypothesis": "Use pytest minus k web socket when debugging the fast API stream handler."
+        },
+        {
+          "clip_id": "s03_026",
+          "split": "train",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "CI/CD",
+            "Grafana",
+            "Prometheus"
+          ],
+          "reference": "Grafana compared Prometheus latency during the CI/CD deployment.",
+          "hypothesis": "Rafana compared pro methods latency during the CICD deployment."
+        },
+        {
+          "clip_id": "s04_005",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run Python minus k auth before touching the fast repair login handler."
+        },
+        {
+          "clip_id": "s01_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest-k auth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s03_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest-k auth before touching the fast API login handler."
+        }
+      ]
+    },
+    "train_speaker/heldout_real": {
+      "clips": 48,
+      "wer": 0.2644628099173554,
+      "cer": 0.0834885164494103,
+      "domain_term_exact_hits": 16,
+      "domain_term_mentions": 93,
+      "domain_term_exact_match_rate": 0.17204301075268819,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Dagster",
+          8
+        ],
+        [
+          "LangGraph",
+          8
+        ],
+        [
+          "vLLM",
+          7
+        ],
+        [
+          "OpenTelemetry",
+          7
+        ],
+        [
+          "Qdrant",
+          6
+        ],
+        [
+          "pgvector",
+          6
+        ],
+        [
+          "Sentry",
+          5
+        ],
+        [
+          "WhisperX",
+          5
+        ],
+        [
+          "Neon",
+          4
+        ],
+        [
+          "Modal",
+          3
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s03_033",
+          "split": "heldout_real",
+          "wer": 0.875,
+          "missed_terms": [
+            "LangGraph",
+            "Tavily"
+          ],
+          "reference": "LangGraph retried after Tavily returned an empty answer.",
+          "hypothesis": "Line graph retried after the ugly return and empty answers."
+        },
+        {
+          "clip_id": "s04_013",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the QDLay before inference events started."
+        },
+        {
+          "clip_id": "s04_032",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "Sentry linked the error to OpenTelemetry trace identifiers.",
+          "hypothesis": "Centre linked to the error to open telemetry trace identifiers."
+        },
+        {
+          "clip_id": "s01_009",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Coordrant returned fever neighbors, then pjvector on the same emitting query."
+        },
+        {
+          "clip_id": "s02_014",
+          "split": "heldout_real",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "Neon",
+            "WhisperX"
+          ],
+          "reference": "The evaluator marked WhisperX drift after Neon returned stale transcript rows.",
+          "hypothesis": "The evaluator marked whisper X drift after neon return stale transcriptionals."
+        }
+      ]
+    },
+    "train_speaker/heldout_fake": {
+      "clips": 48,
+      "wer": 0.4221218961625282,
+      "cer": 0.11675779993567063,
+      "domain_term_exact_hits": 4,
+      "domain_term_mentions": 91,
+      "domain_term_exact_match_rate": 0.04395604395604396,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "TraceNest",
+          8
+        ],
+        [
+          "ModelCrate",
+          8
+        ],
+        [
+          "QueueLoom",
+          7
+        ],
+        [
+          "CacheWeaver",
+          7
+        ],
+        [
+          "EvalSage",
+          7
+        ],
+        [
+          "SchemaHawk",
+          6
+        ],
+        [
+          "TokenHarbor",
+          6
+        ],
+        [
+          "PromptForge",
+          6
+        ],
+        [
+          "RelayMint",
+          6
+        ],
+        [
+          "DriftPilot",
+          5
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s02_038",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "PromptForge called ToolSparrow after QueryMosaic returned no candidates.",
+          "hypothesis": "Prommed force called tool sparrow after query mosaic return no candidates."
+        },
+        {
+          "clip_id": "s04_039",
+          "split": "heldout_fake",
+          "wer": 0.875,
+          "missed_terms": [
+            "PromptForge",
+            "QueryMosaic",
+            "ToolSparrow"
+          ],
+          "reference": "ToolSparrow chose PromptForge after QueryMosaic lowered confidence again.",
+          "hypothesis": "Tools pair out chose prompt footage after query music lowered confidence again."
+        },
+        {
+          "clip_id": "s03_039",
+          "split": "heldout_fake",
+          "wer": 0.75,
+          "missed_terms": [
+            "CacheWeaver",
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed ModelCrate before TokenHarbor trimmed the prompt.",
+          "hypothesis": "Cache viewer warmed model trait before token haber trimmed the prompt."
+        },
+        {
+          "clip_id": "s02_036",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "RAGStone",
+            "VectorNook"
+          ],
+          "reference": "VectorNook stored the note, and RAGStone reranked the top chunk.",
+          "hypothesis": "Victor nook stored the node and dragstone re-rank the topchunk."
+        },
+        {
+          "clip_id": "s03_036",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "QueueLoom",
+            "RelayMint"
+          ],
+          "reference": "No, say RelayMint first, then QueueLoom in that sentence.",
+          "hypothesis": "No, say relay meant first and then Q-Lome in the second sentence."
+        }
+      ]
+    },
+    "dev_speaker/train": {
+      "clips": 16,
+      "wer": 0.18633540372670807,
+      "cer": 0.04684512428298279,
+      "domain_term_exact_hits": 21,
+      "domain_term_mentions": 37,
+      "domain_term_exact_match_rate": 0.5675675675675675,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "LoRA",
+          2
+        ],
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "Kubernetes",
+          2
+        ],
+        [
+          "OpenAPI",
+          1
+        ],
+        [
+          "FastAPI",
+          1
+        ],
+        [
+          "Celery",
+          1
+        ],
+        [
+          "Grafana",
+          1
+        ],
+        [
+          "Nginx",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_027",
+          "split": "train",
+          "wer": 0.6,
+          "missed_terms": [
+            "CI/CD",
+            "Nginx"
+          ],
+          "reference": "Nginx passed WebSocket upgrades once CI/CD finished the deploy.",
+          "hypothesis": "Enging's past WebSocket upgrades, one CIC finished the deploy."
+        },
+        {
+          "clip_id": "s05_023",
+          "split": "train",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "FastAPI",
+            "Helm",
+            "Kubernetes"
+          ],
+          "reference": "Kubernetes restarted FastAPI after Helm changed the resource limit.",
+          "hypothesis": "Cubernetes restarted fast API after help changed the resource limit."
+        },
+        {
+          "clip_id": "s05_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Launch pytest-koth before touching the FastAPI login handler."
+        },
+        {
+          "clip_id": "s05_022",
+          "split": "train",
+          "wer": 0.3,
+          "missed_terms": [
+            "OpenAPI"
+          ],
+          "reference": "Set JWT audience in .env and regenerate the OpenAPI client.",
+          "hypothesis": "Set JWT audience in the .env and regenerate the open API client."
+        },
+        {
+          "clip_id": "s05_026",
+          "split": "train",
+          "wer": 0.25,
+          "missed_terms": [
+            "pytest -k"
+          ],
+          "reference": "No, run pytest -k ingestion after fixing tsconfig.json.",
+          "hypothesis": "No, run Pytest-k ingestion after fixing tsconfig.json."
+        }
+      ]
+    },
+    "dev_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.2184873949579832,
+      "cer": 0.05778894472361809,
+      "domain_term_exact_hits": 5,
+      "domain_term_mentions": 23,
+      "domain_term_exact_match_rate": 0.21739130434782608,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "pgvector",
+          2
+        ],
+        [
+          "vLLM",
+          2
+        ],
+        [
+          "LangGraph",
+          2
+        ],
+        [
+          "OpenTelemetry",
+          2
+        ],
+        [
+          "WhisperX",
+          2
+        ],
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Milvus",
+          1
+        ],
+        [
+          "Ray Serve",
+          1
+        ],
+        [
+          "Sentry",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_013",
+          "split": "heldout_real",
+          "wer": 0.5,
+          "missed_terms": [
+            "OpenTelemetry"
+          ],
+          "reference": "OpenTelemetry traces showed the queue delay before inference even started.",
+          "hypothesis": "Open telemetry traces showed the QDelay before the inference even started."
+        },
+        {
+          "clip_id": "s05_029",
+          "split": "heldout_real",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "Milvus",
+            "pgvector"
+          ],
+          "reference": "pgvector found similar tickets, but Milvus returned cleaner metadata.",
+          "hypothesis": "PG vector found similar tickets, but Melva's returned cleaner metadata."
+        },
+        {
+          "clip_id": "s05_031",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "OpenTelemetry",
+            "Sentry"
+          ],
+          "reference": "OpenTelemetry traces matched the Sentry issue for that timeout.",
+          "hypothesis": "Open telemetry traces match the sentry issue for that timeout."
+        },
+        {
+          "clip_id": "s05_034",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Evidently",
+            "WhisperX"
+          ],
+          "reference": "WhisperX aligned the audio before Evidently scored the drift.",
+          "hypothesis": "Visper X aligned audio before evidently scored the drift."
+        },
+        {
+          "clip_id": "s05_009",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "Qdunt returned fewer neighbors than PG vector on the same embedding query."
+        }
+      ]
+    },
+    "dev_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.36936936936936937,
+      "cer": 0.09055118110236221,
+      "domain_term_exact_hits": 2,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.09090909090909091,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          2
+        ],
+        [
+          "TraceNest",
+          2
+        ],
+        [
+          "TokenHarbor",
+          2
+        ],
+        [
+          "EvalSage",
+          2
+        ],
+        [
+          "ModelCrate",
+          2
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ],
+        [
+          "LogVine",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s05_017",
+          "split": "heldout_fake",
+          "wer": 0.7,
+          "missed_terms": [
+            "CacheWeaver",
+            "TokenHarbor"
+          ],
+          "reference": "CacheWeaver warmed the response, but TokenHarbor capped the prompt window.",
+          "hypothesis": "Cache, we were warned the response, but token harbor kept the prompt window."
+        },
+        {
+          "clip_id": "s05_038",
+          "split": "heldout_fake",
+          "wer": 0.6666666666666666,
+          "missed_terms": [
+            "RAGStack",
+            "RAGStone"
+          ],
+          "reference": "No, I meant RAGStone, not RAGStack, for the reranker.",
+          "hypothesis": "No, I'm in the RaxToll, not RaxTack, for the re-ranker."
+        },
+        {
+          "clip_id": "s05_036",
+          "split": "heldout_fake",
+          "wer": 0.5,
+          "missed_terms": [
+            "ModelCrate",
+            "TokenHarbor"
+          ],
+          "reference": "TokenHarbor clipped the prompt before ModelCrate finished loading.",
+          "hypothesis": "Tookan Harbor clipped the prompt before Model Create finished loading."
+        },
+        {
+          "clip_id": "s05_020",
+          "split": "heldout_fake",
+          "wer": 0.4444444444444444,
+          "missed_terms": [
+            "ModelCrate",
+            "RelayMint"
+          ],
+          "reference": "Wait, change ModelCrate to RelayMint in the serving note.",
+          "hypothesis": "Wait! Change model crate to Relayment in the Serving node."
+        },
+        {
+          "clip_id": "s05_019",
+          "split": "heldout_fake",
+          "wer": 0.4,
+          "missed_terms": [
+            "EvalSage",
+            "PromptForge"
+          ],
+          "reference": "PromptForge generated the fixture while EvalSage compared the answer traces.",
+          "hypothesis": "Prompt force generated the fixture while EVALS H compared the answer traces."
+        }
+      ]
+    },
+    "test_speaker/train": {
+      "clips": 16,
+      "wer": 0.2222222222222222,
+      "cer": 0.057248384118190214,
+      "domain_term_exact_hits": 20,
+      "domain_term_mentions": 42,
+      "domain_term_exact_match_rate": 0.47619047619047616,
+      "command_exact_hits": 6,
+      "command_mentions": 8,
+      "command_exact_match_rate": 0.75,
+      "top_missed_terms": [
+        [
+          "CI/CD",
+          2
+        ],
+        [
+          "tsconfig.json",
+          2
+        ],
+        [
+          "FastAPI",
+          2
+        ],
+        [
+          "pytest -k",
+          2
+        ],
+        [
+          "Helm",
+          2
+        ],
+        [
+          "LoRA",
+          1
+        ],
+        [
+          "Kubernetes",
+          1
+        ],
+        [
+          "Makefile",
+          1
+        ],
+        [
+          "Ruff",
+          1
+        ],
+        [
+          "Uvicorn",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_024",
+          "split": "train",
+          "wer": 0.5,
+          "missed_terms": [
+            "GitHub Actions",
+            "Poetry",
+            "mypy"
+          ],
+          "reference": "GitHub Actions ran mypy after Poetry updated requirements.txt.",
+          "hypothesis": "githubactions ran my buy after poetry updated requirements.txt."
+        },
+        {
+          "clip_id": "s06_004",
+          "split": "train",
+          "wer": 0.45454545454545453,
+          "missed_terms": [
+            "tsconfig.json"
+          ],
+          "reference": "Copy the .env sample, then check tsconfig.json for the path alias.",
+          "hypothesis": "Copy .env sample, then check the TS config JSON for the path alias."
+        },
+        {
+          "clip_id": "s06_005",
+          "split": "train",
+          "wer": 0.4,
+          "missed_terms": [
+            "FastAPI",
+            "pytest -k"
+          ],
+          "reference": "Run pytest -k auth before touching the FastAPI login handler.",
+          "hypothesis": "Run pytest KAuth before touching the fast API login handler."
+        },
+        {
+          "clip_id": "s06_007",
+          "split": "train",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "Helm",
+            "Kubernetes"
+          ],
+          "reference": "Kubernetes accepted the Helm rollout, but the readiness probe stayed red.",
+          "hypothesis": "Kovannetes accepted the helm rollout for the readiness probe state read."
+        },
+        {
+          "clip_id": "s06_021",
+          "split": "train",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "FastAPI",
+            "Makefile",
+            "Ruff",
+            "Uvicorn"
+          ],
+          "reference": "The Makefile target runs Ruff before Uvicorn reloads the FastAPI server.",
+          "hypothesis": "The makefile target runs rough before UVcon reloads the fast API server."
+        }
+      ]
+    },
+    "test_speaker/heldout_real": {
+      "clips": 12,
+      "wer": 0.208955223880597,
+      "cer": 0.062146892655367235,
+      "domain_term_exact_hits": 6,
+      "domain_term_mentions": 21,
+      "domain_term_exact_match_rate": 0.2857142857142857,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "Qdrant",
+          1
+        ],
+        [
+          "pgvector",
+          1
+        ],
+        [
+          "Dagster",
+          1
+        ],
+        [
+          "Sentry",
+          1
+        ],
+        [
+          "Modal",
+          1
+        ],
+        [
+          "vLLM",
+          1
+        ],
+        [
+          "LangGraph",
+          1
+        ],
+        [
+          "OpenTelemetry",
+          1
+        ],
+        [
+          "WhisperX",
+          1
+        ],
+        [
+          "Weaviate",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_034",
+          "split": "heldout_real",
+          "wer": 0.36363636363636365,
+          "missed_terms": [
+            "DeepEval",
+            "W&B"
+          ],
+          "reference": "DeepEval marked the response inconsistent after W&B logged the regression.",
+          "hypothesis": "Deep event marked the response inconsistent after WNB logged the regression."
+        },
+        {
+          "clip_id": "s06_032",
+          "split": "heldout_real",
+          "wer": 0.3333333333333333,
+          "missed_terms": [
+            "Datadog"
+          ],
+          "reference": "Honeycomb traced the request, then Datadog linked the timeout to the deployment.",
+          "hypothesis": "Honeycomb traced the request in data doc linked the timeout to deployment."
+        },
+        {
+          "clip_id": "s06_009",
+          "split": "heldout_real",
+          "wer": 0.2727272727272727,
+          "missed_terms": [
+            "Qdrant",
+            "pgvector"
+          ],
+          "reference": "Qdrant returned fewer neighbors than pgvector on the same embedding query.",
+          "hypothesis": "QGent returned fewer neighbors than PG vector on the same embedding query."
+        },
+        {
+          "clip_id": "s06_012",
+          "split": "heldout_real",
+          "wer": 0.25,
+          "missed_terms": [
+            "LangGraph"
+          ],
+          "reference": "LangGraph retried the tool call when the planner returned an empty step.",
+          "hypothesis": "Langraf retired the tool call when the planner returned an MD step."
+        },
+        {
+          "clip_id": "s06_033",
+          "split": "heldout_real",
+          "wer": 0.25,
+          "missed_terms": [
+            "DSPy"
+          ],
+          "reference": "DSPy chose the next module after the tool call returned incomplete evidence.",
+          "hypothesis": "DSpy shows the next module after the tool call returned in complete evidence."
+        }
+      ]
+    },
+    "test_speaker/heldout_fake": {
+      "clips": 12,
+      "wer": 0.4298245614035088,
+      "cer": 0.11346633416458853,
+      "domain_term_exact_hits": 1,
+      "domain_term_mentions": 22,
+      "domain_term_exact_match_rate": 0.045454545454545456,
+      "command_exact_hits": 0,
+      "command_mentions": 0,
+      "command_exact_match_rate": 0.0,
+      "top_missed_terms": [
+        [
+          "QueueLoom",
+          1
+        ],
+        [
+          "TraceNest",
+          1
+        ],
+        [
+          "SchemaHawk",
+          1
+        ],
+        [
+          "CacheWeaver",
+          1
+        ],
+        [
+          "TokenHarbor",
+          1
+        ],
+        [
+          "EvalSage",
+          1
+        ],
+        [
+          "PromptForge",
+          1
+        ],
+        [
+          "ModelCrate",
+          1
+        ],
+        [
+          "RelayMint",
+          1
+        ],
+        [
+          "SignalKite",
+          1
+        ]
+      ],
+      "worst_clips": [
+        {
+          "clip_id": "s06_038",
+          "split": "heldout_fake",
+          "wer": 0.7777777777777778,
+          "missed_terms": [
+            "EvalSpire",
+            "LatticeForge"
+          ],
+          "reference": "LatticeForge compared the output while EvalSpire flagged the mismatch.",
+          "hypothesis": "Lattice forge compared the output while Ewells by a flag to mismatch."
+        },
+        {
+          "clip_id": "s06_015",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "QueueLoom",
+            "TraceNest"
+          ],
+          "reference": "TraceNest flagged the retry, then QueueLoom moved the event downstream.",
+          "hypothesis": "Trace nest, flag the reach eye, then QLoom moved the event downstream."
+        },
+        {
+          "clip_id": "s06_036",
+          "split": "heldout_fake",
+          "wer": 0.6,
+          "missed_terms": [
+            "PromptBeacon",
+            "PromptPillar"
+          ],
+          "reference": "Wait, I meant PromptBeacon, not PromptPillar, in the test note.",
+          "hypothesis": "Wait, I meant prompt we cannot prompt pillar in the test node."
+        },
+        {
+          "clip_id": "s06_020",
+          "split": "heldout_fake",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "ModelCrate",
+            "RelayMint"
+          ],
+          "reference": "Wait, change ModelCrate to RelayMint in the serving note.",
+          "hypothesis": "Wait. Change model grade to Relayment in the serving node."
+        },
+        {
+          "clip_id": "s06_040",
+          "split": "heldout_fake",
+          "wer": 0.5555555555555556,
+          "missed_terms": [
+            "DriftAnchor",
+            "QueryCrest"
+          ],
+          "reference": "QueryCrest reranked the chunk while DriftAnchor logged the disagreement.",
+          "hypothesis": "Query crust re-rank the chunk while drift anchor logged the disagreement."
+        }
+      ]
+    }
+  }
+}

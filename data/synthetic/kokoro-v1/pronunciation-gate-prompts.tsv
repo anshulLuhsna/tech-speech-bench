@@ -1,0 +1,32 @@
+utterance_id	source_clip_id	target_terms	transcript	synthesis_text
+kpg001	synthetic_pronunciation_gate	LoRA	The adapter loaded LoRA before the first request.	The adapter loaded LoRA before the first request.
+kpg002	synthetic_pronunciation_gate	requirements.txt	Install the packages listed in requirements.txt.	Install the packages listed in requirements dot T X T.
+kpg003	synthetic_pronunciation_gate	OpenAPI	The service published its OpenAPI schema.	The service published its Open A P I schema.
+kpg004	synthetic_pronunciation_gate	JWT	The server rejected the expired JWT.	The server rejected the expired J W T.
+kpg005	synthetic_pronunciation_gate	CI/CD	The CI/CD pipeline deployed the release.	The C I slash C D pipeline deployed the release.
+kpg006	synthetic_pronunciation_gate	Dockerfile	Rebuild the Dockerfile after changing the base image.	Rebuild the Docker file after changing the base image.
+kpg007	synthetic_pronunciation_gate	.env	Copy the secret into the .env file.	Copy the secret into the dot env file.
+kpg008	synthetic_pronunciation_gate	tsconfig.json	Check tsconfig.json for the path alias.	Check T S config dot jay sawn for the path alias.
+kpg009	synthetic_pronunciation_gate	pytest -k	Run pytest -k auth before merging.	Run pie test dash K auth before merging.
+kpg010	synthetic_pronunciation_gate	FastAPI	FastAPI returned a validation error.	Fast A. P. I. returned a validation error.
+kpg011	synthetic_pronunciation_gate	Redis	Redis stored the session token.	red iss stored the session token.
+kpg012	synthetic_pronunciation_gate	Celery	Celery retried the background task.	Celery retried the background task.
+kpg013	synthetic_pronunciation_gate	Kubernetes	Kubernetes restarted the unhealthy pod.	Kubernetes restarted the unhealthy pod.
+kpg014	synthetic_pronunciation_gate	Helm	Helm rolled back the failed release.	Helm rolled back the failed release.
+kpg015	synthetic_pronunciation_gate	Prometheus	Prometheus scraped the new metrics endpoint.	Prometheus scraped the new metrics endpoint.
+kpg016	synthetic_pronunciation_gate	Grafana	Grafana displayed the latency spike.	Grafana displayed the latency spike.
+kpg017	synthetic_pronunciation_gate	GitHub Actions	GitHub Actions ran the test suite.	GitHub Actions ran the test suite.
+kpg018	synthetic_pronunciation_gate	Uvicorn	Uvicorn started four worker processes.	you vee corn started four worker processes.
+kpg019	synthetic_pronunciation_gate	Poetry	Poetry updated the dependency lockfile.	Poetry updated the dependency lockfile.
+kpg020	synthetic_pronunciation_gate	mypy	Run mypy before opening the pull request.	Run my pie before opening the pull request.
+kpg021	synthetic_pronunciation_gate	Nginx	Nginx forwarded the request to the application server.	engine X forwarded the request to the application server.
+kpg022	synthetic_pronunciation_gate	Ruff	Ruff reported an unused import.	Ruff reported an unused import.
+kpg023	synthetic_pronunciation_gate	Docker Compose	Docker Compose started the local services.	Docker Compose started the local services.
+kpg024	synthetic_pronunciation_gate	Postgres	Postgres rejected the duplicate row.	post gress rejected the duplicate row.
+kpg025	synthetic_pronunciation_gate	Makefile	The Makefile defines the release command.	The make file defines the release command.
+kpg026	synthetic_pronunciation_gate	WebSocket	The WebSocket connection closed unexpectedly.	The web socket connection closed unexpectedly.
+kpg027	synthetic_pronunciation_gate	Pydantic	Pydantic validated the request payload.	pie dantic validated the request payload.
+kpg028	synthetic_pronunciation_gate	Alembic	Alembic applied the latest migration.	Alembic applied the latest migration.
+kpg029	synthetic_pronunciation_gate	p95	The p95 latency increased after deployment.	The P ninety five latency increased after deployment.
+kpg030	synthetic_pronunciation_gate	p99	The p99 latency exceeded the alert threshold.	The P ninety nine latency exceeded the alert threshold.
+kpg031	synthetic_pronunciation_gate	DSN	Rotate the DSN before restarting the service.	Rotate the D S N before restarting the service.

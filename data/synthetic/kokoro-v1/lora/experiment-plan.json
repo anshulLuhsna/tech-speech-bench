@@ -1,0 +1,15 @@
+{
+  "seed": 13,
+  "optimizer_update_budget": 160,
+  "effective_batch_size": 8,
+  "human_only_reference_records": 64,
+  "synthetic_only_records": 248,
+  "balanced_records": 496,
+  "balanced_human_records": 248,
+  "balanced_synthetic_records": 248,
+  "human_dev_records": 16,
+  "human_train_sha256": "3a50e2acb3cbfb2d4b0c48276d3315398c20c4557f556fe9f6c784ec7f62f7e7",
+  "human_dev_sha256": "4a680becdbde350c2cd9f378af637e23f7b61f41028fc215ce36879477f54673",
+  "synthetic_manifest_sha256": "04776577f2ffd8037920e95b26b387bc06a064a54d921ef016fc92931c690508",
+  "selection_rule": "all 248 synthetic clips plus 248 deterministic human draws; human rows are shuffled in complete seed-offset cycles"
+}

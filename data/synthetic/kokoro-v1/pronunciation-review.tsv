@@ -1,0 +1,32 @@
+gate_id	term	canonical_sentence	tts_spoken_form	tts_sentence	expected_to_sound_like	review_status	review_note
+kpg001	LoRA	The adapter loaded LoRA before the first request.	LoRA	The adapter loaded LoRA before the first request.	low-rah	approved	approved by user
+kpg002	requirements.txt	Install the packages listed in requirements.txt.	requirements dot T X T	Install the packages listed in requirements dot T X T.	requirements dot T X T	approved	approved by user
+kpg003	OpenAPI	The service published its OpenAPI schema.	Open A P I	The service published its Open A P I schema.	open A P I	approved	approved by user
+kpg004	JWT	The server rejected the expired JWT.	J W T	The server rejected the expired J W T.	J W T	approved	approved by user
+kpg005	CI/CD	The CI/CD pipeline deployed the release.	C I slash C D	The C I slash C D pipeline deployed the release.	C I slash C D	approved	approved by user
+kpg006	Dockerfile	Rebuild the Dockerfile after changing the base image.	Docker file	Rebuild the Docker file after changing the base image.	docker file	approved	approved by user
+kpg007	.env	Copy the secret into the .env file.	dot env	Copy the secret into the dot env file.	dot env	approved	approved by user
+kpg008	tsconfig.json	Check tsconfig.json for the path alias.	T S config dot jay sawn	Check T S config dot jay sawn for the path alias.	T S config dot jay-sawn	approved	user correction: JSON must be pronounced jay-sawn
+kpg009	pytest -k	Run pytest -k auth before merging.	pie test dash K	Run pie test dash K auth before merging.	pie test dash K	approved	approved by user
+kpg010	FastAPI	FastAPI returned a validation error.	Fast A. P. I.	Fast A. P. I. returned a validation error.	fast A P I	approved	user correction: pronounce every letter in A P I
+kpg011	Redis	Redis stored the session token.	red iss	red iss stored the session token.	red-iss	approved	user correction: Redis must not sound like ready
+kpg012	Celery	Celery retried the background task.	Celery	Celery retried the background task.	celery	approved	approved by user
+kpg013	Kubernetes	Kubernetes restarted the unhealthy pod.	Kubernetes	Kubernetes restarted the unhealthy pod.	koo-ber-net-eez	approved	approved by user
+kpg014	Helm	Helm rolled back the failed release.	Helm	Helm rolled back the failed release.	helm	approved	approved by user
+kpg015	Prometheus	Prometheus scraped the new metrics endpoint.	Prometheus	Prometheus scraped the new metrics endpoint.	pro-mee-thee-us	approved	approved by user
+kpg016	Grafana	Grafana displayed the latency spike.	Grafana	Grafana displayed the latency spike.	grah-fah-nah	approved	approved by user
+kpg017	GitHub Actions	GitHub Actions ran the test suite.	GitHub Actions	GitHub Actions ran the test suite.	GitHub Actions	approved	approved by user
+kpg018	Uvicorn	Uvicorn started four worker processes.	you vee corn	you vee corn started four worker processes.	you-vee-corn	approved	approved by user
+kpg019	Poetry	Poetry updated the dependency lockfile.	Poetry	Poetry updated the dependency lockfile.	poetry	approved	approved by user
+kpg020	mypy	Run mypy before opening the pull request.	my pie	Run my pie before opening the pull request.	my pie	approved	approved by user
+kpg021	Nginx	Nginx forwarded the request to the application server.	engine X	engine X forwarded the request to the application server.	engine X	approved	approved by user
+kpg022	Ruff	Ruff reported an unused import.	Ruff	Ruff reported an unused import.	ruff	approved	approved by user
+kpg023	Docker Compose	Docker Compose started the local services.	Docker Compose	Docker Compose started the local services.	docker compose	approved	approved by user
+kpg024	Postgres	Postgres rejected the duplicate row.	post gress	post gress rejected the duplicate row.	post-gress	approved	user correction: Postgres must not sound like postgers
+kpg025	Makefile	The Makefile defines the release command.	make file	The make file defines the release command.	make file	approved	approved by user
+kpg026	WebSocket	The WebSocket connection closed unexpectedly.	web socket	The web socket connection closed unexpectedly.	web socket	approved	approved by user
+kpg027	Pydantic	Pydantic validated the request payload.	pie dantic	pie dantic validated the request payload.	pie-dan-tick	approved	approved by user
+kpg028	Alembic	Alembic applied the latest migration.	Alembic	Alembic applied the latest migration.	uh-lem-bick	approved	approved by user
+kpg029	p95	The p95 latency increased after deployment.	P ninety five	The P ninety five latency increased after deployment.	P ninety-five	approved	approved by user
+kpg030	p99	The p99 latency exceeded the alert threshold.	P ninety nine	The P ninety nine latency exceeded the alert threshold.	P ninety-nine	approved	approved by user
+kpg031	DSN	Rotate the DSN before restarting the service.	D S N	Rotate the D S N before restarting the service.	D S N	approved	approved by user

@@ -1,0 +1,63 @@
+utterance_id	term	variant	canonical_sentence
+ksv1_001a	LoRA	a	We disabled LoRA while tracing the memory regression.
+ksv1_001b	LoRA	b	The deployment loads LoRA after the base checkpoint.
+ksv1_002a	requirements.txt	a	Add the missing package to requirements.txt before rebuilding.
+ksv1_002b	requirements.txt	b	The security scan flagged an outdated entry in requirements.txt.
+ksv1_003a	OpenAPI	a	Regenerate the OpenAPI document after changing the response model.
+ksv1_003b	OpenAPI	b	The client was built from yesterday's OpenAPI specification.
+ksv1_004a	JWT	a	Refresh the JWT when the access token expires.
+ksv1_004b	JWT	b	A malformed JWT caused the authorization failure.
+ksv1_005a	CI/CD	a	Our CI/CD workflow publishes artifacts from the release branch.
+ksv1_005b	CI/CD	b	The CI/CD run stopped during the integration stage.
+ksv1_006a	Dockerfile	a	Move the cacheable install step higher in the Dockerfile.
+ksv1_006b	Dockerfile	b	A stale environment variable remained in the Dockerfile.
+ksv1_007a	.env	a	The local port is configured in the .env file.
+ksv1_007b	.env	b	Never commit production credentials from the .env file.
+ksv1_008a	tsconfig.json	a	Enable strict type checking inside tsconfig.json.
+ksv1_008b	tsconfig.json	b	The build reads its module target from tsconfig.json.
+ksv1_009a	pytest -k	a	Use pytest -k payments to isolate the failing cases.
+ksv1_009b	pytest -k	b	I ran pytest -k timeout before pushing the patch.
+ksv1_010a	FastAPI	a	The FastAPI dependency opens a database connection per request.
+ksv1_010b	FastAPI	b	Mount the health route on the FastAPI application.
+ksv1_011a	Redis	a	The worker reads its rate limit counter from Redis.
+ksv1_011b	Redis	b	A short expiration keeps the Redis cache fresh.
+ksv1_012a	Celery	a	Celery moved the failed message to the retry queue.
+ksv1_012b	Celery	b	The Celery worker lost contact with its broker.
+ksv1_013a	Kubernetes	a	Kubernetes scheduled the workload on a larger node.
+ksv1_013b	Kubernetes	b	The Kubernetes service exposes only the internal port.
+ksv1_014a	Helm	a	Update the Helm values before promoting the release.
+ksv1_014b	Helm	b	Helm rendered an invalid resource name for staging.
+ksv1_015a	Prometheus	a	Prometheus recorded a sudden increase in error rate.
+ksv1_015b	Prometheus	b	The custom counter is now visible in Prometheus.
+ksv1_016a	Grafana	a	Grafana groups the dashboard by deployment region.
+ksv1_016b	Grafana	b	The on-call engineer linked the alert to Grafana.
+ksv1_017a	GitHub Actions	a	GitHub Actions signs the binary before uploading it.
+ksv1_017b	GitHub Actions	b	We restricted GitHub Actions permissions for external contributions.
+ksv1_018a	Uvicorn	a	Uvicorn bound the application to the loopback address.
+ksv1_018b	Uvicorn	b	The process manager restarted Uvicorn after the crash.
+ksv1_019a	Poetry	a	Poetry resolved a different version on the clean machine.
+ksv1_019b	Poetry	b	Use Poetry to separate development packages from runtime packages.
+ksv1_020a	mypy	a	The new protocol removed three mypy errors.
+ksv1_020b	mypy	b	Our pre-commit hook runs mypy on changed modules.
+ksv1_021a	Nginx	a	Nginx adds a request identifier to every response.
+ksv1_021b	Nginx	b	Increase the upload limit in the Nginx configuration.
+ksv1_022a	Ruff	a	Ruff fixed the import order across the package.
+ksv1_022b	Ruff	b	The editor invokes Ruff whenever a file is saved.
+ksv1_023a	Docker Compose	a	Docker Compose created a temporary network for the stack.
+ksv1_023b	Docker Compose	b	Stop Docker Compose before removing the local volumes.
+ksv1_024a	Postgres	a	Postgres chose a sequential scan for the query.
+ksv1_024b	Postgres	b	The backup restored successfully into a fresh Postgres instance.
+ksv1_025a	Makefile	a	Add the benchmark target to the Makefile.
+ksv1_025b	Makefile	b	The Makefile passes the version into the build command.
+ksv1_026a	WebSocket	a	The WebSocket client reconnects with exponential backoff.
+ksv1_026b	WebSocket	b	Send a heartbeat over the WebSocket every thirty seconds.
+ksv1_027a	Pydantic	a	Pydantic rejected the value before it reached business logic.
+ksv1_027b	Pydantic	b	The nested Pydantic schema accepts an optional identifier.
+ksv1_028a	Alembic	a	Alembic generated an empty revision for the metadata change.
+ksv1_028b	Alembic	b	Downgrade the schema with the previous Alembic migration.
+ksv1_029a	p95	a	The p95 response time dropped after adding the index.
+ksv1_029b	p95	b	Track p95 separately for cached and uncached requests.
+ksv1_030a	p99	a	A single slow dependency pushed p99 above the budget.
+ksv1_030b	p99	b	The dashboard compares p99 across all availability zones.
+ksv1_031a	DSN	a	The application reads the DSN from its secret store.
+ksv1_031b	DSN	b	Redact the password before printing the DSN in logs.

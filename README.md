@@ -18,6 +18,12 @@ V0 focuses on one speaker and 100 short utterances covering:
 - vector/data terms: `pgvector`, `Postgres`, `HNSW`, hybrid search
 - software engineering terms: `pytest`, `Dockerfile`, `FastAPI`, `Pydantic`, GitHub Actions, Docker Compose, Kubernetes, Redis, Celery, WebSocket, Prometheus, OpenTelemetry
 
+The current v2 benchmark expands this to 240 real-human clips from six
+speakers with train, held-out real, and pronounceable held-out fake term sets.
+The first open-source synthetic-data experiment trains Whisper LoRA adapters
+on Kokoro speech and evaluates them only on this frozen human benchmark. Read
+`docs/kokoro-synthetic-training-v1.md` for the protocol and result.
+
 ## Repository Layout
 
 ```text
