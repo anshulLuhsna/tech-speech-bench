@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the private 248-clip Kokoro v1 training corpus."""
+"""Validate a private Kokoro training corpus against its frozen prompts."""
 
 from __future__ import annotations
 
@@ -53,10 +53,14 @@ def main() -> None:
 
     prompt_rows = read_tsv(args.prompts)
     manifest_rows = read_tsv(args.manifest)
-    if len(prompt_rows) != 62:
-        raise ValueError(f"expected 62 prompts, found {len(prompt_rows)}")
-    if len(manifest_rows) != 248:
-        raise ValueError(f"expected 248 manifest rows, found {len(manifest_rows)}")
+    if not prompt_rows:
+        raise ValueError("prompt sheet is empty")
+    expected_manifest_rows = len(prompt_rows) * len(EXPECTED_VOICES)
+    if len(manifest_rows) != expected_manifest_rows:
+        raise ValueError(
+            f"expected {expected_manifest_rows} manifest rows, "
+            f"found {len(manifest_rows)}"
+        )
 
     prompt_by_id = {row["utterance_id"]: row for row in prompt_rows}
     expected_clip_ids = {
@@ -130,7 +134,10 @@ def main() -> None:
         total_duration += info.duration
         voice_durations[voice_id] += info.duration
 
-    if voice_counts != Counter({voice: 62 for voice in EXPECTED_VOICES}):
+    expected_voice_counts = Counter(
+        {voice: len(prompt_rows) for voice in EXPECTED_VOICES}
+    )
+    if voice_counts != expected_voice_counts:
         errors.append(f"voice coverage mismatch: {dict(voice_counts)}")
     if errors:
         raise ValueError("training corpus failed:\n" + "\n".join(errors))

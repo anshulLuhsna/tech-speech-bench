@@ -1,0 +1,97 @@
+utterance_id	source_clip_id	target_terms	transcript	synthesis_text
+kcv1_001	synthetic_kokoro_compositional_v1	CodeHawk	CodeHawk rebuilt the index after the schema changed.	Code Hawk rebuilt the index after the schema changed.
+kcv1_002	synthetic_kokoro_compositional_v1	IndexBridge	The worker sent the failed batch back to IndexBridge.	The worker sent the failed batch back to Index Bridge.
+kcv1_003	synthetic_kokoro_compositional_v1	CloudBeacon	CloudBeacon flagged the regression during the canary rollout.	Cloud Beacon flagged the regression during the canary rollout.
+kcv1_004	synthetic_kokoro_compositional_v1	DeployStone	We moved the retry policy into DeployStone yesterday.	We moved the retry policy into Deploy Stone yesterday.
+kcv1_005	synthetic_kokoro_compositional_v1	VectorVault	The dashboard reads its latency estimate from VectorVault.	The dashboard reads its latency estimate from Vector Vault.
+kcv1_006	synthetic_kokoro_compositional_v1	EvalHarbor	EvalHarbor rejected the payload before it reached production.	Eval Harbor rejected the payload before it reached production.
+kcv1_007	synthetic_kokoro_compositional_v1	DeployGrid	The deployment called DeployGrid after the health check failed.	The deployment called Deploy Grid after the health check failed.
+kcv1_008	synthetic_kokoro_compositional_v1	QueueSparrow	QueueSparrow stored the trace alongside the model response.	Queue Sparrow stored the trace alongside the model response.
+kcv1_009	synthetic_kokoro_compositional_v1	DataWeaver	The queue drained normally once DataWeaver recovered.	The queue drained normally once Data Weaver recovered.
+kcv1_010	synthetic_kokoro_compositional_v1	DataLens	DataLens compared the new output with the saved baseline.	Data Lens compared the new output with the saved baseline.
+kcv1_011	synthetic_kokoro_compositional_v1	MetricHub	The service loads MetricHub before opening the event stream.	The service loads Metric Hub before opening the event stream.
+kcv1_012	synthetic_kokoro_compositional_v1	AgentSparrow	AgentSparrow raised an alert when the cache became stale.	Agent Sparrow raised an alert when the cache became stale.
+kcv1_013	synthetic_kokoro_compositional_v1	SchemaCore	SchemaCore rebuilt the index after the schema changed.	Schema Core rebuilt the index after the schema changed.
+kcv1_014	synthetic_kokoro_compositional_v1	DataKite	The worker sent the failed batch back to DataKite.	The worker sent the failed batch back to Data Kite.
+kcv1_015	synthetic_kokoro_compositional_v1	LogFlow	LogFlow flagged the regression during the canary rollout.	Log Flow flagged the regression during the canary rollout.
+kcv1_016	synthetic_kokoro_compositional_v1	BatchForge	We moved the retry policy into BatchForge yesterday.	We moved the retry policy into Batch Forge yesterday.
+kcv1_017	synthetic_kokoro_compositional_v1	RouteStack	The dashboard reads its latency estimate from RouteStack.	The dashboard reads its latency estimate from Route Stack.
+kcv1_018	synthetic_kokoro_compositional_v1	ModelRiver	ModelRiver rejected the payload before it reached production.	Model River rejected the payload before it reached production.
+kcv1_019	synthetic_kokoro_compositional_v1	LogCrest	The deployment called LogCrest after the health check failed.	The deployment called Log Crest after the health check failed.
+kcv1_020	synthetic_kokoro_compositional_v1	ShardRiver	ShardRiver stored the trace alongside the model response.	Shard River stored the trace alongside the model response.
+kcv1_021	synthetic_kokoro_compositional_v1	GraphCove	The queue drained normally once GraphCove recovered.	The queue drained normally once Graph Cove recovered.
+kcv1_022	synthetic_kokoro_compositional_v1	SchemaHarbor	SchemaHarbor compared the new output with the saved baseline.	Schema Harbor compared the new output with the saved baseline.
+kcv1_023	synthetic_kokoro_compositional_v1	SchemaGuard	The service loads SchemaGuard before opening the event stream.	The service loads Schema Guard before opening the event stream.
+kcv1_024	synthetic_kokoro_compositional_v1	StreamSpire	StreamSpire raised an alert when the cache became stale.	Stream Spire raised an alert when the cache became stale.
+kcv1_025	synthetic_kokoro_compositional_v1	LogWatch	LogWatch rebuilt the index after the schema changed.	Log Watch rebuilt the index after the schema changed.
+kcv1_026	synthetic_kokoro_compositional_v1	ShardCore	The worker sent the failed batch back to ShardCore.	The worker sent the failed batch back to Shard Core.
+kcv1_027	synthetic_kokoro_compositional_v1	QueueCore	QueueCore flagged the regression during the canary rollout.	Queue Core flagged the regression during the canary rollout.
+kcv1_028	synthetic_kokoro_compositional_v1	VectorWeaver	We moved the retry policy into VectorWeaver yesterday.	We moved the retry policy into Vector Weaver yesterday.
+kcv1_029	synthetic_kokoro_compositional_v1	EvalMason	The dashboard reads its latency estimate from EvalMason.	The dashboard reads its latency estimate from Eval Mason.
+kcv1_030	synthetic_kokoro_compositional_v1	ToolMesh	ToolMesh rejected the payload before it reached production.	Tool Mesh rejected the payload before it reached production.
+kcv1_031	synthetic_kokoro_compositional_v1	SignalRiver	The deployment called SignalRiver after the health check failed.	The deployment called Signal River after the health check failed.
+kcv1_032	synthetic_kokoro_compositional_v1	ToolPilot	ToolPilot stored the trace alongside the model response.	Tool Pilot stored the trace alongside the model response.
+kcv1_033	synthetic_kokoro_compositional_v1	AgentNest	The queue drained normally once AgentNest recovered.	The queue drained normally once Agent Nest recovered.
+kcv1_034	synthetic_kokoro_compositional_v1	LatticeBridge	LatticeBridge compared the new output with the saved baseline.	Lattice Bridge compared the new output with the saved baseline.
+kcv1_035	synthetic_kokoro_compositional_v1	TraceKite	The service loads TraceKite before opening the event stream.	The service loads Trace Kite before opening the event stream.
+kcv1_036	synthetic_kokoro_compositional_v1	SchemaStone	SchemaStone raised an alert when the cache became stale.	Schema Stone raised an alert when the cache became stale.
+kcv1_037	synthetic_kokoro_compositional_v1	MemoryLatch	MemoryLatch rebuilt the index after the schema changed.	Memory Latch rebuilt the index after the schema changed.
+kcv1_038	synthetic_kokoro_compositional_v1	StreamStone	The worker sent the failed batch back to StreamStone.	The worker sent the failed batch back to Stream Stone.
+kcv1_039	synthetic_kokoro_compositional_v1	BatchMesh	BatchMesh flagged the regression during the canary rollout.	Batch Mesh flagged the regression during the canary rollout.
+kcv1_040	synthetic_kokoro_compositional_v1	CodeTrail	We moved the retry policy into CodeTrail yesterday.	We moved the retry policy into Code Trail yesterday.
+kcv1_041	synthetic_kokoro_compositional_v1	QueueAnchor	The dashboard reads its latency estimate from QueueAnchor.	The dashboard reads its latency estimate from Queue Anchor.
+kcv1_042	synthetic_kokoro_compositional_v1	CachePillar	CachePillar rejected the payload before it reached production.	Cache Pillar rejected the payload before it reached production.
+kcv1_043	synthetic_kokoro_compositional_v1	QueryStore	The deployment called QueryStore after the health check failed.	The deployment called Query Store after the health check failed.
+kcv1_044	synthetic_kokoro_compositional_v1	RelayRunner	RelayRunner stored the trace alongside the model response.	Relay Runner stored the trace alongside the model response.
+kcv1_045	synthetic_kokoro_compositional_v1	QueueMesh	The queue drained normally once QueueMesh recovered.	The queue drained normally once Queue Mesh recovered.
+kcv1_046	synthetic_kokoro_compositional_v1	IndexKite	IndexKite compared the new output with the saved baseline.	Index Kite compared the new output with the saved baseline.
+kcv1_047	synthetic_kokoro_compositional_v1	RelayPilot	The service loads RelayPilot before opening the event stream.	The service loads Relay Pilot before opening the event stream.
+kcv1_048	synthetic_kokoro_compositional_v1	RouteNest	RouteNest raised an alert when the cache became stale.	Route Nest raised an alert when the cache became stale.
+kcv1_049	synthetic_kokoro_compositional_v1	TokenDock	TokenDock rebuilt the index after the schema changed.	Token Dock rebuilt the index after the schema changed.
+kcv1_050	synthetic_kokoro_compositional_v1	QueueSage	The worker sent the failed batch back to QueueSage.	The worker sent the failed batch back to Queue Sage.
+kcv1_051	synthetic_kokoro_compositional_v1	ShardPath	ShardPath flagged the regression during the canary rollout.	Shard Path flagged the regression during the canary rollout.
+kcv1_052	synthetic_kokoro_compositional_v1	VectorStone	We moved the retry policy into VectorStone yesterday.	We moved the retry policy into Vector Stone yesterday.
+kcv1_053	synthetic_kokoro_compositional_v1	ConfigStore	The dashboard reads its latency estimate from ConfigStore.	The dashboard reads its latency estimate from Config Store.
+kcv1_054	synthetic_kokoro_compositional_v1	SignalBeacon	SignalBeacon rejected the payload before it reached production.	Signal Beacon rejected the payload before it reached production.
+kcv1_055	synthetic_kokoro_compositional_v1	RelayKite	The deployment called RelayKite after the health check failed.	The deployment called Relay Kite after the health check failed.
+kcv1_056	synthetic_kokoro_compositional_v1	TokenKite	TokenKite stored the trace alongside the model response.	Token Kite stored the trace alongside the model response.
+kcv1_057	synthetic_kokoro_compositional_v1	AudioPillar	The queue drained normally once AudioPillar recovered.	The queue drained normally once Audio Pillar recovered.
+kcv1_058	synthetic_kokoro_compositional_v1	TokenLens	TokenLens compared the new output with the saved baseline.	Token Lens compared the new output with the saved baseline.
+kcv1_059	synthetic_kokoro_compositional_v1	TracePilot	The service loads TracePilot before opening the event stream.	The service loads Trace Pilot before opening the event stream.
+kcv1_060	synthetic_kokoro_compositional_v1	IndexPilot	IndexPilot raised an alert when the cache became stale.	Index Pilot raised an alert when the cache became stale.
+kcv1_061	synthetic_kokoro_compositional_v1	ModelLatch	ModelLatch rebuilt the index after the schema changed.	Model Latch rebuilt the index after the schema changed.
+kcv1_062	synthetic_kokoro_compositional_v1	MetricStone	The worker sent the failed batch back to MetricStone.	The worker sent the failed batch back to Metric Stone.
+kcv1_063	synthetic_kokoro_compositional_v1	CacheMint	CacheMint flagged the regression during the canary rollout.	Cache Mint flagged the regression during the canary rollout.
+kcv1_064	synthetic_kokoro_compositional_v1	TokenSparrow	We moved the retry policy into TokenSparrow yesterday.	We moved the retry policy into Token Sparrow yesterday.
+kcv1_065	synthetic_kokoro_compositional_v1	CloudBridge	The dashboard reads its latency estimate from CloudBridge.	The dashboard reads its latency estimate from Cloud Bridge.
+kcv1_066	synthetic_kokoro_compositional_v1	TokenPath	TokenPath rejected the payload before it reached production.	Token Path rejected the payload before it reached production.
+kcv1_067	synthetic_kokoro_compositional_v1	MetricCove	The deployment called MetricCove after the health check failed.	The deployment called Metric Cove after the health check failed.
+kcv1_068	synthetic_kokoro_compositional_v1	IndexRunner	IndexRunner stored the trace alongside the model response.	Index Runner stored the trace alongside the model response.
+kcv1_069	synthetic_kokoro_compositional_v1	CodeWatch	The queue drained normally once CodeWatch recovered.	The queue drained normally once Code Watch recovered.
+kcv1_070	synthetic_kokoro_compositional_v1	GraphStack	GraphStack compared the new output with the saved baseline.	Graph Stack compared the new output with the saved baseline.
+kcv1_071	synthetic_kokoro_compositional_v1	TensorSpire	The service loads TensorSpire before opening the event stream.	The service loads Tensor Spire before opening the event stream.
+kcv1_072	synthetic_kokoro_compositional_v1	SchemaPilot	SchemaPilot raised an alert when the cache became stale.	Schema Pilot raised an alert when the cache became stale.
+kcv1_073	synthetic_kokoro_compositional_v1	SchemaMesh	SchemaMesh rebuilt the index after the schema changed.	Schema Mesh rebuilt the index after the schema changed.
+kcv1_074	synthetic_kokoro_compositional_v1	QueueForge	The worker sent the failed batch back to QueueForge.	The worker sent the failed batch back to Queue Forge.
+kcv1_075	synthetic_kokoro_compositional_v1	TraceLatch	TraceLatch flagged the regression during the canary rollout.	Trace Latch flagged the regression during the canary rollout.
+kcv1_076	synthetic_kokoro_compositional_v1	BatchSparrow	We moved the retry policy into BatchSparrow yesterday.	We moved the retry policy into Batch Sparrow yesterday.
+kcv1_077	synthetic_kokoro_compositional_v1	BatchGrid	The dashboard reads its latency estimate from BatchGrid.	The dashboard reads its latency estimate from Batch Grid.
+kcv1_078	synthetic_kokoro_compositional_v1	IndexFlow	IndexFlow rejected the payload before it reached production.	Index Flow rejected the payload before it reached production.
+kcv1_079	synthetic_kokoro_compositional_v1	TokenFlow	The deployment called TokenFlow after the health check failed.	The deployment called Token Flow after the health check failed.
+kcv1_080	synthetic_kokoro_compositional_v1	SignalWeaver	SignalWeaver stored the trace alongside the model response.	Signal Weaver stored the trace alongside the model response.
+kcv1_081	synthetic_kokoro_compositional_v1	ToolTrail	The queue drained normally once ToolTrail recovered.	The queue drained normally once Tool Trail recovered.
+kcv1_082	synthetic_kokoro_compositional_v1	BuildVault	BuildVault compared the new output with the saved baseline.	Build Vault compared the new output with the saved baseline.
+kcv1_083	synthetic_kokoro_compositional_v1	ModelDock	The service loads ModelDock before opening the event stream.	The service loads Model Dock before opening the event stream.
+kcv1_084	synthetic_kokoro_compositional_v1	ModelPath	ModelPath raised an alert when the cache became stale.	Model Path raised an alert when the cache became stale.
+kcv1_085	synthetic_kokoro_compositional_v1	QuerySage	QuerySage rebuilt the index after the schema changed.	Query Sage rebuilt the index after the schema changed.
+kcv1_086	synthetic_kokoro_compositional_v1	StreamWatch	The worker sent the failed batch back to StreamWatch.	The worker sent the failed batch back to Stream Watch.
+kcv1_087	synthetic_kokoro_compositional_v1	TokenBeacon	TokenBeacon flagged the regression during the canary rollout.	Token Beacon flagged the regression during the canary rollout.
+kcv1_088	synthetic_kokoro_compositional_v1	DataVault	We moved the retry policy into DataVault yesterday.	We moved the retry policy into Data Vault yesterday.
+kcv1_089	synthetic_kokoro_compositional_v1	KernelNook	The dashboard reads its latency estimate from KernelNook.	The dashboard reads its latency estimate from Kernel Nook.
+kcv1_090	synthetic_kokoro_compositional_v1	MemoryForge	MemoryForge rejected the payload before it reached production.	Memory Forge rejected the payload before it reached production.
+kcv1_091	synthetic_kokoro_compositional_v1	TokenWeaver	The deployment called TokenWeaver after the health check failed.	The deployment called Token Weaver after the health check failed.
+kcv1_092	synthetic_kokoro_compositional_v1	AudioBridge	AudioBridge stored the trace alongside the model response.	Audio Bridge stored the trace alongside the model response.
+kcv1_093	synthetic_kokoro_compositional_v1	RoutePillar	The queue drained normally once RoutePillar recovered.	The queue drained normally once Route Pillar recovered.
+kcv1_094	synthetic_kokoro_compositional_v1	VoiceNest	VoiceNest compared the new output with the saved baseline.	Voice Nest compared the new output with the saved baseline.
+kcv1_095	synthetic_kokoro_compositional_v1	LogDock	The service loads LogDock before opening the event stream.	The service loads Log Dock before opening the event stream.
+kcv1_096	synthetic_kokoro_compositional_v1	TraceMesh	TraceMesh raised an alert when the cache became stale.	Trace Mesh raised an alert when the cache became stale.

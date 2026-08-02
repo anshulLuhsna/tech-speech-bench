@@ -50,6 +50,14 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prompts", type=Path, default=DEFAULT_PROMPTS)
     parser.add_argument("--terms", type=Path, default=DEFAULT_TERMS)
+    parser.add_argument(
+        "--allow-unlisted-terms",
+        action="store_true",
+        help=(
+            "Allow target terms absent from --terms. Any listed non-train term "
+            "remains forbidden."
+        ),
+    )
     parser.add_argument("--snapshot", type=Path, default=DEFAULT_SNAPSHOT)
     parser.add_argument("--private-dir", type=Path, default=DEFAULT_PRIVATE_DIR)
     parser.add_argument(
@@ -99,7 +107,9 @@ def write_tsv(path: Path, rows: list[dict[str, object]]) -> None:
 
 
 def validate_inputs(
-    prompts: list[dict[str, str]], term_rows: list[dict[str, str]]
+    prompts: list[dict[str, str]],
+    term_rows: list[dict[str, str]],
+    allow_unlisted_terms: bool = False,
 ) -> None:
     required = {
         "utterance_id",
@@ -131,6 +141,8 @@ def validate_inputs(
                     f"{utterance_id}: target absent from transcript: {term}"
                 )
             split = term_splits.get(term)
+            if split is None and allow_unlisted_terms:
+                continue
             if split != "train":
                 raise ValueError(
                     f"{utterance_id}: synthetic pilot may only use train terms; "
@@ -162,7 +174,7 @@ def main() -> None:
     args = parse_args()
     prompts = read_tsv(args.prompts)
     term_rows = read_tsv(args.terms)
-    validate_inputs(prompts, term_rows)
+    validate_inputs(prompts, term_rows, args.allow_unlisted_terms)
 
     prompt_ids = {prompt["utterance_id"] for prompt in prompts}
     requested_ids = set(args.utterance_id)

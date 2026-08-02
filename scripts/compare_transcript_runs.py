@@ -28,6 +28,12 @@ def parse_args() -> argparse.Namespace:
         metavar="LABEL=TRANSCRIPTS_TSV",
         help="Run label and transcripts TSV path. Can be passed multiple times.",
     )
+    parser.add_argument(
+        "--exclude-clip-id",
+        action="append",
+        default=[],
+        help="Exclude this clip from every run. Can be passed multiple times.",
+    )
     parser.add_argument("--out-dir", type=Path, required=True)
     return parser.parse_args()
 
@@ -268,6 +274,15 @@ def main() -> None:
     }
     manifest = {row["clip_id"]: row for row in read_tsv(args.manifest)}
     terms = read_terms(args.terms)
+    excluded = set(args.exclude_clip_id)
+    unknown_exclusions = excluded - set(refs)
+    if unknown_exclusions:
+        raise ValueError(f"unknown excluded clip ids: {sorted(unknown_exclusions)}")
+    refs = {
+        clip_id: reference
+        for clip_id, reference in refs.items()
+        if clip_id not in excluded
+    }
 
     comparison = {}
     for spec in args.run:

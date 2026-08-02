@@ -16,6 +16,8 @@ Planned scripts:
 - `prepare_v2_lora_data.py`: freeze leakage-safe v2 LoRA train/dev metadata
 - `compare_v2_slices.py`: compare runs by speaker partition and term split
 - `bootstrap_paired_runs.py`: estimate paired clip-level uncertainty for WER and exact-term-rate differences between two frozen runs
+- `prepare_kokoro_compositional_v1.py`: generate disjoint CamelCase technical-name prompts for compositional transfer
+- `prepare_kokoro_additive_v2.py`: build the one-epoch human plus real-term and compositional synthetic LoRA mixture
 - `generate_cartesia_tts.py`: validate and generate leakage-safe synthetic training audio with Cartesia
 - `prepare_kokoro_v1.py`: validate the 31-term Kokoro pronunciation review and freeze gate prompts after approval
 - `prepare_kokoro_training_prompts.py`: validate two new sentences per approved train term and freeze the 62 synthesis prompts
@@ -219,6 +221,38 @@ Transcribe the frozen real-human benchmark with each adapter, using
 `bootstrap_paired_runs.py`. The exact commands and results are recorded in
 `docs/kokoro-synthetic-training-v1.md` and
 `results/comparisons/kokoro-v1-controlled/`.
+
+Generate the disjoint compositional corpus and build the additive v2 mixture:
+
+```bash
+uv run python scripts/prepare_kokoro_compositional_v1.py --write
+
+PYTORCH_ENABLE_MPS_FALLBACK=1 \
+~/.venvs/techspeechbench-tts/bin/python \
+  scripts/generate_kokoro_pilot.py \
+  --prompts data/synthetic/kokoro-compositional-v1/prompts.tsv \
+  --allow-unlisted-terms \
+  --private-dir data/synthetic/kokoro-compositional-v1/private \
+  --write
+
+~/.venvs/techspeechbench-tts/bin/python \
+  scripts/check_kokoro_training_corpus.py \
+  --prompts data/synthetic/kokoro-compositional-v1/prompts.tsv \
+  --manifest data/synthetic/kokoro-compositional-v1/private/manifest.tsv \
+  --report data/synthetic/kokoro-compositional-v1/private/qa-summary.json \
+  --write-report
+
+uv run python scripts/prepare_kokoro_additive_v2.py --write
+
+uv run --group train python scripts/train_whisper_lora.py \
+  --train-metadata data/synthetic/kokoro-additive-v2/lora/train.jsonl \
+  --dev-metadata data/synthetic/kokoro-additive-v2/lora/dev.jsonl \
+  --output-dir results/finetunes/whisper-base-en-lora-kokoro-additive-v2-compositional \
+  --max-steps 239
+```
+
+The complete design, result, paired uncertainty, and causal boundary are in
+`docs/kokoro-compositional-augmentation-v2.md`.
 
 Validate the Parler-TTS pronunciation pilot without writing audio:
 

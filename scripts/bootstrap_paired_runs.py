@@ -30,6 +30,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--label-b", required=True)
     parser.add_argument("--iterations", type=int, default=10_000)
     parser.add_argument("--seed", type=int, default=13)
+    parser.add_argument(
+        "--exclude-clip-id",
+        action="append",
+        default=[],
+        help="Exclude this clip from every slice. Can be passed multiple times.",
+    )
     parser.add_argument("--out-dir", type=Path, required=True)
     return parser.parse_args()
 
@@ -126,16 +132,29 @@ def bootstrap(
 
 
 def write_markdown(
-    path: Path, results: dict[str, dict[str, object]], label_a: str, label_b: str
+    path: Path,
+    results: dict[str, dict[str, object]],
+    label_a: str,
+    label_b: str,
+    excluded_clip_ids: list[str],
 ) -> None:
     lines = [
         "# Paired Bootstrap Comparison",
         "",
         f"Differences are `{label_b} - {label_a}`. Negative WER and positive term-rate differences favor `{label_b}`.",
-        "",
-        "| slice | clips | WER diff | 95% interval | term-rate diff | 95% interval |",
-        "| --- | ---: | ---: | ---: | ---: | ---: |",
     ]
+    if excluded_clip_ids:
+        lines.append(
+            "Excluded clips: "
+            + ", ".join(f"`{clip_id}`" for clip_id in excluded_clip_ids)
+        )
+    lines.extend(
+        [
+            "",
+            "| slice | clips | WER diff | 95% interval | term-rate diff | 95% interval |",
+            "| --- | ---: | ---: | ---: | ---: | ---: |",
+        ]
+    )
     for slice_name, metrics in results.items():
         wer_interval = metrics["wer_difference_95_percentile_interval"]
         term_interval = metrics["term_rate_difference_95_percentile_interval"]
@@ -167,6 +186,15 @@ def main() -> None:
     expected_ids = set(references)
     if set(run_a) != expected_ids or set(run_b) != expected_ids:
         raise ValueError("both runs must exactly cover the frozen references")
+    excluded = set(args.exclude_clip_id)
+    unknown_exclusions = excluded - expected_ids
+    if unknown_exclusions:
+        raise ValueError(f"unknown excluded clip ids: {sorted(unknown_exclusions)}")
+    references = {
+        clip_id: reference
+        for clip_id, reference in references.items()
+        if clip_id not in excluded
+    }
 
     slices = {
         "overall": list(references),
@@ -203,13 +231,20 @@ def main() -> None:
         "label_b": args.label_b,
         "iterations": args.iterations,
         "seed": args.seed,
+        "excluded_clip_ids": sorted(excluded),
         "slices": results,
     }
     args.out_dir.mkdir(parents=True, exist_ok=True)
     (args.out_dir / "bootstrap.json").write_text(
         json.dumps(payload, indent=2) + "\n", encoding="utf-8"
     )
-    write_markdown(args.out_dir / "BOOTSTRAP.md", results, args.label_a, args.label_b)
+    write_markdown(
+        args.out_dir / "BOOTSTRAP.md",
+        results,
+        args.label_a,
+        args.label_b,
+        sorted(excluded),
+    )
     print(f"wrote paired bootstrap results under {args.out_dir}")
 
 

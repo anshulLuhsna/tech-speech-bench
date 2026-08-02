@@ -1,0 +1,14 @@
+{
+  "seed": 41,
+  "human_source_records": 64,
+  "human_repeats_per_source": 20,
+  "human_training_records": 1280,
+  "real_term_synthetic_records": 248,
+  "compositional_synthetic_records": 384,
+  "compositional_unique_terms": 96,
+  "compositional_benchmark_term_overlap": 0,
+  "total_training_records": 1912,
+  "effective_batch_size": 8,
+  "optimizer_updates_for_one_epoch": 239,
+  "design": "one full pass over every synthetic clip plus twenty exposures to each human source; compositional full terms are disjoint from the benchmark"
+}
